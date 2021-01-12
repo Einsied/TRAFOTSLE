@@ -1,0 +1,668 @@
+Program structure
+    dependencies
+        All dependecies have to be updated an adjusted to the new directory system
+        probably i should use a macro for this
+    pointer forwarding
+        using pointers to froward objects in vectors could be a good idea
+    files
+        splitting everything in declaration header (.h) and definition (.cpp)
+        allowing to program with less declaration trouble
+        DO EXPERIMENTS FIRST
+
+errors.h 
+    and revise overflows, they probably don't work....
+    especially the pop_size_total which add size could cause problems....
+    because n*signed long int could be bigger then signed long int
+    probably i will have to create a class just to store numbers bigger then 
+    sigend long int
+
+    the error_path has to be added to all classes and functions
+
+grudges
+    empires should have grudges to give them additional wargoals and bonuses
+    grudges should be projectable, to worsen relation between empires. (e.g.
+    The Outer Union has a grudge because of a first contact war against the Lorm-empire.
+    Now it could retaliate against the Lorm in a second war or project the grudge onto the 
+    Rim-union,worsening the relation between Lorm-empire and Rim-union. (for example to 
+    avoid a trade deal or military alliance.)
+    e.g for loosing a planet or a battel or not getting a specific trade deal
+
+acknowledged claims
+    every claim wit a certain severity can be made public. Other empires ca accept the claim 
+    or depending on severity and diplomatic standing deny it for a cultural and political points penalty.
+    Only acknowledged claims can be used as war claims. The war will be seen as just by every 
+    empire/federation, that accepted it.
+
+diplomatic relation
+    should exist between independent empires (not sector administrations and tiny vassals and so on)
+    so every federation or empire object can have diplomatic representation rights, wich allow it to
+    form diplomatic realitons outside of the empire or federation. (federation laws to restrict this)
+    This relation is simple a value  between the two empires (so datawise a integer and two links)
+    influenced by actions and events maybe modifiers (to avoid just bribing relation without end).
+    Maybe instead of an integer a lsit of modifiers.
+
+ground combat
+    flanks in hex
+        clockwise a unit has (clockwise) a front, a right-front-flank, a right-rear-flank,
+        a rear, a left-rear-flank and a left-front-flank.
+        While ships use a shot simulation modell ground units use a simplified modell, because
+        this is better suited to modell tank and infatry groups. They have 6 values corresponding
+        to their 6 sides in a hex field, based on blueprint, formation, training.....
+    battellines
+        to allow the formation of battellines on hex fields some adaptions are necessary
+        battellines are introduced as an ability that buffs the right-front-flank of a unit
+        with the same ability to the left, if it is facing the same direction and buffs the
+        left-front-flank of a uit to the right, if it is facing the same direction. 
+        Both flanks are buffed to the front value of the buff-receiving unit.
+        The ability could also allow to project the value of the front to one of the front
+        flanks, while projecting the rear value to the other rear-flank, making the unit 
+        "4-sided". This would allow 3 additional lines. where the line is facing a edge of 
+        an hex.
+    tiles
+        elevation (5 variants)
+            important is the elevation change, so i would categorize in plain, flat, hills, canyons,
+            mountains            
+        vegetation/trees(/rocks /buildings /waves for desert/volcanic, urban and sea) (1+ (3 * x) variants)
+            because species have diffrent sizes it would be unrealistic if every infatry-men could
+            hide in the same forest. This makes it necesary to introduce vegetation levels,
+            variing in density (none; spare, medium, thick) and size (0.5m; 1m; 2m; 5m; 10m; 20m; etc.)
+            (in case i run out of integers for tiles i could use a palnet vegetation size-factor,
+            scaling all vegetation up)
+        biome (10 variants)
+            here i would use volcanic, urban, desert, snow, hot, temperate, river, sea/ocean, molten sea/lava; fortification
+        savemethod
+            biggest steps are biomes, the elevation, the vegetation density, then vegetation height
+        example-list (assuming vegetation heighte steps are 1m; 2m; 5m;)
+            number:biome-elevation-density-heigth   = ingame name (Descripton) 
+                0:  volcanic-plain-none             = molten-plain (A perfect plain formed by cooling magma....)
+                1:  volcanic-plain-spare-1m         = lava-lands (A plain of cooled lava sparkeld with 1m height boulders, formed...)
+                2:  volcanic-plain-spare-2m         = lava-lands (A plain of cooled lava sparkeld with 2m height boulders, formed...)
+                3:  volcanic-plain-spare-5m         = lava-lands (A plain...5m...)
+                4:  volcanic-plain-medium-1m        = lava-lands (A plain...clutterd with 1m...)
+                5:  volcanic-plain-medium-2m        = lava-lands (A plain...clutterd...2m...)
+                6:  volcanic-plain-medium-5m        = lava-lands (A plain...5m...)
+                7:  volcanic-plain-thick-1m         = lava-lands (A plain...filled with 1m...)
+                8:  volcanic-plain-thick-2m         = lava-lands (A plain...2m...)
+                9:  volcanic-plain-thick-5m         = lava-lands (A plain...5m...)
+                10: volcanic-flat-none              = lava-lands (Relative flat terrain with small dunes and...)
+                11: volcanic-flat-spare-1m          = lava-lands (Relative flat terrain with small piles of rocks, smaller than 1m. ...)
+                ....
+                19: volacnic-flat-thick-5m          = lava-lands (Relative flat trerrain dominated by 5m heigh rock piles. ...)
+                20: volcanic-hills-none             = volcanic-foothills (bare hills, formed of molten rock. Looking like a black, frozen ocean ...)
+                ...
+                30. volcanic-canyons-none           = fire-valleys (Deep canyons flooded with magma, make tis region a impressive and nearly impassable site. ...)
+                ...
+                40. volcanic-mountains-none         = Volvano (A giant fire spying mountain. Outbreaks are regulary and transform the step slopes in ...)
+                ...
+                50: urban-plain-none                = plaza (A wide open plaza. Perfect for military parades or fairs. A giant monument to the achivments of...)
+                51: urban-plain-spare-1m            = parkinglot (A wide parkinglot, with a few vehicles scattered across. ...)
+                ...
+                60: urban-flat-none                 = rooftops (The hive city below is sealed of by this roofs. They form a plain with...)
+                ...
+                100:desert-plain-none               = Sandsea (An endless palin of sand. Sand. Sand. Sand.Sand everywhere.)
+                (results in 500 diffrent tile types)
+            The urban thing should maybe remodelled because buildings will be present on the map. So maybe urban will have no vegetation? 
+            Or the vegetation describes things like satues and stairs and so on...)
+    ground_attacks
+        spray patterns look into space weapons but consider indirect fire 
+        (the ships have no indirect fire only direct one)
+
+ground units trannsport
+	ground units on transports schould consume supply every turn,
+	so they could starve to death during transport increasing the logistical
+	challenge
+	they should use supply in general I would say
+
+Storys
+    attach short descriptions and history files to colonys and planets
+
+cosmetical_species
+    stores information about species like horns, claws and other appearance things
+
+Warps methods/drives
+    Have a medium like blackhole, warp, streamlane or hyperspace, slipspace
+        (allow specific breakdown of medium by event, 
+        some have none/real space like orbital accelerators)
+    Have a target method like Gravity well, Beacon or point-to-point (Jump gate/could be just a precise beacon)
+        (to allow diffrent systems like jumping to the sun or to a station or to coordinates. 
+        Of course there should be an interference free variant named real space)
+    Have a travel type like jump, wormhole, stream or flight
+        (e.g jump is an instant transport from one point to another with cooldown,
+        Starruler 2's slipstream tears and the jumpgates in stargate are wormholes,
+        Hyperlanes are streams and starwars hyperdrive is a flight just like normal sub light-travel)
+    Have a speed factor
+        Making hyperdrive faster then sublight-travel
+    Have a range factor
+        ensuring someone can't insta jump everywhere unless with one specific dangerous device
+    Have a risk factor
+        Allowing ships to disappear in a wormhole and demons to invade through the warp
+    Have a breakdow risk factor 
+        to make them more or less reliable in general so sometimes a warpstorm makes travel impossible
+    Probably something like a use factor to cause problems 
+        eg everybody is using warpdrives and the warp looks like swiss cheese extradimensional invaders spawn
+    Something to support weather like warpstorms traveling trough the galaxy
+    Probablay something to support gatenetworks 
+        to accidentaly reconnect them with each other or to an alien dimension (by an event)
+        or allow to connect gates permanetly between to empires or to your allies
+
+special projects
+    general
+        they have points which are slowly filled up and yield a reward after
+        they are finished
+    scientifical projects
+        this projects give a special technology after they are finished
+        points could be created by special research institutes/stations
+        (LHC-style) or hunting space monsters etc.
+    military
+        e.g giant ships or stations or sips with special bonuses
+
+technology
+    inheritance
+        inherited by sud empires if option set. To enable empire wide research.
+    techlevel
+        value of a clony describing its development.
+        either a general value or one value for a techfield (like physics or medicine or mining...)
+        The techlevel should be determined by general education funds of the empire (costing political influence)
+        and local modifiers, like buildings.
+    Example 
+        Colony A is part of empire B in empire/federation C
+        C has mining tech 5.
+        B inherits minig tech 5 (because it is jsut a sector administration and the federation laws work that way)
+        C is also responsible for education funds and has an education efficency of 42%
+        giving A 5*0.42 = 2.1  => mining tech 2 (always rounding down even if it hurts.) 
+        Leaving a difference of 3 to the empire level.
+        Because of the Imperial-Comm-array on Core world D A gets +0.1 techlevel like all colonys in the system
+        Also the system-university contributes 0.1 techlevel.
+        On A is also a colonial university giving +0.1 a planetary scool +0.05 and a planetary adinistartion centre +0.05
+        so A has a local techlevel of 0.1+0.1+0.1+0.05+0.05=0.4.
+        giving it 3*0.4=1.2 => minigtech +1 giving it a total miningtechlevel of 3
+
+corporations
+    efficency
+        determines the shareholdervalue and output of facilities
+    indepnedence
+        Should have varing degrees of independce, which makes them more efficent but might trigger bad events like a scandal
+        it should also give them a wider spread for all vlaues like shareholdervalue, morals and efficeny 
+    shareholdervalue
+        should have a sharholdervalue, if this value is high the company facilities can be build cheaper and efficency will slowly 
+        decrease. if it is low efficency increases but there is a chance for bancruptcy, it also makes faciliteis more expensiev
+        to build. Can be suibsided with political power to increase sharehodler value and avoid bancruptcy
+    morals
+        a hidden value that gives more efficency and causes negative effents like illegal research scandals, illegal slave pits and
+        so on. Should be counteres by investigations, which cost political influence
+    Sector
+        determines which buildings can be build like mines, factorys, colonies or all of tem for (Giga-corps)
+        Corporations should range from simple manufacturing companys to giant behemoths, which could colonise a whole system 
+        with their facilites and deliver the full output like a regular system.
+    buildings
+        -have unique buildings, if there are to many companies they should be consolidated into one building type and used an 
+        average value to avoid problems (max building id is currently unsigend shor int)
+        -the buildings should not require workers, so theire efficency is lower then normal buildings, but because of the
+        lacking workforcerequirement it should be lower
+        mine
+            produces ore....
+        mining-complex
+            produces minerals ore products like goods or shipparts
+        factory
+            produces goods and uses raw resources 
+        research lab
+            produces research for political influence or goods
+        colonies
+            prodcue political influence
+        media-hub
+            produces cultural inflcuenc for politcal influence or goods
+    intelligence can not be produced by corporations, their higher base efficency is countered by the random efficency-fluctuations,
+    and the possibility of bancruptcy, which deletes all company buildings
+    they should also have their own fleets, tarding and military fleest for the big companys 
+        
+Empires 
+    should be build like trees 
+        this might need a rework of the claims and other classes as the one empire one id approach with a unsigned short it might become difficult 
+        So basically one thing is controlling another the "Sol-system" (lowest level system administration 
+        (this actually contains the links to the colonys)) is part of the "Sol-sector"(first empire like object),
+        which is part of the "Terran-Core-Systems" (second empire like object), which is part of the "Human federation"
+        (third empire like object and in this example the player level), which is part of the "Second Rim Alliance"
+        (fourth empire like object and independent)
+            So each object has some authority over the subjects below. So for example if the "Second Rim Alliance" 
+            declares a war against another party all lower entities will be part of this war. But maybe the "Second Rim Alliance"
+            lacks the right to maintain and command a fleet so the next lower parts will have to lead the war while the 
+            "Second Rim Alliance" can't do anything. So it can essentially serve as a platform for multiple player empires
+            to coordinate things like war, trade or research be giving it the right to collect a research point tax and invest it 
+            with set rules (for example all members vote one research projects or a president proposes a research plan)
+            Of course the "Second RIm Allinace could also just collect all tech and redistribute it to the lower parts.
+            But this would waste research poinst if two parts research the same thing.
+        Also the objects can move within this tree gaining independece from the part above them and stepping up the ladder
+            e.g. by a war which is allowed by the upper level (which could be a weak research alliance)
+            or by being elevated by a higher part if this holds the rights to do so 
+            (a player or the ai restructuring their empire for example, a defensive allinace would very likley lack this right)
+        For interactions below the object uses it's political influence points, for the equal or levels above it uses cultural influence points
+        Best part: it schould be possible to be part of multiple empirelike objects 
+            leading to conflicting rights and forcing someone to leave an empire like object or fighting a war over the changed law
+            of course being part of other empire like objects should be forbidable
+    specialized colonies
+        colonies can be designated for a special purpose. Then are occupied by a capital like thing. Allowing to construct
+        builings with empire wide bonuses and giving a bonus based on size (or always occuping a whole planet).
+        e.g. garden planet for the imperial elite, vacation resort for the whole empire, galactic administration planet (like trantor)
+    capital
+        a object attached to the empire storing special capital building like monuments or ceremonial weapon chamber and
+        the location of imperial institutions like the imperial archives or the imperial university.(by link to colony)
+    institutions
+        provide bonuses for the empire and huge bonuses for the system and colony in which they are located 
+        (but need a lot of goods and space)
+        they are conquerable
+            the conquereo is get's an appropriate short time reward like tech or science points for conquering the university
+            (this rewards should scale to prevent the HUGE-HUGE-Federation to conquer an tiny minor and get a lot of science points
+            (the tech-differences or political differences should also matter. (conquering the imperial fleet-headquarter of a 
+            pacifist-empire should be nearly useless))
+        they are moveabel
+            over a a long time period (avoid just fleeing in the alst minute) they can be relocated onto another planet
+            (ther should be a ruined or offswitched dummy to reserve the space).
+        they can be evcuated
+            same as movement but with a penalty and faster (to allow fleeing in the last hour...)
+        they are removable
+            but removing takes time to avoid (burned earth) 
+            or gives a huge penalty but is done instant to allow burned earth for a price (of course the player can avoid this 
+            by blowing up the planet)
+
+Empire parliaments and voting process
+    of course there will be 100% despotic empires, but others will have parliaments (e.g federartions or democracys)
+    votes
+        votes are something between delegates and political power
+        they are bound to an empire like in the UN or to a political faction
+        votes are subdivided into 3 categories fanatic, normal and corrupt
+        Basically a faction system: We have for example a communist faction,
+        consisting to 22% of fanatics, 47% normals and 31% corrupt delegates, 
+        because the empire has X percent corruption and Ypercent of it's communists
+        pop are fanatic (even with 0% fanatic pops ther should be a decent amout of fanatic 
+        communist delegates; with 100% fanatic pops ther should still be corrupt and normals;
+        the same applies for corruption, 100% still leaves 1 or two fanatics and normals behind...)
+    voting process
+        fanatics always vote based on faction, normals can be moved for by faction standing points
+        gained by supporting laws they favour (or diplomacy for national delegates). corrupts can be moved 
+        the same way or with political power/points the costs for this action should depend on te proposal easy 
+        to let eco-faction vote pro communist law, difficult to get capitalist to vote for said law.
+        This is a pressure system so every invested point on one side adds pressure on that faction to vote
+        into that direction (reluctance to vote fo someting could be implemented as a basic-pressure)
+        (like starruler 2 or urban empire)
+    vote distribution
+        votes can be given by diffrent methods e.g.:
+            controlled planets
+            population
+            Fleet size
+            Army size
+            recent war distribution
+            science points output
+            paid tribute
+            cultural infuence
+            fixed amout (the Xylan empire always gets 250 votes/seats/delegates)
+            contribution to federation fleet
+            power projection (resource that is gained in pressing demands in wars or diplomavy)
+            etc.
+        this votes are then given to either the empires or the respective sub unit (system administration)
+        and are either filled with the main factions there or with nationalists form that sector
+        The rounding process should ensure that not all seats are filled leaving a unaffiliated/random faction
+        behind, which has no base pressure and it's fanatics split based on a random number, this independent
+        faciton should spice things up
+        also it should be possible to make a x-party system or solike the k or the us by rounding up seats,
+        or giving all seats in 1 area two one faction (1 delegate per county in uk ....)
+    unhappiness of empires
+        if a parliament voting-process does not mirror the political views of it's member empires they will be 
+        unhappy based on their relative size(or something like that, probably their "size" (militarists are comparing
+        to other empires by fleet-size, capitalists by priduction etc.), and their main ehtics (if an nationalist empire 
+        is part of a federation that only votes on popsize and does not allow national delegates they should be pissed)
+    (simel exampel) example:
+        the Rim-union consists of the Solar-federation, the empire of Xorg and the Vakun-republic
+        The Rim-union has jurisdiction over trade and scientifical matters and so it'has an trade minister which controls 10% 
+        of all votes and a science minister controlling 6% of all votes
+        135 votes are fixed for the Vakun-republic 43 for the Xorg-empire, this seats are filled based on faction
+        45 votes are fixed for the Xorg-empire and filled by national delegates
+        342 votes are given for tribute. The Solar-federation contributed 56% the Vakun-republic 33% and the
+        Xorg-empire 11% to the federation budget. This seats are filled by national delegates
+        432 votes are given based on population and filled based on faction. The Solar-federation has 32 billon citizens,
+        the Valkun-republic 23 billion and the Xorg-empire 28billion
+        25 seats are give for fleet.strength. The Solar-federation has 65k fleet points, the Vakun-republic 34k and
+        the Xorg-emipre 114k. This seats are filled with national delegates.
+        The Solar-federation has 56% Capitalist-pops 12% Pacifist-pops 22% eco-freindly pops and 10% communist pops
+        The Valkun-republic has 23% democratic-pops 35% communist pops and 42% industrial-(anti-eco)-pops
+        The Xorg-empire has 54% warmonger-pops 23% communist-pops and 23% (eco-friendly pops)
+            So we have:
+            goverment
+                1,022*0.10 trade-min     = 102.2        = 102
+                1,022*0.06 science-min   = 61.32        = 61
+                NO INDEPENDET DELEGATES FOR THE GOVERMENT!
+            Vakun-fixed seats
+                135*0.23 democrats      = 31.5          = 31
+                135*0.35 commuinsts     = 47.25         = 47
+                135*0:42 industrial     = 56.7          = 56
+                independent (135-31-47-56)              = 1
+            Xorg fixed
+                43*0.54 warmonger       = 23.22         = 23
+                43*0.23 communist       = 9.89          = 9
+                43*0.23 ecos            = 9.89          = 9
+                independent (43-23-9-9)                 = 2
+            Xorg national fixed
+                45 Xorg nationalists                    = 45
+            Tribute
+                342*0.56 Solar-national = 191.52        = 191
+                342*0.33 Vakun-national = 112.86        = 112
+                342*0.11 Xorg-national  = 37.62         = 37
+                independent (like above)                = 2
+            population (total 32+23+28=83)
+                432*(32/83) Solar-fed   = 166.55       (= 166)
+                    166*0.56 capital    = 92.96         = 92
+                    166*0.12 pacifits   = 19.92         = 19
+                    166*0.22 eco        = 36.52         = 36
+                    166*0.10 communist  = 16.6          = 16
+                    independent                         = 3
+                432*(23/83) Vakun-rep   = 119.71       (= 119)
+                    119*0.23 democrats  = 27.37         = 27
+                    119*0.35 communists = 41.65         = 41
+                    119*0.42 industrial = 49.98         = 49
+                    independent                         = 2
+                432*(28/83) Xorg-emp    = 145.73       (= 145)
+                    145*0.54 warmonger  = 78.3          = 78
+                    145*0.23 communist  = 33.35         = 33
+                    145*0.23 ecos       = 33.35         = 33
+                    independent                         = 1
+                indepedent                              = 2
+            fleet-srength (65k +34k +114k =213k)
+                25*(65/213) Sol-national= 7.62          = 7
+                25*(34/213) Vakun-natio = 3.99          = 3
+                25*(114/213) Xorg-natio = 13.38         = 13
+                independent                             = 2
+            So the Rim-Union parliament consists of the following factions 
+                goverment:
+                    trade minister      = 102
+                    science minister    = 61
+                faction:
+                    capitalists         = 92
+                    pacifists           = 19
+                    eco-friendly        = 78
+                    communists          = 146
+                    democrats           = 58
+                    industrialists      = 105
+                    warmonger           = 101
+                national
+                    Solar-national      = 198
+                    Vakun-national      = 115
+                    Xorg-national       = 95
+                independent             = 15
+            The Xorg empire would be happy about the fleet stregth-votingpart (because it is militaristic)
+            while the Vakun would be unhappy because they are pacifist. This would be compensated
+            by the vote per pop because the vakun are democatic
+            The number of independent votes rises with the number of empires in the federation and the 
+            number of factions in the empire.
+            The voting system is configurable and can be changed by vote (unless te federation constitution 
+            makes this impossible (for keeping fixed votes or so)). So manipulating the voting system and
+            the faction ratio during the vote is important, especially if the parliament is only elected
+            every 2o turns or longer.
+    ministers
+        if a specific resource (e.g science, production, intelligence) lies within the jurisdiction
+        of an empire it can set up an minister, which gives certain bonuses.
+        So every empire can only have one minister affecting it (if the federation has a science minister, 
+        no subempire can have one, they are all affected by this minister)
+        The jurisdiction is given based on key-laws
+        if an empire is member of 2 federations with minister it will get either the average or no bonus
+        the bonus of the minister scales with the amout of votes they have.
+        this represents their political influence and is a trade off between the semi random communist
+        economics minister and the bonuses. The random effect should always resilt in a lost of control for
+        the player to make it a trade-off. (The political views of the ministers should usually be problematic,
+        without having a fanatic capitalist minister in a 100% communist empire(maybe he distastes something
+        or is ecofreindly or votes for to the benefit of his home-sector)
+
+    Empires and faction pressure
+        depending on the amout of pop-factions(size) in an empire the chances of pop-members switching 
+        to that size changes.
+        So communism spreads or capitalism spreads, this should be implemented as pressure, ifluenced by:
+            +:
+            pops changed faction last turn;
+            members in faction;
+            goverment influence;
+            members in opposite faction (radicalization of empire)
+            problems (strarvation breeds communism, richness capitalism)
+            -: 
+            already a signifikant mayority (to avoid singel faction-empires)
+            goverment influence
+            favoured laws passed (if you have communist laws, less pops join communism=
+            opposite laws passed in the last X turns (if the empire just became communist
+            the population should not demand capitalism after they pushed for just 5 years ago)
+        The federation should downward pressure, based on an integration coefficent
+
+Military
+    structure
+        tree like organized.
+    Operation areas (aka south front)
+        parts of the tree (commands) can get operation areas, to make ai patrolling and so on easier.
+    coups
+        military coups happen based on things like military independence, stability and hapiness
+        in a coup a branch of the military-tree with a illoyal officer and more than x percent of the
+        total military power decides to revolt every subbrancn follows based on officers and position
+        in the tree (if the 5 star general revolts and the revolt reaches down to a lieutanant, he should
+        not try to śtay loyal because, he is likely already surrounded by rebels.
+        coup battels in the first turn should not be real battels, but dice rolling things instead to simulate
+        the confusion. (people being stabben in their bunks and cremembers fighting crewmebers)
+        Also based on the general military loyality the involved units should get damaged,
+        because there were fights in the units, because one bob tried to stay loyal to the other side.
+
+wars
+    should have areas attached to them either war areas or civic protection zones
+    should have special civilian-factions to allow retreat and evacuation fleets
+        after the capitulation of an besieged planet
+    should influence a prestige-ressource
+        by battel results, retreating, not reliefing sieged planets (if promised to do so),
+        or evacuating planets.
+    should be able to be fought sport-like like flower wars for warrior-empires
+    should create refugee streams (part of civilian-faction) heading for civic protection zones
+        neighbouring empires or deeper into an empire away from the front. Either in refugee fleets
+        or as traderoute-like streams
+    should have fronts
+        maybe identified by a tension modifier caused by battles, positioned ships, claims, 
+        owner of neighbouring systems and tension in neighburing systems (maybe this could be
+        expanded into a mechanic. Allowing to escalate and provoke border conflicts or avoid them)
+    should have participants and a list with victories crimes and so on for every participant,
+    making grudges after peace and so on easeier.
+
+Contracts are basically empire like objects but betweet to empires and with more limited scope
+
+Warpartys/allinaces/factions should be temporary empire like objects 
+    which if not specifically changed (by a vote or so) dissolve themselve after a peace contract was made with the enemy
+    but they can of course serve as the founding cell of an galactic federation
+
+Pathfinding
+    The problem can be simplified to a net-problem. Every warppoint is a node connected to other nodes. The connections have rules 
+    and movement costs, so far so good. The connections in a system can simply be added to this connections. 
+    Now the question is no longer what is the shortest route through x systems? The question is which is th shortest route
+    trough x nodes? The algorithm acts like a passenger with a bus and a train ticket, planing the route based on to the distance
+    to the next train or busstation and the cnnections between the stations. 
+    Real trouble starts if the Ai is considering to open a womhole or not, because one wormhole changes everything and so this
+    option has a lot of resulting options making a decision very complicated. probably the ai(algorithmical instance) should try to
+    build a traffic network and hold back some emergency wormholes for military actions.
+
+Computer controlled empires
+    should have options to choose from and weight them based on their gain.
+    the final decision should be randomized based on the weight.
+
+Habitats    
+    write colony for spaceships and stations class
+    call them habitats
+
+    they will have modules instead of buildings
+    and can not be conquered by ground forces
+
+Intelligence
+    General
+        Points are not stored and have to be spent every turn. But it is 
+        possible to invest in multi-turn projects to build points up. 
+        This allows weak empires to save up for an action, while sacrificing
+        flexibility.
+    Attack
+        An attack is an action against a colonie, ship or base, with a result
+        and points commited to the attack.
+        Options could be destroy ship/base, increase Revolt points/unrest, 
+        steal ship plans, sway election, kill leader, take over base, decrease
+        loyality, steal fleet positions, lower enemy espionage defense(!!!)....
+    Defense
+        Colonies
+            Colonies or system administrations(better systems, because it still
+            allows attacks agaisnt backwater regions, while saving memory) have
+            defensive points attached to them. 
+        Ships and bases 
+            get their defense from their crew size and special modules. And
+            probably an empire wide budget distributed on all ships, also 
+            protecting positions of the fleet or unit. So basically each bigger
+            military unit (Truppenverband) could have it's own espionage budget
+    Counter Espionage
+        This is an action aimed at one of the bigg enemy worlds. If successful
+        it gives them a negativ modifier for espionage actions against the 
+        attacker. This allows a aimed defense against certain empires and should
+        be cheaper the general defense
+    Success chance
+        General
+            it is a leaking system so sucess is always possible it just becomes
+            more and more unlikley with higher defense spending. There should
+            be a penalty for spending to much points on one system and one 
+            action, to avoid all-in attacks on single systems or objects, 
+            because this would be an unfair attacker advantage.
+        Colonies
+            The chance depends on attack-points, defensive-points, size,
+            population and buildings
+
+Resistance, Revolt and Militia
+    Resistance
+        this non military resistance groups, showing up before an revolt.
+        They commit acts of sabotage according to politcal views or reason
+        for the resistnce. The range of this actions includes: stealing of
+        military supplies; attacking goveremnt agencies(lowering political 
+        point income); cultural or scientifical boykott (lowering culture and
+        science points); lowering the loyality of other pops; lowering the
+        happiness of other pops; destroing or damaging buildings and killing 
+        members of pops. The are supressed by the milita and the intelligence 
+        defense (the intelligence defense should be more efficent, forcing 
+        players to build Intelligence buildings, before the almighty imperial 
+        security agency crushes them unprepared)
+    Revolt-points
+        Revolt points are generated by illoyal pops and increase
+        the CHANCE of an revolt
+    Militia-points
+        represent the local sector militia. Like the starploice they are
+        generated by special buildings but not used until a revolt starst.
+    Revolt
+        In case of an revolt the militia automatically crushes the revolt.
+        But it has also a chance of participating in the revolt,based on 
+        diffrent factors(sector governor, laws, species revolting....) 
+        the police and the pirates can also participate, based on diffrent
+        factors the pirates appear (if they were not obliberated in the revolt)
+        in the form of either small military/corporation ships or as randoized
+        general pirate blueprints
+    Draft
+        They are equipped after a blueprint ratio. Like the star police
+        (In the blueprint the representative/repressive abilities have to
+        be balanced against battel abilities). They shoul be weaker then the
+        real army but able to fill gaps (like imperial conscripts).
+        A milita based military should be possible (the tradeoff is the lack
+        of specialized troops, the increased risk of rebellion during war, 
+        and the stronger troops of rebelling system-governors)
+
+Piracy and Star-police
+    point system
+        piracy is represented by piracy points describing how ell established
+        the pirates are they increase based on moved cargo and pirated cargo
+        (so moved cargo attracts criminals and pirate cargo helps them, this 
+        should allow things to spiral out of control. Probably the moved to 
+        pirated cargo ration should be 1:10 or 1:100)
+        they are destroyed with police points at a slow rate (10% of the police 
+        points every turn?)
+    police-points
+        describes the number of active police ships in the system (this arrn't
+        real ships unless they are conscripted just a number)
+        increased by certain buildings to a level given by this buildings
+        (so building x produces 20 police points and allows a maximum of 400 
+        points, so after 20 turns the pool is at it's max)
+    piracy factor
+        based on the police to piracy points ratio a piracy factor is calculated
+        (e.g. if the pirates outnumber the police 1:5 it is 100% if they are 
+        even (1:1) it is 50% and if the police outnumbers them 5:1 it is 0%)
+        Balancing the y-intercept and slope will be difficult.
+        However the factor is never smaller the 0% or bigger then 100%.
+    System maximum
+        depending on system size(or planets in system) a certain number of 
+        police-points should be enough to police the whole system,
+        making more unnecessary. (technically a maxnumber of piracy-points
+        depending on system size should do the trick.
+    draft
+        one or multiple blueprins and ratios schould be desigen for police ships
+        allowing them to spawn as small or tiny ships in the system if drafted
+        (a design factor should reduce the total amout of produced and max
+        police-points based on the design. To discourage the player from 
+        building warready police ships only. Diffrent zones like core;
+        border, rim for administrations and corresponding blueprints or
+        blueprint mixes should allow flexible design.
+        (e.g. Tiny fast police-only-cruisers for the core and medium nearly 
+        battel-ready ships for the borderregions.)
+
+Empires should be identidied by pointers
+    -> class has to be named empire
+
+False flag
+    allow ships to assume the identity of another empire
+    the real identity should be detectable by boarding
+
+Officers 
+    attach small officer objects to ships/units giving small bonuses
+    maybe with loyality values (rebellion)
+    for simple ship/unit officers a competence value, a loyality value a name
+    and a class (combat, navigation, repair/med) should be enough
+
+Charachters
+    * let characters retire and come back out of retirment under certain 
+        cirsumstances (e.g. their homeworld beeing attacked)
+    * they may refuse to come out of retirement plantig cabbages (diocletian) 
+        and come back out if something happens
+    * also allow for something like crypt and cryo statis worlds dedicated to 
+        collect the remains of former rulers giving bonues for maintenace
+        (every ruler should have their own tomb/retiemrnet palast/cryo vault,
+        with buliding value to give it flair and track the investment
+        (maybe allow to let old tombas fall into disrepair))
+        Also think about inca living mummy things were every empereor gets a
+        continent/colony on a planet
+
+Write:
+    Storage for trade connections (remember to process them in the system 
+    and to implent the piracy-factor (float between 0 and 1). Find solution
+    for multiple systems (maybe an average)
+
+Finish:
+    populations
+        empire id
+            update the empire id (either a empire pointer or a pointer to 
+            a culture class)
+        ethics
+            revise the ethics, and build a system that can deal with a big 
+            number of diffrent ethics (possible an pointer to an ethic class
+            and values describing how much this pop likes this class)
+    trade_connections
+        add a blockade modifier allowing other empires to steal loot
+        add something like a trade route class to allow tradec connections to
+            be associated with hexes (one route 1+x connections) making 
+            blockading/stealing goods on hex map possible
+    buldings:
+        add livingspace (for housing modules)
+        police and militia-generation
+    colonys
+        add buildings_queue (pointer to buldings in buildingsqueu)
+        something like a corruption level decreasing production?
+    ground_units
+    species
+        add size (used for needed living space and ground battle)
+    Global
+        add Goods
+
+Implementation pending -> no source file
+    ground_unit
+    species
+
+Rewrite:
+    planets
+
+Consider
+    buildings (add something to make them increase palnetary defence unless it is done in another way for example by checking in building X exists....)

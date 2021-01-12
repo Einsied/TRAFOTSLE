@@ -1,0 +1,45 @@
+/*
+Errorcodes:
+0: No Error occured
+1: Negative value in unsigend variable
+2: Overflow 
+3: requested Arrayfield should not exist
+4: value bigger then expected
+*/
+
+/*
+Trade Goods:
+    1.Grain
+    2.Food
+    3.Ore
+    4.Minerals
+    5.Industrial Goods
+    6.Consumer Goods
+    7.Special Goods
+    8.Luxury Goods
+    9.Basic Shipparts
+    10.Organic Shipparts
+    11.Special Shipparts
+    12.Advanced Shipparts
+    13.Weapons
+    14.Synths
+    15.Rare Ores
+    16.Rare Organics
+    17.Rare Minerals
+    18.Pilots
+    19.Soldiers
+    20.Fruits
+    21.Fermented Fruits
+    22.Nutrition Slime
+    23.Royal Jelly
+
+System_Goods:
+    1.Political Influence
+
+Empire_Goods:
+    1.Cultural influence
+    2.Intelligence
+    3.Research
+
+Buildings:
+*/
