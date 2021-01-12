@@ -1,0 +1,30 @@
+.description{
+	border: 3px solid blue;
+	border-radius: 1rm;
+}
+.implementation{
+	border: 3px solid green;
+	border-radius: 1rm;
+}
+.seeAlso{
+	border: 3px solid black;
+	border-radius: 1rm;
+}
+nav{
+	border: 3px solid black;
+	border-radius: 1rm;
+}
+.pagetitle{
+	color:black;
+}
+body{
+	background-color: white;
+}
+th, td, table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.scan{
+	max-width:30%;
+	height:auto;
+}
