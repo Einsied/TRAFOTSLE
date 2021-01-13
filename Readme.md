@@ -13,9 +13,13 @@ From this topics a implementation plan will be written and later implemented.
 This implementation plan should be the precursor to a documentation,
 because it describes what should be possible.
 
+## Sanity Checks
+* each Note should have at least one particle
+* each particle should be part of one topic
+
 ## Naming conventions
 
 I stands for physical documents/source notes
-N for digital documents/source notes
+D for digital documents/source notes
 P stands for particles
 T stands for topics

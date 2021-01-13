@@ -1,0 +1,734 @@
+{
+	"Items":[
+		{
+			"Id": "I001",
+			"Description": "galactic regions",
+			"Keywords" : [
+				"map generation"
+			]
+		},
+		{
+			"Id": "I002",
+			"Description": "ground units",
+			"Keywords" : [
+				"ground units"
+			]
+		},
+		{
+			"Id": "I003",
+			"Description": "ground units, ocean navies, planetary bombardment, aquatic colonies",
+			"Keywords" : [
+				"ground units",
+				"colonies",
+				"battle module",
+				"blueprints",
+				"subsystem"
+			]
+		},
+		{
+			"Id": "I004",
+			"Description": "fleet/ship movements, subAis/Admirals, AI interaction, military pressure",
+			"Keywords" : [
+				"object hierarchy",
+				"AI",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I005",
+			"Description": "long & subturns",
+			"Keywords" : [
+				"game concept"
+			]
+		},
+		{
+			"Id": "I006",
+			"Description": "Setup mini game",
+			"Keywords" : [
+				"map generation"
+			]
+		},
+		{
+			"Id": "I007",
+			"Description": "Awarding points, political model, conflict/wars"
+			"Keywords" : [
+				"game concept",
+				"pops"
+			]
+		},
+		{
+			"Id": "I008",
+			"Description": "breaking defensive treaties",
+			"Keywords" : [
+				"diplomacy"
+			]
+		},
+		{
+			"Id": "I009",
+			"Description": "Ideas for setup mini game",
+			"Keywords" : [
+				"map generation"
+			]
+		},
+		{
+			"Id": "I010",
+			"Description": "Luxury resources/limited strategic resources",
+			"Keywords" : [
+				"game concept"
+			]
+		},
+		{
+			"Id": "I011",
+			"Description": "movement of troops and ships in battle combined with attack",
+			"Keywords" : [
+				"battle module"
+			]
+		},
+		{
+			"Id": "I012",
+			"Description": "Crude Ai scripts",
+			"Keywords" : [
+				"AI"
+			]
+		},
+		{
+			"Id": "I013",
+			"Description": "Military pressure and Danger",
+			"Keywords" : [
+				"game concept"
+			]
+		},
+		{
+			"Id": "I014",
+			"Description": "campaign ideas",
+			"Keywords" : [
+				"story"
+			]
+		},
+		{
+			"Id": "I015",
+			"Description": "general AI concept with example",
+			"Keywords" : [
+				"AI"
+			]
+		},
+		{
+			"Id": "I016",
+			"Description": "research ideas (research web with RNG elements)",
+			"Keywords" : [
+				"game concept",
+				"research"
+			]
+		},
+		{
+			"Id": "I017",
+			"Description": "Warp/FTL-methods and idea of planets crashing",
+			"Keywords" : [
+				"FTL",
+				"planets",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I018",
+			"Description": "war weariness",
+			"Keywords" : [
+				"game concept"
+			]
+		},
+		{
+			"Id": "I019",
+			"Description": "Blueprints for ships and ship production",
+			"Keywords" : [
+				"game concept",
+				"object hierarchy",
+				"ship building"
+			]
+		},
+		{
+			"Id": "I020",
+			"Description": "maps of planets, hybrid-units",
+			"Keywords" : [
+				"saves",
+				"object classes",
+				"ground movement"
+			]
+		},
+		{
+			"Id": "I021",
+			"Description": "cultures and their consequences on pops",
+			"Keywords" : [
+				"game concept",
+				"object hierarchy"
+			]
+		},
+		{
+			"Id": "I022",
+			"Description": "story/ campaign Fall of the 1 empire",
+			"Keywords" : [
+				"story",
+				"tutorial"
+			]
+		},
+		{
+			"Id": "I023",
+			"Description": "idea of garden worlds",
+			"Keywords" : [
+				"planets"
+			]
+		},
+		{
+			"Id": "I024",
+			"Description": "stock markets, trade, research, industrial waste, Eco sphere",
+			"Keywords" : [
+				"game concept",
+				"research",
+				"trade",
+				"resources",
+				"pops,
+				"production",
+				"colonies"
+			]
+		},
+		{
+			"Id": "I025",
+			"Description": "ambitions, victory points",
+			"Keywords" : [
+				"game concept"
+			]
+		},
+		{
+			"Id": "I026",
+			"Description": "trade, trading stations, trade routes, trade network",
+			"Keywords" : [
+				"game concept"
+			]
+		},
+		{
+			"Id": "I027",
+			"Description": "History tracking, AI  messages, events based on history, troop moral and discipline",
+			"Keywords" : [
+				"tool",
+				"game concept",
+				"AI",
+				"ground troops"
+			]
+		},
+		{
+			"Id": "I028",
+			"Description": "Weapons naming, subturns, action points, ship movement",
+			"Keywords" : [
+				""game concept",
+				"battel module"
+			]
+		},
+		{
+			"Id": "I029",
+			"Description": "Shields in space battle",
+			"Keywords" : [
+				"battle module"
+			]
+		},
+		{
+			"Id": "I030",
+			"Description": "Claims on planets, mobile colonies and colonies on habitats and ships",
+			"Keywords" : [
+				"colonies",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I031",
+			"Description": "space nomads, subsystem designs, diplomatic request tone",
+			"Keywords" : [
+				"game concept",
+				"empire",
+				"diplomacy",
+				"subsystems"
+			]
+		},
+		{
+			"Id": "I032",
+			"Description": "Fighter launch and recovery",
+			"Keywords" : [
+				"subsystems",
+				"battle module"
+			]
+		},
+		{
+			"Id": "I033",
+			"Description": "early example blueprints for ship design",
+			"Keywords" : [
+				"blueprints",
+				"subsystems"
+			]
+		},
+		{
+			"Id": "I034",
+			"Description": "different kind of shields",
+			"Keywords" : [
+				"Subsystems"
+			]
+		},
+		{
+			"Id": "I035",
+			"Description": "ship crashes into planets",
+			"Keywords" : [
+				"game concept"
+			]
+		},
+		{
+			"Id": "I036",
+			"Description": "colonists need different modules to be transported (depending on social class and other stuff)",
+			"Keywords" : [
+				"pops",
+				"subsystems"
+			]
+		},
+		{
+			"Id": "I037",
+			"Description": "outdated note about expanding pops and infantry",
+			"Keywords" : [
+			]
+		},
+		{
+			"Id": "I038",
+			"Description": "Another campaign concept",
+			"Keywords" : [
+				"story"
+			]
+		},
+		{
+			"Id": "I039",
+			"Description": "Ships moving around planets, blockades, vassal states, lend-lease for blueprints also ship classification",
+			"Keywords" : [
+				"game concept",
+				"battle module",
+				"diplomacy",
+				"tools"
+			]
+		},
+		{
+			"Id": "I040",
+			"Description": "ideas for ethics of pops",
+			"Keywords" : [
+				"pops"
+			]
+		},
+		{
+			"Id": "I041",
+			"Description": "entertainment subsystems",
+			"Keywords" : [
+				"subsystems"
+			]
+		},
+		{
+			"Id": "I042",
+			"Description": "ship movement in battle",
+			"Keywords" : [
+				"battle module"
+			]
+		},
+		{
+			"Id": "I043",
+			"Description": "Action points in space battle/energy",
+			"Keywords" : [
+				"battle module",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I044",
+			"Description": "ground combat, morale, orbital bombardment, landing troops, etc",
+			"Keywords" : [
+				"battle module",
+				"ground units",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I045",
+			"Description": "pops can be enslaved (maybe outdated)",
+			"Keywords" : [
+				"pops",
+				"laws"
+			]
+		},
+		{
+			"Id": "I046",
+			"Description": "damage models for weapons",
+			"Keywords" : [
+				"combat module",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I047",
+			"Description": "damage model in depth, hp and structural integrity at the end",
+			"Keywords" : [
+				"battle module",
+				"subsystems"
+			]
+		},
+		{
+			"Id": "I048",
+			"Description": "pre-setup in depth, thoughts about saving history",
+			"Keywords" : [
+				"map generation",
+				"object hierarchy"
+			]
+		},
+		{
+			"Id": "I049",
+			"Description": "Implementing battle lines on a hex field",
+			"Keywords" : [
+				"battle module",
+				"ground combat"
+			]
+		},
+		{
+			"Id": "I050",
+			"Description": "private sector in economy, continents, pop caste",
+			"Keywords" : [
+				"game concept",
+				"object hierarchy",
+				"pops",
+				"planets",
+				"colonies"
+			]
+		},
+		{
+			"Id": "I051",
+			"Description": "movement and shooting in space combat, components, cheaper production for standard sub-systems",
+			"Keywords" : [
+				"game concept",
+				"object hierarchy",
+				"pops",
+				"planets",
+				"colonies"
+			]
+		},
+		{
+			"Id": "I052",
+			"Description": "Solution to Mp many/million 1 vs 1 battle problem",
+			"Keywords" : [
+				"game concept",
+				"game design"
+			]
+		},
+		{
+			"Id": "I053",
+			"Description": "warp inhibitors, Bonus and late game tech",
+			"Keywords" : [
+				"game concept",
+				"empires",
+				"research",
+				"FTL"
+			]
+		},
+		{
+			"Id": "I054",
+			"Description": "wormhole inhibitor by size reduction or no-hole-zone",
+			"Keywords" : [
+				"FTL"
+			]
+		},
+		{
+			"Id": "I055",
+			"Description": "Contracts",
+			"Keywords" : [
+				"diplomacy",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I057",
+			"Description": "farming yields for planets, factions for pops and empires (outdated)",
+			"Keywords" : [
+			]
+		},
+		{
+			"Id": "I058",
+			"Description": "fear-benevolence slider (for empires) reputation",
+			"Keywords" : [
+				"game concept",
+				"empires"
+			]
+		},
+		{
+			"Id": "I059",
+			"Description": "Ideas for expanding characters/historical figures",
+			"Keywords" : [
+				"characters",
+				"AI",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I060",
+			"Description": "Imperial heritage",
+			"Keywords" : [
+				"empires",
+				"game concept",
+				"ambitions"
+			]
+		},
+		{
+			"Id": "I061",
+			"Description": "Elite troops, honor guards",
+			"Keywords" : [
+				"ground troops"
+			]
+		},
+		{
+			"Id": "I062",
+			"Description": "Tactics as kind of research with experience points",
+			"Keywords" : [
+				"game concept",
+				"research",
+				"ground troops"
+			]
+		},
+		{
+			"Id": "I063",
+			"Description": "cooperating weapons",
+			"Keywords" : [
+				"game concept",
+				"battle module"
+			]
+		},
+		{
+			"Id": "I064",
+			"Description": "ideas for senate and diplomacy within empires",
+			"Keywords" : [
+				"game concept",
+				"diplomacy",
+				"senate"
+			]
+		},
+		{
+			"Id": "I065",
+			"Description": "ores on planets (dated)",
+			"Keywords" : [
+				"planets"
+			]
+		},
+		{
+			"Id": "I066",
+			"Description": "Claims (connected to conflicts probably)",
+			"Keywords" : [
+				"game concept",
+				"diplomacy"
+			]
+		},
+		{
+			"Id": "I067",
+			"Description": "conflicts",
+			"Keywords" : [
+				"diplomacy",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I068",
+			"Description": "political organizations, army bud get for units updates",
+			"Keywords" : [
+				"game concept",
+				"senate"
+			]
+		},
+		{
+			"Id": "I069",
+			"Description": "Military barracks, ship collision, planet contest (planets work even if occupied) (outdated by continents allowing only certain colonies on continents to function), ideas for ground battle",
+			"Keywords" : [
+				"game concept",
+				"planets",
+				"colonies",
+				"battle module"
+			]
+		},
+		{
+			"Id": "I070",
+			"Description": "Buildings, system bonuses, planets, probably dated",
+			"Keywords" : [
+				"colonies",
+				"special planets",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I071",
+			"Description": "cultures, imperial heritage, diseases",
+			"Keywords" : [
+				"game concept",
+				"empire"
+			]
+		},
+		{
+			"Id": "I072",
+			"Description": "weapons of mass destruction, terror score",
+			"Keywords" : [
+				"game concept",
+				"local administration"
+			]
+		},
+		{
+			"Id": "I073",
+			"Description": "pop opinions/ideologies",
+			"Keywords" : [
+				"game concept",
+				"empire",
+				"pops"
+			]
+		},
+		{
+			"Id": "I074",
+			"Description": "science: connection between fields",
+			"Keywords" : [
+				"game concept",
+				"research"
+			]
+		},
+		{
+			"Id": "I075",
+			"Description": "map organization, map generation",
+			"Keywords" : [
+				"object hierarchy",
+				"map generation"
+			]
+		},
+		{
+			"Id": "I076",
+			"Description": "idea for a building and draw backs for technology",
+			"Keywords" : [
+				"research"
+			]
+		},
+		{
+			"Id": "I077",
+			"Description": "Encyclopedias for research bonus",
+			"Keywords" : [
+				"research",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I078",
+			"Description": "Movement between systems, Multi turn transit, warp inhibitors, collisions",
+			"Keywords" : [
+				"FTL", 
+				"tool", 
+				"pathfinding"
+			]
+		},
+		{
+			"Id": "I079",
+			"Description": "maintenance and soft fleet cap, diseases spreading via trade",
+			"Keywords" : [
+				"game concept",
+				"colony",
+				"trade",
+				"pops"
+			]
+		},
+		{
+			"Id": "I080",
+			"Description": "How to deal with fringe pops",
+			"Keywords" : [
+				"pops",
+				"colony",
+				"optimization",
+			]
+		},
+		{
+			"Id": "I081",
+			"Description": "pop growth",
+			"Keywords" : [
+				"pops"
+			]
+		},
+		{
+			"Id": "I082",
+			"Description": "anarchy for unstable colonies to avoid endless rebel empire spamming; Buildings for organizations on planets",
+			"Keywords" : [
+				"colony",
+				"empire"
+			]
+		},
+		{
+			"Id": "I083",
+			"Description": "create pregenitor empires during map generation (partly done by players), also more setup regulations",
+			"Keywords" : [
+				"mag generation",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I084",
+			"Description": "plans for the trad network (probably with free market in this paper)",
+			"Keywords" : [
+				"trade",
+				"optimization"
+			]
+		},
+		{
+			"Id": "I085",
+			"Description": "arsenals to store weapons and equip militias",
+			"Keywords" : [
+				"ground troops",
+				"colony",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I086",
+			"Description": "gratitude in empire relations",
+			"Keywords" : [
+				"diplomacy",
+				"game concept"
+			]
+		},
+		{
+			"Id": "I087",
+			"Description": "archives and research + blueprints",
+			"Keywords" : [
+				"game concept",
+				"research",
+				"blueprints"
+			]
+		},
+		{
+			"Id": "I088",
+			"Description": "Hidden info known to the server but not to the player. Usage of diplomats and a way to spice negotiations",
+			"Keywords" : [
+				"game concept",
+				"diplomacy"
+			]
+		},
+		{
+			"Id": "I089",
+			"Description": "A way to simplify large scale battles in simulation and play",
+			"Keywords" : [
+				"object hierarchy",
+				"game concept",
+				"battle module",
+				"optimization"
+			]
+		},
+		{
+			"Id": "I090",
+			"Description": "Details about the founding of NGOs and a shift away from the empire NGO to a more general organization model",
+			"Keywords" : [
+				"colony",
+				"game concepts",
+				"pops",
+				"planets",
+				"resources",
+				"production",
+				"empire",
+				"special planets",
+				"local administration"
+			]
+		},
+	]
+}
