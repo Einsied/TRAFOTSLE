@@ -1,16 +1,12 @@
 import os
 
-def GenerateFolder(Folder):
-	if not os.path.exists(Folder):
-		os.makedirs(Folder)
-	return
-
 def indentedNewLine(content, indentationDepth = 0):
 	return "\t" * indentationDepth + content
 
 def CreateIndex(ItemFolder):
 	ItemFolders = os.listdir(ItemFolder)
 	Images = {}
+	jsonFileName = "ImageIndex.json"
 
 	for Folder in ItemFolders:
 		if os.path.isdir(ItemFolder + Folder):
@@ -47,5 +43,6 @@ def CreateIndex(ItemFolder):
 	jsonString += "\n" + indentedNewLine("]", jsonIndentation)
 	jsonIndentation -= 1
 	jsonString += "\n" + indentedNewLine("}", jsonIndentation)
-	with open("ImageIndex.json", "w") as index:
+	with open(ItemFolder + jsonFileName, "w") as index:
 		index.write(jsonString)
+	return ItemFolder + jsonFileName

@@ -1,3 +1,7 @@
 **/analog_notes/ImageIndex.json
 **/python/CreateImageIndex.pyc
 **/python/__init__.pyc
+**/python/__pycache__/*
+**/python/ReadAnalogItems.pyc
+**/python/ReadParticles.pyc
+**/python/CreateHtmlNotes.pyc

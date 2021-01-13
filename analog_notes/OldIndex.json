@@ -50,7 +50,7 @@
 		},
 		{
 			"Id": "I007",
-			"Description": "Awarding points, political model, conflict/wars"
+			"Description": "Awarding points, political model, conflict/wars",
 			"Keywords" : [
 				"game concept",
 				"pops"
@@ -185,7 +185,7 @@
 				"research",
 				"trade",
 				"resources",
-				"pops,
+				"pops",
 				"production",
 				"colonies"
 			]
@@ -218,7 +218,7 @@
 			"Id": "I028",
 			"Description": "Weapons naming, subturns, action points, ship movement",
 			"Keywords" : [
-				""game concept",
+				"game concept",
 				"battel module"
 			]
 		},
@@ -442,6 +442,14 @@
 			]
 		},
 		{
+			"Id": "I056",
+			"Description": "Melee combat ground troops",
+			"Keywords" : [
+				"combat module",
+				"ground combat"
+			]
+		},
+		{
 			"Id": "I057",
 			"Description": "farming yields for planets, factions for pops and empires (outdated)",
 			"Keywords" : [
@@ -637,7 +645,7 @@
 			"Keywords" : [
 				"pops",
 				"colony",
-				"optimization",
+				"optimization"
 			]
 		},
 		{
@@ -729,6 +737,6 @@
 				"special planets",
 				"local administration"
 			]
-		},
+		}
 	]
 }
