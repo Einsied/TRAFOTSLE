@@ -1,0 +1,39 @@
+{
+	"Notes":[
+		{
+			"Id": "N001",
+			"Description":"A summary of error codes and possible resources.",
+			"File": "general.txt",
+			"Particles":[
+			]
+		},
+		{
+			"Id": "N002",
+			"Description":"A simplified terminal ui idea.",
+			"File": "interface_hex.txt",
+			"Particles":[
+			]
+		},
+		{
+			"Id": "N003",
+			"Description":"A experimental file dealing with damage channels and a class implementation",
+			"File": "ship_damage.txt",
+			"Particles":[
+			]
+		},
+		{
+			"Id": "N004",
+			"Description":"Ideas regarding buildings, the fundamental species (AI, individual, Swarm), laws, FTL methods an planet setups",
+			"File": "Space_game_sheet.odt",
+			"Particles":[
+			]
+		},
+		{
+			"Id": "N005",
+			"Description":"Ideas for: programming implementation, grudges, claims, ground combat, diplomatic relations, FTL methods, technology, Corporations, Empires, military, wars, Contracts, pathfinding intelligence, Piracy, characters, false flag operations",
+			"File": "todo.txt",
+			"Particles":[
+			]
+		}
+	]
+}
