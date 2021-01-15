@@ -42,12 +42,49 @@ def htmlFile(title, content):
 	htmlStr += "\n" + indentedNewLine("</html>", htmlIndentation)
 	return htmlStr
 
+def CreateNavbar(Root, htmlIndentation):
+	def addNavEntry(Name, PathToIndex, htmlIndentation):
+		htmlStr = indentedNewLine("<li>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine(
+			"<a href=\"{IndexPath:}\">".format(
+				IndexPath = Root + PathToIndex + "/Index.html"
+			), htmlIndentation
+		)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine(Name, htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+		return htmlStr
+	htmlStr = "\n" + indentedNewLine("<nav>", htmlIndentation)
+	htmlIndentation += 1
+	htmlStr += "\n" + indentedNewLine("<h2>Navigation</h2>", htmlIndentation)
+	htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+	htmlIndentation += 1
+	htmlStr += "\n" + indentedNewLine(
+		addNavEntry("Items", ItemFolder, htmlIndentation), htmlIndentation
+	)
+	htmlStr += "\n" + indentedNewLine(
+		addNavEntry("Particles", ParticleFolder, htmlIndentation), htmlIndentation
+	)
+	htmlStr += "\n" + indentedNewLine(
+		addNavEntry("Notes", NotesFolder, htmlIndentation), htmlIndentation
+	)
+	htmlIndentation -= 1
+	htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+	htmlIndentation -= 1
+	htmlStr += "\n" + indentedNewLine("</nav>", htmlIndentation)
+	return htmlStr
+
 def CreateItems(Items):
 	def CreateItemPage(Id, Item):
 		# Indentation inherited from html file
 		htmlIndentation = 2
 		htmlStr = indentedNewLine("<main>", htmlIndentation)
 		htmlIndentation += 1
+		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlStr += "\n" + indentedNewLine(
 			"<h1 class=\"ItemTitle\">{Title:}</h1>".format(Title = Id),
 			htmlIndentation
@@ -109,6 +146,7 @@ def CreateItems(Items):
 		htmlIndentation = 2
 		htmlStr = indentedNewLine("<main>", htmlIndentation)
 		htmlIndentation += 1
+		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<table>", htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<tr>", htmlIndentation)
@@ -170,6 +208,7 @@ def CreateParticles(Particles):
 		# Indentation inherited from html file
 		htmlIndentation = 2
 		htmlStr = indentedNewLine("<main>", htmlIndentation)
+		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine(
 			"<h1 class=\"ItemTitle\">{Title:}</h1>".format(Title = Id),
@@ -196,6 +235,7 @@ def CreateParticles(Particles):
 		# Indentation inherited from html file
 		htmlIndentation = 2
 		htmlStr = indentedNewLine("<main>", htmlIndentation)
+		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<table>", htmlIndentation)
 		htmlIndentation += 1
@@ -240,6 +280,7 @@ def CreateDigitalNotes(Notes):
 		# Indentation inherited from html filea
 		htmlIndentation = 2
 		htmlStr = indentedNewLine("<main>", htmlIndentation)
+		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine(
 			"<h1 class=\"ItemTitle\">{Title:}</h1>".format(Title = Id),
@@ -290,7 +331,6 @@ def CreateDigitalNotes(Notes):
 		htmlStr += "\n" + indentedNewLine(Note["File"], htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
-
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 		htmlIndentation += 1
@@ -301,6 +341,7 @@ def CreateDigitalNotes(Notes):
 		# Indentation inherited from html file
 		htmlIndentation = 2
 		htmlStr = indentedNewLine("<main>", htmlIndentation)
+		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<table>", htmlIndentation)
 		htmlIndentation += 1
@@ -359,7 +400,7 @@ def CreateDigitalNotes(Notes):
 
 def CreateNotes(HtmlFolder, Items, Particles, Notes):
 	GenerateFolder(HtmlFolder)
-	global ItemFolder, ParticleFolder, NotesFolder
+	global ItemFolder, ParticleFolder, NotesFolder 
 	ItemFolder = HtmlFolder + "/Items"
 	ParticleFolder = HtmlFolder + "/Particles"
 	NotesFolder = HtmlFolder + "/Notes"
