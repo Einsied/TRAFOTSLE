@@ -1,7 +1,8 @@
 import os
 
 ItemFolder = "./html/Items"
-ParticleFolder = "./html/Items"
+ParticleFolder = "./html/Particles"
+NotesFolder = "./html/Notes"
 
 def GenerateFolder(Folder):
 	if not os.path.exists(Folder):
@@ -75,8 +76,9 @@ def CreateItems(Items):
 			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
 			htmlIndentation += 1
 			htmlStr += "\n" + indentedNewLine(
-				"<a href=\"../particles/{particle:}\">".format(particle = particle), 
-				htmlIndentation
+				"<a href=\"../../{particlePath:}\">".format(
+					particlePath = ParticleFolder + "/" + particle + ".html"
+				), htmlIndentation
 			)
 			htmlIndentation += 1
 			htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
@@ -233,10 +235,134 @@ def CreateParticles(Particles):
 	with open (IndexFileName, "w") as IndexFile:
 		IndexFile.write(htmlFile("Index", CreateIndex(Particles)))
 
+def CreateDigitalNotes(Notes):
+	def CreateNotePage(Id, Note):
+		# Indentation inherited from html filea
+		htmlIndentation = 2
+		htmlStr = indentedNewLine("<main>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine(
+			"<h1 class=\"ItemTitle\">{Title:}</h1>".format(Title = Id),
+			htmlIndentation
+		)
+		htmlStr += "\n" + indentedNewLine("<h2>Content:</h2>".format(Title = Id),
+			htmlIndentation
+		)
+		htmlStr += "\n" + indentedNewLine("<section class=\"NoteDescription\">",
+			htmlIndentation
+		)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine(Note["Description"], htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<section class=\"NoteMeta\">",
+			htmlIndentation
+		)
+		htmlStr += "\n" + indentedNewLine("<h2>Spawned Particles:</h2>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+		htmlIndentation += 1
+		for particle in Note["Particles"]:
+			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(
+				"<a href=\"../../{particleFile:}\">".format(
+					particleFile = ParticleFolder + "/" + particle + ".html"
+				), htmlIndentation
+			)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<h2>Original File</h2>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine(
+			"<a href=\"../../digital_notes/{File:}\">".format(File = Note["File"]), 
+			htmlIndentation
+		)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine(Note["File"], htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
+		htmlIndentation += 1
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</main>", htmlIndentation)
+		return htmlStr
+	def CreateIndex(Notes):
+		# Indentation inherited from html file
+		htmlIndentation = 2
+		htmlStr = indentedNewLine("<main>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("<table>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("<tr>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("<th> ID </th>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<th> Particles </th>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</tr>", htmlIndentation)
+		for Id in sorted(Notes.keys()):
+			FileName = "./" + Id + ".html"
+			htmlStr += "\n" + indentedNewLine("<tr>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(
+				"<a href=\"{FileName:}\">".format(FileName = FileName), 
+				htmlIndentation
+			)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(Id, htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
+			htmlIndentation += 1
+			for particle in Notes[Id]["Particles"]:
+				htmlStr += "\n" + indentedNewLine(
+					"<a href=\"../../{particle:}.html\">".format(
+						particle = ParticleFolder + "/" + particle
+					), 
+					htmlIndentation
+				)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+				htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</tr>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</table>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</main>", htmlIndentation)
+		return htmlStr
+	GenerateFolder(NotesFolder)
+	for Id in sorted(Notes.keys()):
+		FileName = NotesFolder + "/" + Id + ".html"
+		with open (FileName, "w") as ItemFile:
+			ItemFile.write(htmlFile(Id, CreateNotePage(Id, Notes[Id])))
+	IndexFileName = NotesFolder + "/Index.html"
+	with open (IndexFileName, "w") as IndexFile:
+		IndexFile.write(htmlFile("Index", CreateIndex(Notes)))
+
 def CreateNotes(HtmlFolder, Items, Particles, Notes):
 	GenerateFolder(HtmlFolder)
-	global ItemFolder, ParticleFolder
+	global ItemFolder, ParticleFolder, NotesFolder
 	ItemFolder = HtmlFolder + "/Items"
-	ParticleFolder = HtmlFolder +"/Particles"
+	ParticleFolder = HtmlFolder + "/Particles"
+	NotesFolder = HtmlFolder + "/Notes"
 	CreateItems(Items)
 	CreateParticles(Particles)
+	CreateDigitalNotes(Notes)
