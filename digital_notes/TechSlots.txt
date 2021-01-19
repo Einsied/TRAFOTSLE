@@ -91,6 +91,21 @@ The system also allows do do much more complex and weird stuff if the player
 desires to,
 without giant problems (That I could see at the moment).
 
+The slots could also be used to transport tech points if FTL-communication
+is not viable.
+FTL-Antenna could determine how fast the research stores on a planet fill
+up,
+unless a ship brings them.
+So basically we would have a research capacity and sources to fill it.
+A problem would be to differentiate between real research that can only
+be filled up by research institutes and storage slots
+that are filled up by antenna.
+Maybe we need 3 forms of research currency:
+1. Research capacity.
+2. Real research.
+3. Copy potential. (Which is a limited version of real research.)
+At the moment I like this system but it has to be hidden well.
+
 So tldr:
 Colonies get a general tech level everybody could can use.
 (The content depending on the controller of the colony)
