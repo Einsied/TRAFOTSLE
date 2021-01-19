@@ -40,6 +40,13 @@
 				"false flag operations"
 			],
 			"File": "todo.txt"
+		},
+		{
+			"Id": "N006",
+			"Description": [
+				"Technology in colonies and tech slots."
+			],
+			"File": "TechSlots.txt"
 		}
 	]
 }

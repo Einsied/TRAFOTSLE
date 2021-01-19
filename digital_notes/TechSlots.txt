@@ -1,0 +1,104 @@
+# Technology colonies
+
+Binding tech levels to colonies allows an more natural flow of technology.
+It also allows all organizations within a colony to use this technology, 
+which might be a bad thing, so further restricting logic should be put in place.
+
+To simplify storage there should be a general tech level,
+implying the accessibility of certain technologies
+and slots for special technology, permitting specialization.
+This slots could be tied to holdings directly solving the access problem.
+(Remember all holdings not hold by anyone are hold by the controller of the
+colony)
+
+So all tech buildings owned by own organization form a pool.
+The organization can then either use this research pool to :
+1. Contribute to research projects.
+2. Increase the general tech level of the colony making more tech available.
+2. Give itself a buff above the general tech level of the colony.
+	(This method should for obvious reasons be less efficient (50% malus))
+3. Create a slot for a special technology.
+
+The size of a slot should be determined by that technology.
+Also if the pool shrinks the contributions should disappear as listed above.
+So active research first, general knowledge second and slots last.
+(Biggest slot first would probably realistic since the disappearance
+is probably cause by a crisis like a disease or orbital bombardment
+and high-tech is lost first under this circumstances).
+
+The purpose of the slots is specialization like a farming-world holding a very
+high farming-tech and a shipyard colony plans for weapons and ships.
+
+This also hints to a split in research output into active research
+and maintenance for existing tech.
+Also a central technology repository would be interesting.
+Forcing organization to clone technology from a existing source into a slot.
+This could be:
+1. An artifact as described in another note.
+2. A world that already has a technology in this slot.
+3. A world that has high general tech levels.
+
+This also implies a rework of the tech tree,
+since it would become part of the map.
+
+The research fields would now be held in slots to allow cloning of
+their subfields and connection between technologies would allow cloning
+of a lesser form.
+This kind of misses the point.
+
+They could give bonus on research speed for other technologies.
+So having a high physics level in a colony makes researching lasers easier.
+Research is now conducted by contributing points to a slot and making it bigger,
+thereby increasing its level for normal technologies like Physics.
+
+Projects would be conducted by reserving a slot and filling it up with new tech.
+The continuous improvement of parts would be done with two slots.
+One holding the original part the other one the new part.
+After the project researching the new part is finished
+the better part/component/reactor/whatever is kept
+and the other slot freed for an new attempt.
+
+The undirected science/theology research etc. could now be represented,
+by a certain fraction of slots allocated to random projects.
+Here it has to be made sure the player does not destroy slots until
+he achieves the desired result.
+
+The general tech could still be somewhat tech tree like by allowing
+to weight different parts or filling it with slots.
+So research of the player determines if the general pool gives them
+more mining or farming tech depending on their research projects.
+
+The general tech could also consist of slots for each general technology
+associated with a real slot in the wide world giving its max value.
+But triggering an exhausting search if it is destroyed.
+An better option might be to associate a bunch of research
+and research storage facilities  with the tech and use their sum for growth
+and max value.
+Allowing worlds specialized one research topic.
+It should also be possible to pool all facilities into one pool
+and do a weighted spread at which point we are back at a weighed
+tech tree.
+This pooling approach could also be used to create (more expensive slots).
+Basically it behaves like the colony pool formed by the different facilities.
+
+This is kind of elegant since if this is the default it becomes a very simple
+system:
+Research goes in is distributed onto fields
+and they are filled up to a maximum.
+Filling speed and maximum governed by distributing weights.
+
+The system also allows do do much more complex and weird stuff if the player
+desires to,
+without giant problems (That I could see at the moment).
+
+So tldr:
+Colonies get a general tech level everybody could can use.
+(The content depending on the controller of the colony)
+Every organization having a research holding in the colony can get a boost on
+this. 
+(And maybe access to their own tech if it is higher than that of the controller)
+They can also get slots to store special to specialize their holding.
+This slots can be public but do not have to be public (slot owner decides).
+The Technology of an organization accessible by the general tech level of
+it is determined by linked slots and a weighed pool. 
+(The weights of the pool are determined by the organization).
