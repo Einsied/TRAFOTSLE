@@ -2,9 +2,9 @@
 	"Items":[
 		{
 			"Id": "I001",
-			"Description": "Usage of galactic regions to theme parts of the galaxy to make it more heterogeneous.",
-			"Particles": [
-				"P0001"
+			"Description": [
+				"Usage of galactic regions to theme parts of the galaxy to",
+				"make it more heterogeneous."
 			]
 		}
 	]

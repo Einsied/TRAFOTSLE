@@ -238,7 +238,8 @@ def CreateParticles(Particles):
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
 		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine(Particle["content"], htmlIndentation)
+		print(Particle)
+		htmlStr += "\n" + indentedNewLine(Particle["Content"], htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
 		htmlIndentation -= 1
@@ -504,13 +505,19 @@ def CreateDigitalNotes(Notes):
 		IndexFile.write(htmlFile("Index", CreateIndex(Notes)))
 
 def CreateConcepts(Concepts, Particles):
+	print("TODO: Concepts")
 	print(Concepts)
+	print()
 
 def CreateTopics(Topics, Particles):
+	print("TODO: Topics")
 	print(Topics)
+	print()
 
 def CreateUncontained(Uncontained):
+	print("TODO: Uncontained")
 	print(Uncontained)
+	print()
 
 def CreateNotes(
 	HtmlFolder, Items, Notes, Particles, Concepts, Topics, Uncontained
@@ -526,3 +533,4 @@ def CreateNotes(
 	CreateConcepts(Concepts, Particles)
 	CreateTopics(Topics, Particles)
 	CreateUncontained(Uncontained)
+	print("TODO: CreateCSV")

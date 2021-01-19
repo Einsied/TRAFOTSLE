@@ -1,19 +1,26 @@
 def connect(Topics, Concepts, Particles, Items, Notes):
-	uncontainedItems = []
+	# Prepare Items and Notes
 	for ItemId in sorted(Items.keys()):
-		if (len(Items[ItemId]["Particles"]) == 0):
-			uncontainedItems.append(ItemId)
-	uncontainedNotes = []
+		Items[ItemId]["Particles"] = []
 	for NoteId in sorted(Notes.keys()):
-		if (len(Notes[NoteId]["Particles"]) == 0):
-			uncontainedNotes.append(NoteId)
-	# Prepare particles
+		Notes[NoteId]["Particles"] = []
+	# Process particles
+	uncontainedItems = set(Items.keys())
+	uncontainedNotes = set(Notes.keys())
 	for particleId in Particles.keys():
-		Particles[particleId] = {
-			"content": Particles[particleId],
-			"Concepts": [],
-			"Topics": []
-		}
+		Particles[particleId]["Concepts"] = []
+		Particles[particleId]["Topics"] = []
+		SourceId = Particles[particleId]["SourceId"]
+		if(SourceId in Items.keys()):
+			Items[SourceId]["Particles"].append(SourceId)
+			uncontainedItems -= set(SourceId)
+		elif(SourceId in Notes.keys()):
+			Notes[SourceId]["Particles"].append(SourceId)
+			uncontainedNotes -= set(SourceId)
+		elif(SourceId != "None"):
+			print("SourceId: {SourceId:} unknown".format(
+				SourceId = SourceId
+			))
 	# Prepare Concepts
 	for conceptId in Concepts.keys():
 		Concepts[conceptId]["Topics"] = []

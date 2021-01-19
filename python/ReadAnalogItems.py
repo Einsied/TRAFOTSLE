@@ -1,6 +1,12 @@
 import os
 import json
 
+def reformParagraph(lineList):
+	paragraph = ""
+	for line in lineList:
+		paragraph += " " + line.strip()
+	return paragraph.strip()
+
 def Read(NewItemFile, OldItemFile, ImageItemFile):
 	Items = {}
 	with open(OldItemFile, "r") as ItemFile:
@@ -15,9 +21,10 @@ def Read(NewItemFile, OldItemFile, ImageItemFile):
 	with open(NewItemFile, "r") as ItemFile:
 		NewItems = json.load(ItemFile)
 		for Item in NewItems["Items"]:
-			Items[Item["Id"]]["Description"] = Item["Description"]
+			Items[Item["Id"]]["Description"] = reformParagraph(
+				Item["Description"]
+			)
 			Items[Item["Id"]]["Old"] = False
-			Items[Item["Id"]]["Particles"] = Item["Particles"]
 	with open(ImageItemFile, "r") as ItemFile:
 		NewItems = json.load(ItemFile)
 		for Item in NewItems["Items"]:

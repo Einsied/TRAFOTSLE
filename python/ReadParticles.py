@@ -1,6 +1,12 @@
 import os
 import json
 
+def reformParagraph(lineList):
+	paragraph = ""
+	for line in lineList:
+		paragraph += " " + line.strip()
+	return paragraph.strip()
+
 def Read(ParticleFolder):
 	ParticleFiles = os.listdir(ParticleFolder)
 	Particles = {}
@@ -8,5 +14,8 @@ def Read(ParticleFolder):
 	for ParticleFile in ParticleFiles:
 		with open(ParticleFolder + ParticleFile, "r") as particleFile:
 			particle = json.load(particleFile)
-			Particles[particle["Id"]] = particle["Content"]
+			Particles[particle["Id"]] = {
+				"Content": reformParagraph(particle["Content"]),
+				"SourceId": particle["SourceId"]
+			}
 	return Particles

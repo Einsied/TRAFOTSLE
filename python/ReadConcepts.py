@@ -5,7 +5,7 @@ def reformParagraph(lineList):
 	paragraph = ""
 	for line in lineList:
 		paragraph += " " + line.strip()
-	return paragraph
+	return paragraph.strip()
 
 def Read(ConceptFolder):
 	ConceptFiles = os.listdir(ConceptFolder)
