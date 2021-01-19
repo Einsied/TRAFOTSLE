@@ -3,6 +3,8 @@ import os
 ItemFolder = "./html/Items"
 ParticleFolder = "./html/Particles"
 NotesFolder = "./html/Notes"
+ConceptFolder = "./html/concepts"
+TopicFolder = "./html/topics"
 
 def GenerateFolder(Folder):
 	if not os.path.exists(Folder):
@@ -44,7 +46,7 @@ def htmlFile(title, content):
 
 def CreateNavbar(Root, htmlIndentation):
 	def addNavEntry(Name, PathToIndex, htmlIndentation):
-		htmlStr = indentedNewLine("<li>", htmlIndentation)
+		htmlStr = indentedNewLine("<li>", 0)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine(
 			"<a href=\"{IndexPath:}\">".format(
@@ -100,7 +102,20 @@ def CreateItems(Items):
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine(Item["Description"], htmlIndentation)
 		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("</p>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<h2>Keywords:</h2>".format(Title = Id),
+			htmlIndentation
+		)
+		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+		htmlIndentation += 1
+		for keyword in Item["Keywords"]:
+			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(keyword, htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<section class=\"ItemMeta\">",
@@ -211,7 +226,7 @@ def CreateParticles(Particles):
 		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine(
-			"<h1 class=\"ItemTitle\">{Title:}</h1>".format(Title = Id),
+			"<h1 class=\"ParticleTitle\">{Title:}</h1>".format(Title = Id),
 			htmlIndentation
 		)
 		htmlStr += "\n" + indentedNewLine("<h2>Content:</h2>".format(Title = Id),
@@ -223,9 +238,68 @@ def CreateParticles(Particles):
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
 		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine(Particle, htmlIndentation)
+		htmlStr += "\n" + indentedNewLine(Particle["content"], htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<section class=\"ParticleMeta\">",
+			htmlIndentation
+		)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("<h2>Contained in:</h2>".format(Title = Id),
+			htmlIndentation
+		)
+		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("Concepts:", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+		htmlIndentation += 1
+		for conceptId in Particle["Concepts"]:
+			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(
+				"<a href=\"../../{conceptPath:}\">".format(
+					conceptPath = ConceptFolder + "/" + conceptId + ".html"
+				), htmlIndentation
+			)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(conceptId, htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+		htmlIndentation += 1
+		htmlStr += "\n" + indentedNewLine("Topics:", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+		htmlIndentation += 1
+		for TopicId in Particle["Topics"]:
+			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(
+				"<a href=\"../../{topicPath:}\">".format(
+					topicPath = TopicFolder + "/" + TopicId + ".html"
+				), htmlIndentation
+			)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(TopicId, htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 		htmlIndentation -= 1
@@ -242,6 +316,8 @@ def CreateParticles(Particles):
 		htmlStr += "\n" + indentedNewLine("<tr>", htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<th> ID </th>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<th> Contained in Topics </th>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<th> Contained in Concepts </th>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</tr>", htmlIndentation)
 		for Id in sorted(Particles.keys()):
@@ -260,6 +336,35 @@ def CreateParticles(Particles):
 			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
+			htmlIndentation += 1
+			for TopicId in Particles[Id]["Topics"]:
+				htmlStr += "\n" + indentedNewLine(
+					"<a href=\"{TopicPath:}\">".format(
+						TopicPath= TopicFolder + "/" + TopicId + ".html"
+					), htmlIndentation
+				)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(TopicId + " ", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
+			htmlIndentation += 1
+			for ConceptId in Particles[Id]["Concepts"]:
+				htmlStr += "\n" + indentedNewLine(
+					"<a href=\"{ConceptPath:}\">".format(
+						ConceptPath = ConceptFolder + "/" + ConceptId + ".html"),
+					htmlIndentation
+				)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(ConceptId + " ", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
+
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</tr>", htmlIndentation)
 		htmlIndentation -= 1
@@ -283,7 +388,7 @@ def CreateDigitalNotes(Notes):
 		htmlStr = indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine(
-			"<h1 class=\"ItemTitle\">{Title:}</h1>".format(Title = Id),
+			"<h1 class=\"NoteTitle\">{Title:}</h1>".format(Title = Id),
 			htmlIndentation
 		)
 		htmlStr += "\n" + indentedNewLine("<h2>Content:</h2>".format(Title = Id),
@@ -398,12 +503,26 @@ def CreateDigitalNotes(Notes):
 	with open (IndexFileName, "w") as IndexFile:
 		IndexFile.write(htmlFile("Index", CreateIndex(Notes)))
 
-def CreateNotes(HtmlFolder, Items, Particles, Notes):
+def CreateConcepts(Concepts, Particles):
+	print(Concepts)
+
+def CreateTopics(Topics, Particles):
+	print(Topics)
+
+def CreateUncontained(Uncontained):
+	print(Uncontained)
+
+def CreateNotes(
+	HtmlFolder, Items, Notes, Particles, Concepts, Topics, Uncontained
+):
 	GenerateFolder(HtmlFolder)
 	global ItemFolder, ParticleFolder, NotesFolder 
 	ItemFolder = HtmlFolder + "/Items"
 	ParticleFolder = HtmlFolder + "/Particles"
 	NotesFolder = HtmlFolder + "/Notes"
 	CreateItems(Items)
-	CreateParticles(Particles)
 	CreateDigitalNotes(Notes)
+	CreateParticles(Particles)
+	CreateConcepts(Concepts, Particles)
+	CreateTopics(Topics, Particles)
+	CreateUncontained(Uncontained)

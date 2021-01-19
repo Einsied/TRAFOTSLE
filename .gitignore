@@ -6,4 +6,6 @@
 **/python/ReadAnalogItems.pyc
 **/python/ReadDigitalNotes.pyc
 **/python/ReadParticles.pyc
+**/python/ReadConcepts.pyc
+**/python/ReadTopics.pyc
 **/python/CreateHtmlNotes.pyc

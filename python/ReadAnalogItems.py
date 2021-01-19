@@ -15,11 +15,9 @@ def Read(NewItemFile, OldItemFile, ImageItemFile):
 	with open(NewItemFile, "r") as ItemFile:
 		NewItems = json.load(ItemFile)
 		for Item in NewItems["Items"]:
-			Items[Item["Id"]] = {
-				"Description": Item["Description"],
-				"Old": False,
-				"Particles": Item["Particles"]
-			}
+			Items[Item["Id"]]["Description"] = Item["Description"]
+			Items[Item["Id"]]["Old"] = False
+			Items[Item["Id"]]["Particles"] = Item["Particles"]
 	with open(ImageItemFile, "r") as ItemFile:
 		NewItems = json.load(ItemFile)
 		for Item in NewItems["Items"]:

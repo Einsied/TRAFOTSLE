@@ -1,0 +1,13 @@
+{
+	"Id": "C001",
+	"Name": "Organizations",
+	"Description":[
+		[
+			"Organizations are the playable entities in the game.",
+			"They can be everything from empires and mega corporations",
+			"to knightly orders and interstellar nomad tribes."
+		]
+	],
+	"Particles": [
+	]
+}
