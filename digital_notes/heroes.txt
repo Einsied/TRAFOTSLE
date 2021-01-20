@@ -1,0 +1,7 @@
+To allow heroes to exist on the battlefield as classical hero units.
+It should be possible to bind characters to specific units.
+So  a captain can be bound to a ship or a warrior to a special warrior unit.
+
+It could also be interesting to do this the other way round.
+But there are already some thoughts about unit loyalty in writing,
+I suppose.

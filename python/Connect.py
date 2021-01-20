@@ -12,11 +12,11 @@ def connect(Topics, Concepts, Particles, Items, Notes):
 		Particles[particleId]["Topics"] = []
 		SourceId = Particles[particleId]["SourceId"]
 		if(SourceId in Items.keys()):
-			Items[SourceId]["Particles"].append(SourceId)
-			uncontainedItems -= set(SourceId)
+			Items[SourceId]["Particles"].append(particleId)
+			uncontainedItems -= set([SourceId])
 		elif(SourceId in Notes.keys()):
-			Notes[SourceId]["Particles"].append(SourceId)
-			uncontainedNotes -= set(SourceId)
+			Notes[SourceId]["Particles"].append(particleId)
+			uncontainedNotes -= set([SourceId])
 		elif(SourceId != "None"):
 			print("SourceId: {SourceId:} unknown".format(
 				SourceId = SourceId
@@ -34,13 +34,13 @@ def connect(Topics, Concepts, Particles, Items, Notes):
 		foundParticles += Concepts[ConceptId]["Particles"]
 		for ParticleId in Concepts[ConceptId]["Particles"]:
 			if ConceptId not in Particles[ParticleId]["Concepts"]:
-				Particles[ParticlId]["Concepts"].append(ConceptId)
+				Particles[ParticleId]["Concepts"].append(ConceptId)
 	for TopicId in Topics.keys():
 		Topic = Topics[TopicId]
 		foundConcepts += Topic ["Concepts"]
 		for ConceptId in Topic["Concepts"]:
 			if TopicId not in Concepts[ConceptId]["Topics"]:
-				Concepts[ConceptId]["Topics"].append(TopicID)
+				Concepts[ConceptId]["Topics"].append(TopicId)
 		foundParticles += Topic["Particles"]
 		for ParticleId in Topic["Particles"]:
 			if TopicId not in Particles[ParticleId]["Topics"]:

@@ -47,6 +47,13 @@
 				"Technology in colonies and tech slots."
 			],
 			"File": "TechSlots.txt"
+		},
+		{
+			"Id": "N007",
+			"Description": [
+				"How to allow the existence of battlefield heroes."
+			],
+			"File": "heroes.txt"
 		}
 	]
 }
