@@ -147,25 +147,26 @@ def CreateItems(Items):
 			htmlIndentation
 		)
 		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine("<h2>Spawned Particles:</h2>", htmlIndentation)
-		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
-		htmlIndentation += 1
-		for particle in Item["Particles"]:
-			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+		if(len(Item["Particles"]) > 0):
+			htmlStr += "\n" + indentedNewLine("<h2>Spawned Particles:</h2>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(
-				"<a href=\"../../{particlePath:}\">".format(
-					particlePath = ParticleFolder + "/" + particle + ".html"
-				), htmlIndentation
-			)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+			for particle in Item["Particles"]:
+				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(
+					"<a href=\"../../{particlePath:}\">".format(
+						particlePath = ParticleFolder + "/" + particle + ".html"
+					), htmlIndentation
+				)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
 			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<h2>Original Item</h2>", htmlIndentation)
 		for Image in Item["Images"]:
 			htmlStr += "\n" + indentedNewLine(
@@ -272,59 +273,79 @@ def CreateParticles(Particles):
 			htmlIndentation
 		)
 		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine("<h2>Contained in:</h2>".format(Title = Id),
+		htmlStr += "\n" + indentedNewLine("<h2>Spawned by:</h2>".format(Title = Id),
 			htmlIndentation
 		)
-		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+		Folder = ""
+		if Particle["SourceId"][0] == "I":
+			Folder = ItemFolder
+		if Particle["SourceId"][0] == "N":
+			Folder = NotesFolder
+		htmlStr += "\n" + indentedNewLine(
+			"<a href=\"../../{Path:}\">".format(
+				Path = Folder + "/" + Particle["SourceId"] + ".html"
+			), htmlIndentation
+		)
 		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
-		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine("Concepts:", htmlIndentation)
-		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
-		htmlIndentation += 1
-		for conceptId in Particle["Concepts"]:
-			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(
-				"<a href=\"../../{conceptPath:}\">".format(
-					conceptPath = ConceptFolder + "/" + conceptId + ".html"
-				), htmlIndentation
+		htmlStr += "\n" + indentedNewLine(Particle["SourceId"], htmlIndentation)
+		htmlIndentation -= 1
+		htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+		if(len(Particle["Concepts"]) > 0 or len(Particle["Topics"])):
+			htmlStr += "\n" + indentedNewLine("<h2>Contained in:</h2>".format(
+				Title = Id), htmlIndentation
 			)
+			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(conceptId, htmlIndentation)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
-		htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
-		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine("Topics:", htmlIndentation)
-		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
-		htmlIndentation += 1
-		for TopicId in Particle["Topics"]:
-			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(
-				"<a href=\"../../{topicPath:}\">".format(
-					topicPath = TopicFolder + "/" + TopicId + ".html"
-				), htmlIndentation
-			)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(TopicId, htmlIndentation)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+			if(len(Particle["Concepts"]) > 0):
+				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine("Concepts:", htmlIndentation)
+				htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+				htmlIndentation += 1
+				for conceptId in Particle["Concepts"]:
+					htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+					htmlIndentation += 1
+					htmlStr += "\n" + indentedNewLine(
+						"<a href=\"../../{conceptPath:}\">".format(
+							conceptPath = ConceptFolder + "/" + conceptId + ".html"
+						), htmlIndentation
+					)
+					htmlIndentation += 1
+					htmlStr += "\n" + indentedNewLine(conceptId, htmlIndentation)
+					htmlIndentation -= 1
+					htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+					htmlIndentation -= 1
+					htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+			if(len(Particle["Topics"]) > 0):
+				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine("Topics:", htmlIndentation)
+				htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
+				htmlIndentation += 1
+				for TopicId in Particle["Topics"]:
+					htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+					htmlIndentation += 1
+					htmlStr += "\n" + indentedNewLine(
+						"<a href=\"../../{topicPath:}\">".format(
+							topicPath = TopicFolder + "/" + TopicId + ".html"
+						), htmlIndentation
+					)
+					htmlIndentation += 1
+					htmlStr += "\n" + indentedNewLine(TopicId, htmlIndentation)
+					htmlIndentation -= 1
+					htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+					htmlIndentation -= 1
+					htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 		htmlIndentation -= 1
@@ -434,25 +455,26 @@ def CreateDigitalNotes(Notes):
 			htmlIndentation
 		)
 		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine("<h2>Spawned Particles:</h2>", htmlIndentation)
-		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
-		htmlIndentation += 1
-		for particle in Note["Particles"]:
-			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+		if(len(Note["Particles"]) > 0):
+			htmlStr += "\n" + indentedNewLine("<h2>Spawned Particles:</h2>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(
-				"<a href=\"../../{particleFile:}\">".format(
-					particleFile = ParticleFolder + "/" + particle + ".html"
-				), htmlIndentation
-			)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+			for particle in Note["Particles"]:
+				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(
+					"<a href=\"../../{particleFile:}\">".format(
+						particleFile = ParticleFolder + "/" + particle + ".html"
+					), htmlIndentation
+				)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
 			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<h2>Original File</h2>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine(
 			"<a href=\"../../digital_notes/{File:}\">".format(File = Note["File"]), 
@@ -536,8 +558,9 @@ def CreateConcepts(Concepts, Particles):
 		htmlIndentation += 1
 		htmlStr += indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlStr += "\n" + indentedNewLine(
-			"<h1 class=\"ConceptTitle\">{Title:}</h1>".format(Title = Id),
-			htmlIndentation
+			"<h1 class=\"ConceptTitle\">{Title:}</h1>".format(
+				Title = Concept["Name"] + " ({Id:})".format(Id = Id)
+			), htmlIndentation
 		)
 		htmlStr += "\n" + indentedNewLine("<section class=\"ConceptDescription\">",
 			htmlIndentation
@@ -556,36 +579,37 @@ def CreateConcepts(Concepts, Particles):
 			htmlStr += "\n" + indentedNewLine("</p>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
-		htmlStr += "\n" + indentedNewLine("<section class=\"ConceptParticles\">",
-			htmlIndentation
-		)
-		htmlStr += "\n" + indentedNewLine("<h2>Particles:</h2>",
-			htmlIndentation
-		)
-		htmlIndentation += 1
-		for particle in Concept["Particles"]:
-			FileName = "../../" + ParticleFolder + "/" + particle + ".html"
-			htmlStr += "\n" + indentedNewLine("<h3>", htmlIndentation)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(
-				"<a href=\"{FileName:}\">".format(FileName = FileName), 
+		if(len(Concept["Particles"]) > 0):
+			htmlStr += "\n" + indentedNewLine("<section class=\"ConceptParticles\">",
+				htmlIndentation
+			)
+			htmlStr += "\n" + indentedNewLine("<h2>Particles:</h2>",
 				htmlIndentation
 			)
 			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+			for particle in Concept["Particles"]:
+				FileName = "../../" + ParticleFolder + "/" + particle + ".html"
+				htmlStr += "\n" + indentedNewLine("<h3>", htmlIndentation)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(
+					"<a href=\"{FileName:}\">".format(FileName = FileName), 
+					htmlIndentation
+				)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</h3>", htmlIndentation)
+				htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(Particles[particle]["Content"],
+					htmlIndentation
+				)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</p>", htmlIndentation)
 			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</h3>", htmlIndentation)
-			htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(Particles[particle]["Content"],
-				htmlIndentation
-			)
-			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</p>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</main>", htmlIndentation)
 		return htmlStr
@@ -657,8 +681,9 @@ def CreateTopics(Topics, Particles):
 		htmlIndentation += 1
 		htmlStr += indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlStr += "\n" + indentedNewLine(
-			"<h1 class=\"ConceptTitle\">{Title:}</h1>".format(Title = Id),
-			htmlIndentation
+			"<h1 class=\"ConceptTitle\">{Title:}</h1>".format(
+			Title = Topic["Name"] + " ({Id:})".format(Id = Id)
+			), htmlIndentation
 		)
 		htmlStr += "\n" + indentedNewLine("<section class=\"TopicParticles\">",
 			htmlIndentation
@@ -690,32 +715,33 @@ def CreateTopics(Topics, Particles):
 			htmlStr += "\n" + indentedNewLine("</p>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
-		htmlStr += "\n" + indentedNewLine("<section class=\"TopicConcepts\">",
-			htmlIndentation
-		)
-		htmlStr += "\n" + indentedNewLine("<h2>Concepts:</h2>",
-			htmlIndentation
-		)
-		htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
-		htmlIndentation += 1
-		for concept in Topic["Concepts"]:
-			FileName = "../../" + ConceptFolder + "/" + concept + ".html"
-			htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
-			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(
-				"<a href=\"{FileName:}\">".format(FileName = FileName), 
+		if(len(Topic["Concepts"]) > 0):
+			htmlStr += "\n" + indentedNewLine("<section class=\"TopicConcepts\">",
 				htmlIndentation
 			)
+			htmlStr += "\n" + indentedNewLine("<h2>Concepts:</h2>",
+				htmlIndentation
+			)
+			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			htmlStr += "\n" + indentedNewLine(concept, htmlIndentation)
+			for concept in Topic["Concepts"]:
+				FileName = "../../" + ConceptFolder + "/" + concept + ".html"
+				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(
+					"<a href=\"{FileName:}\">".format(FileName = FileName), 
+					htmlIndentation
+				)
+				htmlIndentation += 1
+				htmlStr += "\n" + indentedNewLine(concept, htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+				htmlIndentation -= 1
+				htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
 			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
 			htmlIndentation -= 1
-			htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</main>", htmlIndentation)
 		return htmlStr
