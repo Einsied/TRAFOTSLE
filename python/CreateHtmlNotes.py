@@ -35,7 +35,7 @@ def CreateCssFile():
 	cssString += addCssClass("ItemDescription", [])
 	cssString += addCssClass("ItemMeta", [])
 	cssString += addCssClass("ItemScan", [
-		{"Name": "max-width", "Value":"30%"}
+		{"Name": "max-width", "Value":"45%"}
 	])
 	# Note
 	cssString += addCssClass("NoteTitle", [])
