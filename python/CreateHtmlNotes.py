@@ -677,6 +677,7 @@ def CreateConcepts(Concepts, Particles):
 		htmlStr += "\n" + indentedNewLine("<tr>", htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<th> ID </th>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<th> Name </th>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<th> Contained Particles </th>", htmlIndentation)
 		htmlIndentation -= 1
 		htmlStr += "\n" + indentedNewLine("</tr>", htmlIndentation)
@@ -694,6 +695,13 @@ def CreateConcepts(Concepts, Particles):
 			htmlStr += "\n" + indentedNewLine(Id, htmlIndentation)
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine("{Name:}".format(
+				Name = Concepts[Id]["Name"]
+			), htmlIndentation)
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
@@ -813,6 +821,7 @@ def CreateTopics(Topics, Particles):
 		htmlStr += "\n" + indentedNewLine("<tr>", htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine("<th> ID </th>", htmlIndentation)
+		htmlStr += "\n" + indentedNewLine("<th> Name </th>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<th> Contained Particles </th>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<th> Contained Concepts </th>", htmlIndentation)
 		htmlIndentation -= 1
@@ -831,6 +840,13 @@ def CreateTopics(Topics, Particles):
 			htmlStr += "\n" + indentedNewLine(Id, htmlIndentation)
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
+			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine("{Name:}".format(
+				Name = Topics[Id]["Name"]
+			), htmlIndentation)
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
