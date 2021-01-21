@@ -1,0 +1,16 @@
+{
+	"Id": "P0005",
+	"Content": [
+		"To reduce the risk of typos.",
+		"Buildings production should be managed via reactions and efficency.",
+		"So a factory is connected to a reaction that deternmines how raw",
+		"materials are turned into finished products.",
+		"It also has a efficency that determines the real",
+		"output of the factory.",
+		"Of course buildings also need raw source terms",
+		"to produce raw materials.",
+		"This could be implemented as a reaction with only manpower",
+		"or no input."
+	],
+	"SourceId": "none"
+}
