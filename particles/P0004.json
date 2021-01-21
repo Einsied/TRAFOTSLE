@@ -1,0 +1,19 @@
+{
+	"Id": "P0004",
+	"Content": [
+		"Damage should be dealt via channels and layers.",
+		"So we have a kinetic, an energy and an moral channel.",
+		"We also have a layer 1(e.g. armor) and a layer 2 (shield) above it.",
+		"This model should allow me to implement attack and defence",
+		"in a simple abstract manner.",
+		"True damage is simply a channel that is not defended by any device",
+		"an shield is simply an second layer, anti energy and kinetic defense.",
+		"By allowing percentile and absolut reduction I could also simulate",
+		"point defense systems.",
+		"Ships can then protect each other by applying the defense as an area",
+		"of effect.",
+		"Of course simulating larger torpedoes or missles an implementing",
+		"point defenses as weapons is still a good idea I think"
+	],
+	"SourceId": "none"
+}

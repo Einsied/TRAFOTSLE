@@ -2,10 +2,13 @@
 	"Id": "P0001",
 	"Content": [
 		"Galactic regions can be used to make the galaxy more heterogeneous.",
-		"Examples would be: A area rich in nebulae, natives or minerals;",
+		"Give it large scale texture so to speak.",
+		"Therefor each region is assigned one or multiple themes,",
+		"like: a area rich in nebulae, natives or minerals,",
+		"or more or easy/difficult to travers.",
 		"Player spawn themes like the \"lone empire\",",
-		"\"the sector of the 3 powers\"",
-		"(balancement could be a challenge for the player spawn themes)."
+		"\"the sector of the 3 powers\" would also be a good idea,",
+		"but balancement could be a challenge."
 	],
 	"SourceId": "I001"
 }

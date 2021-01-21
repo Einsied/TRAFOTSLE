@@ -1,0 +1,16 @@
+{
+	"Id": "P0002",
+	"Content": [
+		"Ground units consist of modules. (Which might be equitment).",
+		"These then inform the stat block of the unit",
+		"They may include but are not limited to: armor, meele weapons,",
+		"ranged weapons, charging equipment, mounts,",
+		"fortification, enviroment suits, diving gear, parachutes,",
+		"and other support equipment.",
+		"From this list it should be quite clear that this modules also inform",
+		"the abilities, attacks and other characteristics of the unit.",
+		"For example without an oxygen supply infantry can not deploy on",
+		"inhospitable worlds."
+	],
+	"SourceId": "I002"
+}

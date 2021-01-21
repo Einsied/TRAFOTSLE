@@ -15,7 +15,44 @@ def GenerateFolder(Folder):
 def indentedNewLine(content, indentationDepth = 0):
 	return "\t" * indentationDepth + content
 
-def htmlFile(title, content):
+def CreateCssFile():
+	def addCssAttribute(name, value):
+		return "\n\t{name:}:{value:};".format(name = name, value = value)
+	def addCssClass(name, attributeList):
+		classString = ".{name:}{{".format(name = name)
+		for attribute in attributeList:
+			classString += addCssAttribute(
+				attribute["Name"], attribute["Value"]
+			)
+		classString += "\n}"
+		return classString
+	# Particle
+	cssString = addCssClass("ParticleTitle", [])
+	cssString += addCssClass("ParticleContent", [])
+	cssString += addCssClass("ParticleMeta", [])
+	# Item 
+	cssString += addCssClass("ItemTitle", [])
+	cssString += addCssClass("ItemDescription", [])
+	cssString += addCssClass("ItemMeta", [])
+	cssString += addCssClass("ItemScan", [
+		{"Name": "max-width", "Value":"30%"}
+	])
+	# Note
+	cssString += addCssClass("NoteTitle", [])
+	cssString += addCssClass("NoteDescription", [])
+	cssString += addCssClass("NoteMeta", [])
+	# Concept
+	cssString += addCssClass("ConceptTitle", [])
+	cssString += addCssClass("ConceptDescription", [])
+	cssString += addCssClass("ConceptParticles", [])
+	# Topic
+	cssString += addCssClass("TopicTitle", [])
+	cssString += addCssClass("TopicParticles", [])
+	CssFileName = HtmlFolder + "/docu.css"
+	with open (CssFileName, "w") as CssFile:
+		CssFile.write(cssString)
+
+def htmlFile(title, content, Root):
 	htmlIndentation = 0
 	htmlStr = indentedNewLine("<!DOCTYPE html>", htmlIndentation)
 	htmlStr += "\n" + indentedNewLine("<html>", htmlIndentation)
@@ -23,6 +60,11 @@ def htmlFile(title, content):
 	# Header
 	htmlStr += "\n" + indentedNewLine("<head>", htmlIndentation)
 	htmlIndentation += 1
+	htmlStr += "\n" + indentedNewLine(
+		"<link rel=\"stylesheet\" href=\"{Root:}/docu.css\" />".format(
+			Root = Root + HtmlFolder 
+		),htmlIndentation
+	)
 	htmlStr += "\n" + indentedNewLine("<meta charset=\"utf-8\" />", 
 		htmlIndentation
 	)
@@ -62,7 +104,7 @@ def CreateNavbar(Root, htmlIndentation):
 		htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
 		return htmlStr
 	def addNavEntryUncontained(PathToIndex, htmlIndentation):
-		htmlStr = indentedNewLine("<li>", 0)
+		htmlStr = indentedNewLine("<li>", htmlIndentation)
 		htmlIndentation += 1
 		htmlStr += "\n" + indentedNewLine(
 			"<a href=\"{IndexPath:}\">".format(
@@ -168,7 +210,7 @@ def CreateItems(Items):
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
 		htmlStr += "\n" + indentedNewLine("<h2>Original Item</h2>", htmlIndentation)
-		for Image in Item["Images"]:
+		for Image in sorted(Item["Images"]):
 			htmlStr += "\n" + indentedNewLine(
 				"<img class=\"ItemScan\" "
 				+ "src=\"../../analog_notes/{ImagePath:}\"".format(
@@ -238,10 +280,12 @@ def CreateItems(Items):
 	for Id in sorted(Items.keys()):
 		FileName = ItemFolder + "/" + Id + ".html"
 		with open (FileName, "w") as ItemFile:
-			ItemFile.write(htmlFile(Id, CreateItemPage(Id, Items[Id])))
+			ItemFile.write(htmlFile(Id, CreateItemPage(Id, Items[Id]), 
+				"../../")
+			)
 	IndexFileName = ItemFolder + "/Index.html"
 	with open (IndexFileName, "w") as IndexFile:
-		IndexFile.write(htmlFile("Index", CreateIndex(Items)))
+		IndexFile.write(htmlFile("Index", CreateIndex(Items), "../../"))
 
 def CreateParticles(Particles):
 	GenerateFolder(ParticleFolder)
@@ -273,23 +317,24 @@ def CreateParticles(Particles):
 			htmlIndentation
 		)
 		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine("<h2>Spawned by:</h2>".format(Title = Id),
-			htmlIndentation
-		)
-		Folder = ""
-		if Particle["SourceId"][0] == "I":
-			Folder = ItemFolder
-		if Particle["SourceId"][0] == "N":
-			Folder = NotesFolder
-		htmlStr += "\n" + indentedNewLine(
-			"<a href=\"../../{Path:}\">".format(
-				Path = Folder + "/" + Particle["SourceId"] + ".html"
-			), htmlIndentation
-		)
-		htmlIndentation += 1
-		htmlStr += "\n" + indentedNewLine(Particle["SourceId"], htmlIndentation)
-		htmlIndentation -= 1
-		htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+		if (Particle["SourceId"] != None):
+			htmlStr += "\n" + indentedNewLine("<h2>Spawned by:</h2>".format(Title = Id),
+				htmlIndentation
+			)
+			Folder = ""
+			if Particle["SourceId"][0] == "I":
+				Folder = ItemFolder
+			if Particle["SourceId"][0] == "N":
+				Folder = NotesFolder
+			htmlStr += "\n" + indentedNewLine(
+				"<a href=\"../../{Path:}\">".format(
+					Path = Folder + "/" + Particle["SourceId"] + ".html"
+				), htmlIndentation
+			)
+			htmlIndentation += 1
+			htmlStr += "\n" + indentedNewLine(Particle["SourceId"], htmlIndentation)
+			htmlIndentation -= 1
+			htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 		if(len(Particle["Concepts"]) > 0 or len(Particle["Topics"])):
 			htmlStr += "\n" + indentedNewLine("<h2>Contained in:</h2>".format(
 				Title = Id), htmlIndentation
@@ -387,7 +432,9 @@ def CreateParticles(Particles):
 			for TopicId in Particles[Id]["Topics"]:
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"{TopicPath:}\">".format(
-						TopicPath= TopicFolder + "/" + TopicId + ".html"
+						TopicPath =(
+							"../../" + TopicFolder + "/" + TopicId + ".html"
+						)
 					), htmlIndentation
 				)
 				htmlIndentation += 1
@@ -421,10 +468,12 @@ def CreateParticles(Particles):
 	for Id in sorted(Particles.keys()):
 		FileName = ParticleFolder + "/" + Id + ".html"
 		with open (FileName, "w") as ItemFile:
-			ItemFile.write(htmlFile(Id, CreateParticlePage(Id, Particles[Id])))
+			ItemFile.write(htmlFile(Id, CreateParticlePage(Id, Particles[Id]),
+				"../../"
+			))
 	IndexFileName = ParticleFolder + "/Index.html"
 	with open (IndexFileName, "w") as IndexFile:
-		IndexFile.write(htmlFile("Index", CreateIndex(Particles)))
+		IndexFile.write(htmlFile("Index", CreateIndex(Particles), "../../"))
 
 def CreateDigitalNotes(Notes):
 	def CreateNotePage(Id, Note):
@@ -545,10 +594,14 @@ def CreateDigitalNotes(Notes):
 	for Id in sorted(Notes.keys()):
 		FileName = NotesFolder + "/" + Id + ".html"
 		with open (FileName, "w") as ItemFile:
-			ItemFile.write(htmlFile(Id, CreateNotePage(Id, Notes[Id])))
+			ItemFile.write(htmlFile(Id, CreateNotePage(Id, Notes[Id]),
+				"../../"
+			))
 	IndexFileName = NotesFolder + "/Index.html"
 	with open (IndexFileName, "w") as IndexFile:
-		IndexFile.write(htmlFile("Index", CreateIndex(Notes)))
+		IndexFile.write(htmlFile("Index", CreateIndex(Notes),
+			"../../"
+		))
 
 def CreateConcepts(Concepts, Particles):
 	def CreateConceptPage(Id, Concept):
@@ -668,10 +721,14 @@ def CreateConcepts(Concepts, Particles):
 	for Id in sorted(Concepts.keys()):
 		FileName = ConceptFolder + "/" + Id + ".html"
 		with open (FileName, "w") as ConceptFile:
-			ConceptFile.write(htmlFile(Id, CreateConceptPage(Id, Concepts[Id])))
+			ConceptFile.write(htmlFile(Id, CreateConceptPage(Id, Concepts[Id]),
+				"../../"
+			))
 	IndexFileName = ConceptFolder + "/Index.html"
 	with open (IndexFileName, "w") as IndexFile:
-		IndexFile.write(htmlFile("Index", CreateIndex(Concepts)))
+		IndexFile.write(htmlFile("Index", CreateIndex(Concepts),
+			"../../"
+		))
 
 def CreateTopics(Topics, Particles):
 	def CreateTopicPage(Id, Topic):
@@ -681,7 +738,7 @@ def CreateTopics(Topics, Particles):
 		htmlIndentation += 1
 		htmlStr += indentedNewLine(CreateNavbar("../../", htmlIndentation), htmlIndentation)
 		htmlStr += "\n" + indentedNewLine(
-			"<h1 class=\"ConceptTitle\">{Title:}</h1>".format(
+			"<h1 class=\"TopicTitle\">{Title:}</h1>".format(
 			Title = Topic["Name"] + " ({Id:})".format(Id = Id)
 			), htmlIndentation
 		)
@@ -815,10 +872,12 @@ def CreateTopics(Topics, Particles):
 	for Id in sorted(Topics.keys()):
 		FileName = TopicFolder + "/" + Id + ".html"
 		with open (FileName, "w") as TopicFile:
-			TopicFile.write(htmlFile(Id, CreateTopicPage(Id, Topics[Id])))
+			TopicFile.write(htmlFile(Id, CreateTopicPage(Id, Topics[Id]),
+				"../../"
+			))
 	IndexFileName = TopicFolder + "/Index.html"
 	with open (IndexFileName, "w") as IndexFile:
-		IndexFile.write(htmlFile("Index", CreateIndex(Topics)))
+		IndexFile.write(htmlFile("Index", CreateIndex(Topics), "../../"))
 
 def CreateUncontained(Uncontained):
 	def CreateUncontainedPage():
@@ -912,7 +971,7 @@ def CreateUncontained(Uncontained):
 		return htmlStr
 	IndexFileName = HtmlFolder + "/Uncontained.html"
 	with open (IndexFileName, "w") as IndexFile:
-		IndexFile.write(htmlFile("Uncontained Objects", CreateUncontainedPage()))
+		IndexFile.write(htmlFile("Uncontained Objects", CreateUncontainedPage(), "../"))
 
 def CreateNotes(
 	HtmlFolderNew, Items, Notes, Particles, Concepts, Topics, Uncontained
@@ -926,6 +985,7 @@ def CreateNotes(
 	ItemFolder = HtmlFolder + "/Items"
 	ParticleFolder = HtmlFolder + "/Particles"
 	NotesFolder = HtmlFolder + "/Notes"
+	CreateCssFile()
 	CreateItems(Items)
 	CreateDigitalNotes(Notes)
 	CreateParticles(Particles)

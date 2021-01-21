@@ -17,7 +17,9 @@ def connect(Topics, Concepts, Particles, Items, Notes):
 		elif(SourceId in Notes.keys()):
 			Notes[SourceId]["Particles"].append(particleId)
 			uncontainedNotes -= set([SourceId])
-		elif(SourceId != "None"):
+		elif(SourceId == "none"):
+			Particles[particleId]["SourceId"] = None
+		else:
 			print("SourceId: {SourceId:} unknown".format(
 				SourceId = SourceId
 			))
