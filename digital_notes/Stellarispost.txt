@@ -1,0 +1,42 @@
+Hello fellow stellaris players,
+this is the second time I post on the forum so if this was already posted before under a diffrent name please just link the thread and close this one.
+
+Motivation
+I played Stellaris on the huge map settings, because I like to play a big scary blob covering the entire galaxy, but I noted that at some point the gaglaxy started to feel bland, flat, homogeneous and I was just painting it system by system.
+I missed the thrill to get exactly this system to boost my mineral output or secure that chokepoint to build a great citadel securing my empires northern border.
+So I asked myself, why did I not feel the same way in CK2 or EU4?
+And the answer seemed to be american treasure fleets, the silkroute, the reconquista most parts of the map had something unique going on.
+Stellaris lacks this feeling. There is just a bunch of stars floating around, some have habitabel worlds around them, some even have decent habitabel worlds around them. Some of them even have special strategic goods one may pickup while painting the map.
+<Spoiler>
+And then there is the L-cluster. The prototype of a galactic region. It is visaully clearly seperated form the rest of the galaxy so it is special. It can only be reached by a certain investment(research) making it extra special. It even comes with a unique resource and a small story. Making it really unique.
+</Spoiler>
+So the idea for galactic regions is pretty simple the world generator script picks out a special part of the galaxy (5-20 stars maybe) and gives them a theme. Now the stars are generated with new stats according to this theme. A few exampels could be:
+* The great void (a line of uninhabitable stars without planets or anything sepearting two parts of the galaxy)
+* The vibrant centre (~3 very valuable systems able to support a big population, probably seeded with an AI empire)
+* The resource rich rim (~5 systems with very high mineral output)
+* The living worlds (15-20 systems with 4-6 primitives)
+* The Corporate sector (containing strategic resources)
+* The ruined empire (containing some Megastructures and possibly a fallen empire)
+* Dune (A normal part of the galaxy with a system containing a unique resource)
+* The labyrinth (A region where hyperlanes are rare and have more tails (dead ends) making this part of the galaxy harder to navigate)
+* The fast grid (The opposit of the labyrinth with hyperlanes going everywhere)
+* The warzone (seeded with more "aggressive" empires (e.g. Fanatical Purifiers))
+* The great steppe (holding marauders)
+* The peacful ocean (having peacuful empires in one place)
+* The precursors realm (where the precursor homeworld and artefacts might spawn)
+* Anti shield nebula (shields do not work in this region) 
+* Throw in region wide events, like a strange disease or a mini-invasion-crisis, in as bonus.
+
+Some of this exampels might be practical others not so much. But I hope I was able to demonstrate the potential, especailly including the seeding of AI-empires.
+
+The problem is of course balancement. To avoid breaking the game benefical regions wold have to be guarded by space monsters, to ensure they do not influence the eraly game to much.
+But regions guarded in that manner could block an early empires expansion, so a route around has to be ensured unless they are specifically intenden as walls/seperators like the Alps or the Pyrenees.
+That means the world generator script has to account for that by either picking appropriate systems out of the hyperlane web structure or generating a acceptable structure after the regions were picked.
+
+In general I believe this approach if used carefully could lead to more interesting huge maps.
+If this was already suggested, please link the thread, so everybody stumbling across this post gets to the correct thread.
+If you believe the idea has some inherent value feel free to expand on it and eliminate/correct the oversights in this inital post.
+If you belive this idea would not benefit the further development of the game, please note why so that others may see the errors of this way and learn form it.
+
+Cheers,
+KeinName22

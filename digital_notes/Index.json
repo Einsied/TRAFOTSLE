@@ -54,6 +54,13 @@
 				"How to allow the existence of battlefield heroes."
 			],
 			"File": "heroes.txt"
+		},
+		{
+			"Id": "N008",
+			"Description": [
+				"A never published forum post dicussing galactic regions."
+			],
+			"File": "Stellarispost.txt"
 		}
 	]
 }
