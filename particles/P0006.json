@@ -1,0 +1,14 @@
+{
+	"Id": "P0006",
+	"Content": [
+		"It should be possible to place buoys on claimed planets or systems.",
+		"This should inform other organizations about the claim.",
+		"They should starting to fail after a time,",
+		"using a mean-time-to-happen-system triggered after a minimal amount",
+		"of time or another maintenance-system.",
+		"This should prevent the spamming of buoys further than just",
+		"production costs, by requiring patrols.",
+		"It hides the deliberate destruction of a buoy by another organization"
+	],
+	"SourceId": "none"
+}
