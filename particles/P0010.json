@@ -1,0 +1,25 @@
+{
+	"Id": "P0010",
+	"Content": [
+		"Survival or breathing gear could clutter the unit rooster",
+		"with special region versions like: snow-, space-, desert-",
+		"or jungle-rocket-trooper.",
+		"To avoid these survival gears could be tiered like",
+		"nothing restricting deployment to hospital planets or",
+		"colony-structures; breathers allows to deploy on other planets",
+		"survival suit allowing deployment in space or planets without",
+		"atmosphere and finally high pressure suits allowing sub aquatic",
+		"(for surface dwellers, aquatic species are of course kind of",
+		"inverted)",
+		"or gas-giant deployment (floating at a certain height on the giant).",
+		"Another idea was also to allow limit deployment without proper",
+		"equipment, applying penalties for every turn stationed in the wrong",
+		"environment.",
+		"This could be combined with vehicles allowing the troops to use them",
+		"as bases venturing out into the unforgiving environment for short",
+		"periods of time.",
+		"Of course venturing out of a ship in a gas giant without",
+		"a pressure-suit should squash all troops."
+	],
+	"SourceId": "I003"
+}

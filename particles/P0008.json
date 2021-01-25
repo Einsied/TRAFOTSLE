@@ -1,0 +1,20 @@
+{
+	"Id": "P0008",
+	"Content": [
+		"For soldiers one module should correspond to one value.",
+		"E.g: Helmet to vision range,",
+		"primary weapon to ranged damage,",
+		"sidearm to melee damage,",
+		"armor/uniform to hp,",
+		"breathing gear to deployability,",
+		"Backpack to supplies",
+		"and Mount to speed on different terrains.",
+		"The same would apply to tanks and other vehicles but with different",
+		"cosmetic names.",
+		"The whole things seems dated and simple modules thrown together at",
+		"at will seem to be the better option.",
+		"The implied restriction can be solved by having module slots,",
+		"which was probably the idea in the first place."
+	],
+	"SourceId": "I003"
+}

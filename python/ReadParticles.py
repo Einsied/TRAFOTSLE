@@ -13,7 +13,13 @@ def Read(ParticleFolder):
 
 	for ParticleFile in ParticleFiles:
 		with open(ParticleFolder + ParticleFile, "r") as particleFile:
-			particle = json.load(particleFile)
+			try:
+				particle = json.load(particleFile)
+			except ValueError:
+				print("Error while reading {ParticleFile:}".format(
+					ParticleFile = ParticleFile
+				))
+				raise
 			Particles[particle["Id"]] = {
 				"Content": reformParagraph(particle["Content"]),
 				"SourceId": particle["SourceId"]

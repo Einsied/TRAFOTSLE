@@ -13,7 +13,13 @@ def Read(ConceptFolder):
 
 	for ConceptFile in ConceptFiles:
 		with open(ConceptFolder + ConceptFile, "r") as conceptFile:
-			concept = json.load(conceptFile)
+			try:
+				concept = json.load(conceptFile)
+			except ValueError:
+				print("Error while reading(ConceptFile:)".format(
+					ConceptFile = ConceptFile
+				))
+				raise
 			Concepts[concept["Id"]] = {
 				"Name": concept["Name"],
 				"Description": [reformParagraph(line)

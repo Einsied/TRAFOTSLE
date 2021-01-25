@@ -1,0 +1,19 @@
+{
+	"Id": "P0016",
+	"Content": [
+		"Space ship components should be group hierarchical",
+		"simplifying use by the player, AI and treatment in the code.",
+		"The lowest hierarchy level is the component corresponding to",
+		"an atomic functioning part like a Laser-canon, a battery",
+		"or a cargo hold.",
+		"The level above it is the compartment corresponding to a functional",
+		"part, like a cargo bay(multiple cargo holds), laser-gun-emplacement",
+		"(a laser-canon with a battery), a torpedo bay",
+		"(combining the outlet with a ammo storage and other infrastructure)",
+		"or a gun tower (combining an rotation device, fire control, guns,",
+		"ammo delivery and armor into one unit.)",
+		"The highest level is the module combining the compartments to form",
+		"a gun battery or logistics section."
+	],
+	"SourceId": "I003"
+}

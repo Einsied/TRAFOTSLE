@@ -7,7 +7,13 @@ def Read(TopicFolder):
 
 	for TopicFile in TopicFiles:
 		with open(TopicFolder + TopicFile, "r") as topicFile:
-			topic = json.load(topicFile)
+			try:
+				topic = json.load(topicFile)
+			except ValueError:
+				print("Error while reading {TopicFile:}".format(
+					TopicFile = TopicFile
+				))
+				raise
 			Topics[topic["Id"]] = {
 				"Name": topic["Name"],
 				"Particles": topic["Particles"],

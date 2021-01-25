@@ -1,0 +1,21 @@
+{
+	"Id": "P0009",
+	"Content": [
+		"Units should be mixable from different types.",
+		"So part infantry part vehicle Type A part vehicle part B.",
+		"Relevant here is that the sum should be better than its parts.",
+		"One way to realize this would be to calculate the total stats of",
+		"the unit by building the sum over the best 80% of the unit.",
+		"So we find add the values of the best units until we have summed up",
+		"80% of the units total head count determined by an arbitrary",
+		"weight-function that ensures a tank is weighed heavier for the", 
+		"a infantry men.",
+		"A measure could be the raw production cost of the unit,",
+		"its hp, size (as in transport size/physical volume) or a combination",
+		"of these values.",
+		"Attempting to make it as difficult to exploit as possible.",
+		"Equipment is lost evenly and the stats reduced accordingly.",
+		"Evenly is meant in regard to the weight-function." 
+	],
+	"SourceId": "I003"
+}
