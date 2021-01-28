@@ -2,8 +2,8 @@
 	"Id": "P0017",
 	"Content": [
 		"Ships and units should be collected into armies and fleets,",
-		"since that makes dealing with them in the campaign much easier.",
-		"So I move unit packages instead of units"
+		"since that makes dealing with them in the campaign-map much easier.",
+		"So I move unit packages instead of units."
 	],
 	"SourceId": "I004"
 }
