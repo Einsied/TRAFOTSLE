@@ -1,0 +1,27 @@
+{
+	"Id": "P0019",
+	"Content": [
+		"Sub AIs (e.g. commanding fleets or flotillas) should communicate",
+		"with each other like requesting reinforcements from their superior", 
+		"or peers.",
+		"So a admiral can request a system governor to send him supplies",
+		"or produce ships if they are associated.",
+		"It should also be possible to assign virtual budget to inferiors.",
+		"The idea was a sort of mission bulletin board were Sub AIs post",
+		"Missions (with possible rewards) and requests.",
+		"So an admiral may garrison defense posts assigned by the governor,",
+		"while the governor fulfills production orders placed by the admiral.",
+		"The idea it to automate whole sections of the empire and ",
+		"use abstract goals to simplify decisions for the AI.",
+		"So the AI just decides to garrison a system with a fleet,",
+		"instead of deciding to send that and that ship to this planet.",
+		"Establishing a hierarchy and permitting the player to set the",
+		"relations between the AIs would be necessary I think.",
+		"This means a superior AI or the player can decide to assign a fleet",
+		"to a sector and some parts or the whole sector to the fleet",
+		"This blends with hierarchical organizations/empires, where the sector",
+		"governor just decides to form his own defense fleet, since he has",
+		"resources."
+	],
+	"SourceId": "I004"
+}

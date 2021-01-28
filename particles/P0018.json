@@ -1,0 +1,12 @@
+{
+	"Id": "P0018",
+	"Content": [
+		"Units and ships should be organized into fleets and armies.",
+		"This formations are used to hand orders down.",
+		"So a fleet garrisons a sector and orders flotillas to garrison", 
+		"systems.",
+		"That flotillas then orders smaller flotillas to garrison individual",
+		"planets."
+	],
+	"SourceId": "I004"
+}

@@ -1,0 +1,21 @@
+{
+	"Id": "P0020",
+	"Content": [
+		"Every unit or ship should generate military pressure.",
+		"This value is dampened and flows around the map.",
+		"It declines with distance to the origin.",
+		"So a big fleet moving in builds up the pressure over a few turns,",
+		"while the pressure bleeds into neighboring systems.",
+		"The idea is to a) permit arms races, by influencing the local pops.",
+		"b) inform player and AI about threatening invasions.",
+		"It also allows pops to demand protection for bigger worlds",
+		"or for pacifist to disapprove of the military presence.",
+		"Modifiers depending on the relation to the source/owner of the",
+		"pressure generating units should also be applied.",
+		"So that pops are not scared by allied fleets at the borders",
+		"unless the distrust the ally.",
+		"Finding a fitting decline and proximity formula could be a nightmare,",
+		"but we will see."
+	],
+	"SourceId": "I004"
+}
