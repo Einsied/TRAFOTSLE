@@ -1,0 +1,12 @@
+{
+	"Id": "P0021",
+	"Content": [
+		"Splitting turns in long and short terms allows for better game",
+		"pacing (Buildings being build every n minor-turns, while fleets",
+		"move every turn).",
+		"This allows to make bigger decisions in bigger intervals and eases",
+		"the decision pressure on the player.",
+		"This should of course be customize able."
+	],
+	"SourceId": "I005"
+}

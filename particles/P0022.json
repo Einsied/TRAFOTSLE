@@ -1,0 +1,30 @@
+{
+	"Id": "P0022",
+	"Content": [
+		"To allow give ancient empires a \"realistic\" history and populate",
+		"the map a setup game should be part of the map generation.",
+		"It is played on an abstracted map, so at least the planets are",
+		"abstracted. It could also be played on systems or regions.",
+		"Given the fact that the setup game should setup all empires",
+		"without taking forever it might be wise to switch between them.",
+		"So first the ancient empires have 3 turns to set up on the regions.",
+		"Then the middle aged ones can together with the ancient ones deal",
+		"with the systems. And the last few turns are played with abstract",
+		"planets. Depending on the perks picked up by the player/AI",
+		"their empire is enters this game at a certain round.",
+		"Actions during these turns should be limited in number.",
+		"So a player/empire has 10 action tokens to invest into actions.",
+		"This actions might include: Investing in military, research,",
+		"a region/system/planet, starting a war, ending a war, map a part",
+		"of the map, up-lift a species, strengthen the government or",
+		"colonizing a different part of the map with an expedition fleet",
+		"(spawning an offshoot-civilization with the same species as the",
+		"as the sending empire.",
+		"There should also be a cap on certain actions, so the player does",
+		"not build up an unmaintainable military.",
+		"In general this should allow the empires to get decent starting",
+		"positions and backstories. Like being driven off from their",
+		"home-world during a war and now living as space nomads."
+	],
+	"SourceId": "I006"
+}
