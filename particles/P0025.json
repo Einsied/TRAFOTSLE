@@ -1,0 +1,17 @@
+{
+	"Id": "P0025",
+	"Content": [
+		"The crews of ships and units should have political views,",
+		"determined by their origin for example.",
+		"Probably drifting to the organizations average over time.",
+		"They should not be simulated like full populations but a simple",
+		"array of values should allow me to separate the forces in a civil",
+		"war more reasonably than just flipping a coin.",
+		"They can also disobey orders now.",
+		"Characters could also fill the role but it would create additional",
+		"problems i believe.",
+		"For simplicity they could also just contain a pointer to an object",
+		"shared among a larger object like a fleet."
+	],
+	"SourceId": "none"
+}

@@ -1,0 +1,24 @@
+{
+	"Id": "P0024",
+	"Content": [
+		"Rumors should spread with ships. This rumors contain strategic",
+		"information like production capability of systems, technological",
+		"advancement or military strength. They can then be gathered by",
+		"intelligence operations. The idea is here to have an organic",
+		"flow of information between parts of space that is accessible",
+		"to everyone.",
+		"Of course organizations should be able to minimize",
+		"the amount of rumors spread by their ships.",
+		"The number and kind or rumors carried should depend on the crew.",
+		"More specifically its size and political views,",
+		"so some cultures are more tight lipped and militarists tend to",
+		"spread rumors about the military.",
+		"This of course implies the crews are that finely modeled",
+		"maybe i could take the organization average or a linked colony",
+		"or so. Probably I will take the origin of the rumor into account,",
+		"so the locals determine the chance. Not as elegant than using what",
+		"the crews saw in space (crew specific modifiers) and picked up in",
+		"local bars (using crew and local modifier) but still acceptable."
+	],
+	"SourceId": "none"
+}
