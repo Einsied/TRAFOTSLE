@@ -193,7 +193,7 @@ def CreateItems(Items):
 			htmlStr += "\n" + indentedNewLine("<h2>Spawned Particles:</h2>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			for particle in Item["Particles"]:
+			for particle in sorted(Item["Particles"]):
 				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
 				htmlIndentation += 1
 				htmlStr += "\n" + indentedNewLine(
@@ -256,7 +256,7 @@ def CreateItems(Items):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for particle in Items[Id]["Particles"]:
+			for particle in sorted(Items[Id]["Particles"]):
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"../../{particle:}.html\">".format(
 						particle = ParticleFolder + "/" + particle
@@ -429,7 +429,7 @@ def CreateParticles(Particles):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for TopicId in Particles[Id]["Topics"]:
+			for TopicId in sorted(Particles[Id]["Topics"]):
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"{TopicPath:}\">".format(
 						TopicPath =(
@@ -445,7 +445,7 @@ def CreateParticles(Particles):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for ConceptId in Particles[Id]["Concepts"]:
+			for ConceptId in sorted(Particles[Id]["Concepts"]):
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"{ConceptPath:}\">".format(
 						ConceptPath = ConceptFolder + "/" + ConceptId + ".html"),
@@ -508,7 +508,7 @@ def CreateDigitalNotes(Notes):
 			htmlStr += "\n" + indentedNewLine("<h2>Spawned Particles:</h2>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			for particle in Note["Particles"]:
+			for particle in sorted(Note["Particles"]):
 				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
 				htmlIndentation += 1
 				htmlStr += "\n" + indentedNewLine(
@@ -570,7 +570,7 @@ def CreateDigitalNotes(Notes):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for particle in Notes[Id]["Particles"]:
+			for particle in sorted(Notes[Id]["Particles"]):
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"../../{particle:}.html\">".format(
 						particle = ParticleFolder + "/" + particle
@@ -706,7 +706,7 @@ def CreateConcepts(Concepts, Particles):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for particle in Concepts[Id]["Particles"]:
+			for particle in sorted(Concepts[Id]["Particles"]):
 				FileName = "../../" + ParticleFolder + "/" + particle + ".html"
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"{FileName:}\">".format(FileName = FileName), 
@@ -757,7 +757,7 @@ def CreateTopics(Topics, Particles):
 			htmlIndentation
 		)
 		htmlIndentation += 1
-		for particle in Topic["Particles"]:
+		for particle in sorted(Topic["Particles"]):
 			FileName = "../../" + ParticleFolder + "/" + particle + ".html"
 			htmlStr += "\n" + indentedNewLine("<h3>", htmlIndentation)
 			htmlIndentation += 1
@@ -789,8 +789,8 @@ def CreateTopics(Topics, Particles):
 			)
 			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			for concept in Topic["Concepts"]:
-				FileName = "../../" + ConceptFolder + "/" + concept + ".html"
+			for concept in sorted(Topic["Concepts"]):
+				FileName = "../../" + ConceptFolder + "/" + concept["Id"] + ".html"
 				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
 				htmlIndentation += 1
 				htmlStr += "\n" + indentedNewLine(
@@ -798,7 +798,10 @@ def CreateTopics(Topics, Particles):
 					htmlIndentation
 				)
 				htmlIndentation += 1
-				htmlStr += "\n" + indentedNewLine(concept, htmlIndentation)
+				htmlStr += "\n" + indentedNewLine("{Id:}({Name:})".format(
+					Id = concept["Id"],
+					Name = concept["Name"]
+				), htmlIndentation)
 				htmlIndentation -= 1
 				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 				htmlIndentation -= 1
@@ -851,7 +854,7 @@ def CreateTopics(Topics, Particles):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for particle in Topics[Id]["Particles"]:
+			for particle in sorted(Topics[Id]["Particles"]):
 				FileName = "../../" + ParticleFolder + "/" + particle + ".html"
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"{FileName:}\">".format(FileName = FileName), 
@@ -865,14 +868,15 @@ def CreateTopics(Topics, Particles):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for concept in Topics[Id]["Concepts"]:
-				FileName = "../../" + ConceptFolder + "/" + concept + ".html"
+			for concept in sorted(Topics[Id]["Concepts"]):
+				FileName = "../../" + ConceptFolder + "/"
+				FileName += concept["Id"] + ".html"
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"{FileName:}\">".format(FileName = FileName), 
 					htmlIndentation
 				)
 				htmlIndentation += 1
-				htmlStr += "\n" + indentedNewLine(concept, htmlIndentation)
+				htmlStr += "\n" + indentedNewLine(concept["Id"], htmlIndentation)
 				htmlIndentation -= 1
 				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 			htmlIndentation -= 1

@@ -49,6 +49,13 @@ def connect(Topics, Concepts, Particles, Items, Notes):
 				Particles[ParticleId]["Topics"].append(TopicId)
 	uncontainedParticles -= set(foundParticles)
 	uncontainedConcepts -= set(foundConcepts)
+	# Make sure the topics now the Name of the assocaited conceots
+	for TopicId in Topics.keys():
+		Topic = Topics[TopicId]
+		Topic["Concepts"] = [
+			{"Id": ConceptId, "Name": Concepts[ConceptId]["Name"]}
+			for conceptId in Topic["Concepts"]
+		]
 	return {
 		"uncontainedItems": uncontainedItems,
 		"uncontainedNotes": uncontainedNotes,
