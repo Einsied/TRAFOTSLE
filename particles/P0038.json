@@ -1,0 +1,18 @@
+{
+	"Id": "P0038",
+	"Content": [
+		"Conflicts could have a tree shape containing sub-conflicts.",
+		"That allows them to branch of and slowly spiral out of control",
+		"or burn our in several minor conflicts that are decided after the",
+		"big one ends.",
+		"It should also be possible to merge conflicts,",
+		"so a larger organization can merge the conflict of its own and its",
+		"subjects against another organization ant that organizations subjects",
+		"into one big conflict.",
+		"Essentially resolving them all at once or coordinating the efforts",
+		"a little bit better, by assigning a shared military force.",
+		"I007 contains an elaborate example of such a tree structure including",
+		"a timeline example that creates it."
+	],
+	"SourceId": "I007"
+}

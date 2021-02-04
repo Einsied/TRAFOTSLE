@@ -1,0 +1,18 @@
+{
+	"Id": "P0029",
+	"Content": [
+		"Pops should have binary political issues like militarism vs.",
+		"pacifism.",
+		"Then each pop has a position on the issue expressing its proximity",
+		"to one of the two poles.",
+		"With this method politics become an array of integers which should",
+		"be less complicated than other models.",
+		"It could be necessary to attach weights to each issue,",
+		"to track how important it,",
+		"this can implicitly done bye assuming issues close a 50/50 split",
+		"are not important.",
+		"An alternative is to assign a split in one issue fanatics but I",
+		"believe that approach is ill suited for realistic models"
+	],
+	"SourceId": "I007"
+}

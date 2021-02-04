@@ -1,0 +1,18 @@
+{
+	"Id": "P0037",
+	"Content": [
+		"It should be possible to add additional values to conflicts",
+		"like public opinion, the opinion of a arbitration panel,",
+		"or the decryption of the blueprints for a protected blueprint",
+		"(connected to a good that should be monopolized)",
+		"to simulate multiple dimensions of the conflict.",
+		"If this values cross certain thresholds the conflicts",
+		"either change in nature or are decided completely.",
+		"They should have a strength modifier describing how important they",
+		"are compared to each other.",
+		"So for some conflicts public opinions matters but battle results",
+		"are more important",
+		"They also be able should influence escalation costs and other values."
+	],
+	"SourceId": "I007"
+}

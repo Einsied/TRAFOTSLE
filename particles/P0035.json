@@ -1,0 +1,24 @@
+{
+	"Id": "P0035",
+	"Content": [
+		"It should be possible to enter, drag somebody into or push them",
+		"out of a conflict for a fee.",
+		"If it should be possible to push out the last opponent leading to",
+		"a win by default or push out somebody that is the target of a goal",
+		"should be carefully considered or made optional.",
+		"if the option exists dragging in and pushing out should be slow",
+		"processes.",
+		"The defending party should enter the conflict for free.",
+		"The fees should depend on interest determining factors like:",
+		"relations to participants (and the side on which they are relative",
+		"to the joining party),",
+		"proximity to the participants or the goal (if it is a map object)",
+		"and lastly a factor determined by the official ideology of the",
+		"joining organization and the goal.",
+		"It should be possible to pay the fee for somebody else.",
+		"If the joining into the conflict is a continuous process this could",
+		"be simply done by contributing to their joining progress.",
+		"One could the also frustrate another parties attempt to join."
+	],
+	"SourceId": "I007"
+}

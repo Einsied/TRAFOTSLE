@@ -1,0 +1,22 @@
+{
+	"Id": "C003",
+	"Name": "Conflicts",
+	"Description":[
+		[
+			"Conflicts are the abstract vehicle to simulate struggles",
+			"between organizations.",
+			"They are abstractions range from civil disputes between allies",
+			"using diplomats and public opinion to full scale wars"
+		]
+	],
+	"Particles": [
+		"P0031",
+		"P0032",
+		"P0033",
+		"P0034",
+		"P0035",
+		"P0036",
+		"P0037",
+		"P0038"
+	]
+}

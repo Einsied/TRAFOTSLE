@@ -1,0 +1,12 @@
+{
+	"Id": "T010",
+	"Name": "Victory conditions/scoring",
+	"Particles": [
+		"P0026",
+		"P0027",
+		"P0028",
+		"P0032"
+	],
+	"Concepts": [
+	]
+}

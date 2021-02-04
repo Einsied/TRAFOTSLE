@@ -1,0 +1,13 @@
+{
+	"Id": "C002",
+	"Name": "Pops",
+	"Description":[
+		[
+			"Pops are populations of colonies and deal with the simulation",
+			"of civil society, like politics or consuming food."
+		]
+	],
+	"Particles": [
+		"P0029"
+	]
+}

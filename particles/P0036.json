@@ -1,0 +1,17 @@
+{
+	"Id": "P0036",
+	"Content": [
+		"It should be possible to escalate conflicts,",
+		"therefore they need an abstract escalation level either as a single",
+		"value or as a bunch of values corresponding to different practices.",
+		"Every party should be able to influence this value/s by their",
+		"actions.",
+		"So glassing a planet makes glassing a planet more acceptable in this",
+		"conflict.",
+		"Or spending diplomatic influence to make piracy acceptable makes",
+		"piracy more acceptable in this conflict.",
+		"It should also be possible to lower the level/s by an cease-fire",
+		"agreed upon by everyone or by spending diplomatic influence or so."
+	],
+	"SourceId": "I007"
+}

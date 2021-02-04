@@ -1,0 +1,18 @@
+{
+	"Id": "P0032",
+	"Content": [
+		"It should be possible to attach goals to conflicts that yield",
+		"victory points if the conflict is won.",
+		"The amount of points could depend on the amount of invested",
+		"resources, the negative effects on and the strength of the opponent.",
+		"It could be something like a humiliation war that damages the",
+		"opponents morale/loyalty of their pops.",
+		"It could also awarded for the otherwise pointless liberation of",
+		"peoples or opponents subjects.",
+		"However care should be taken to balance the gained points against",
+		"strategic advantages to the winner.",
+		"It could also be a flower war/conflict awarding the winner points",
+		"depending on the resources invested by both winner and loser."
+	],
+	"SourceId": "I007"
+}
