@@ -3,7 +3,12 @@
 	"Name": "Map Generation",
 	"Particles": [
 		"P0001",
-		"P0022"
+		"P0022",
+		"P0040",
+		"P0041",
+		"P0042",
+		"P0043",
+		"P0044"
 	],
 	"Concepts": [
 	]

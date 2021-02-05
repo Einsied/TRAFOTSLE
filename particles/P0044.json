@@ -1,0 +1,11 @@
+{
+	"Id": "P0044",
+	"Content": [
+		"During map generation spawn points should be generated that are then",
+		"occupied by players and filled up by computer generated species.",
+		"This implicitly means that player have to choose their starting",
+		"conditions before the setup game and my loose some perks if it goes",
+		"badly for them (like being driven from their home)."
+	],
+	"SourceId": "none"
+}

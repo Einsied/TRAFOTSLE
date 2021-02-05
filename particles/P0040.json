@@ -1,0 +1,24 @@
+{
+	"Id": "P0040",
+	"Content": [
+		"To keep the late starters occupied in the setup game,",
+		"while the early starters make their moves,",
+		"it could be interesting to let them do some stuff in their home",
+		"system before it starts existing.",
+		"So they get a better tailored starting experience than the early",
+		"starters.",
+		"Of course this only works if their home system is not occupied by",
+		"an early starter so the options available  to them should be generic",
+		"enough to be applied with that fact in mind.",
+		"Another option would be to let them do stuff that takes effect just",
+		"after they spawned.",
+		"This could go hand in hand with a change in resolution,",
+		"so after a jump from region to system level,",
+		"system configuration starts to matter.",
+		"This of course may feel punishing if they loos their capital,",
+		"so instead they may simply design their society and found",
+		"mega-corps, monastic orders and other organizations that are",
+		"partially randomized for the older empires."
+	],
+	"SourceId": "I009"
+}

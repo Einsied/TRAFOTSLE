@@ -1,0 +1,17 @@
+{
+	"Id": "P0039",
+	"Content": [
+		"Breaking a (defense) treaty should loosen the strength of similar",
+		"treaties.",
+		"It should also inflict an penalty on own pops depending on the",
+		"strength of the broken treaty.",
+		"The idea is to make honoring a treaty a strategic decision by",
+		"imposing specific penalties directly (loosing the benefits of the",
+		"treaty) and indirectly (loosing diplomatic capital used to",
+		"strengthen the treaty and loosing the support of pops).",
+		"This also allows to adjust the strength of a treaty to a desired",
+		"value instead of making it absolute,",
+		"allowing loose promises."
+	],
+	"SourceId": "I008"
+}
