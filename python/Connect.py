@@ -53,7 +53,7 @@ def connect(Topics, Concepts, Particles, Items, Notes):
 	for TopicId in Topics.keys():
 		Topic = Topics[TopicId]
 		Topic["Concepts"] = [
-			{"Id": ConceptId, "Name": Concepts[ConceptId]["Name"]}
+			{"Id": conceptId, "Name": Concepts[ConceptId]["Name"]}
 			for conceptId in Topic["Concepts"]
 		]
 	return {
