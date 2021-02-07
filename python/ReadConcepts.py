@@ -16,7 +16,7 @@ def Read(ConceptFolder):
 			try:
 				concept = json.load(conceptFile)
 			except ValueError:
-				print("Error while reading(ConceptFile:)".format(
+				print("Error while reading {ConceptFile:}".format(
 					ConceptFile = ConceptFile
 				))
 				raise
