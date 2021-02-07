@@ -789,7 +789,9 @@ def CreateTopics(Topics, Particles):
 			)
 			htmlStr += "\n" + indentedNewLine("<ul>", htmlIndentation)
 			htmlIndentation += 1
-			for concept in sorted(Topic["Concepts"]):
+			for concept in sorted(Topic["Concepts"],
+				key = lambda concept: concept["Id"]
+			):
 				FileName = "../../" + ConceptFolder + "/" + concept["Id"] + ".html"
 				htmlStr += "\n" + indentedNewLine("<li>", htmlIndentation)
 				htmlIndentation += 1
@@ -868,7 +870,9 @@ def CreateTopics(Topics, Particles):
 			htmlStr += "\n" + indentedNewLine("</td>", htmlIndentation)
 			htmlStr += "\n" + indentedNewLine("<td>", htmlIndentation)
 			htmlIndentation += 1
-			for concept in sorted(Topics[Id]["Concepts"]):
+			for concept in sorted(Topics[Id]["Concepts"],
+				key = lambda concept: concept["Id"]
+			):
 				FileName = "../../" + ConceptFolder + "/"
 				FileName += concept["Id"] + ".html"
 				htmlStr += "\n" + indentedNewLine(
