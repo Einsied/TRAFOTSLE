@@ -68,6 +68,14 @@
 				"A python skript illustrating the unrolling of a sphere onto 2d."
 			],
 			"File": "SphericalMap.py"
+		},
+		{
+			"Id": "N010",
+			"Description": [
+				"A image showing how to turn a 4 connectivity 2d grid into a 6",
+				"connectivity 2d grid."
+			],
+			"File": "4-to-6-connectivity.svg"
 		}
 	]
 }
