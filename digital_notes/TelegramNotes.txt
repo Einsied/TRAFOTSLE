@@ -1,0 +1,33 @@
+Kein Name, [22.05.20 16:11]
+Space game:
+* dynasties for Monarchies
+* chronicles (ahnenreihen bonus für current ruler)
+* ruling parties
+* party leaders for republics
+* assassination and stuff like that
+* species life expectancy 25-300 years after that biological immortality
+* name list for titles so all monarchs can be named after roman emperors and all spiritual leaders after soft drinks or so (player can choose those and the  are cosmetic)(they track incarnation so we get Pepsi III. (space pope) automatically)
+
+Kein Name, [22.05.20 16:12]
+[In reply to Kein Name]
+Player looses control if dynasties or leader and ruling party are switched or so. => allows takeover of empires from within
+
+Kein Name, [22.05.20 16:14]
+[In reply to Kein Name]
+Multiple leaders like:
+* spiritual
+* monarch
+* prime minister etc.
+For more flavor and fluent change between systems (monarchy, constitutional monarchy, republic)
+
+Kein Name, [22.05.20 16:17]
+[In reply to Kein Name]
+This name list thing is useful in general (like for ships fleets and troops)
+
+Kein Name, [22.05.20 16:19]
+[In reply to Kein Name]
+Which leads organically to "Pepsi III. 2. memorial fleet"
+
+Kein Name, [22.05.20 16:22]
+[In reply to Kein Name]
+Chronicles could be built during initialization rounds
