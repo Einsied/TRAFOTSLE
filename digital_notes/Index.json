@@ -83,6 +83,13 @@
 				"Some noste regarding the generation of spherical maps for planets"
 			],
 			"File": "SphericalMaps.txt"
+		},
+		{
+			"Id": "N012",
+			"Description": [
+				"Flavor ideas for political systems and succession."
+			],
+			"File": "TelegramNotes.txt"
 		}
 	]
 }
