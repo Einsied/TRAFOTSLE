@@ -76,6 +76,13 @@
 				"connectivity 2d grid."
 			],
 			"File": "4-to-6-connectivity.svg"
+		},
+		{
+			"Id": "N011",
+			"Description": [
+				"Some noste regarding the generation of spherical maps for planets"
+			],
+			"File": "SphericalMaps.txt"
 		}
 	]
 }

@@ -1,0 +1,8 @@
+There are concepts like the fibonacci sphere, with arbitray vetex number
+or a cube sphere (a cube projected onto a sphere) that might suit my planets
+better.
+The cube sphere has a better connectivity than the icosahedron.
+(All rectangle has 4 neighbours.)
+
+See Coding Adventure: Procedural Moons and Planets
+https://www.youtube.com/watch?v=lctXaT9pxA0
