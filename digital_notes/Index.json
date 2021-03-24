@@ -90,6 +90,13 @@
 				"Flavor ideas for political systems and succession."
 			],
 			"File": "TelegramNotes.txt"
+		},
+		{
+			"Id": "N013",
+			"Description": [
+				"Ideas regarding cultures and culture drift."
+			],
+			"File": "cultures.txt"
 		}
 	]
 }

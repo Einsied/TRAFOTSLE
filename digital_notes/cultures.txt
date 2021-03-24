@@ -1,0 +1,70 @@
+See cultures as a tree like structure, with a culture group a cultures
+containing streams.
+So we would have Terran imperial culture group, with the sol-system/core culture
+containing a martian, Terran and lunar stream.
+
+This would all have attributes/ tenets, so the Terran imperial culture group
+has the "sacred home world", "imperium sine fine" and "xenophobia" as
+core tenets, meaning all cultures adhering to it have to contain 2
+of this 3 as core tenets.
+
+The sol-system/core culture replicates them (since it is the founding culture)
+and also adds additional tenets like "grand fleet" and "industrial nightmares".
+It streams then add a third layer/iteration to that like "garden world" for
+Earth instead of "industrial nightmares" or "science haven" for Luna
+instead of "grand fleet".
+
+The stream still need to contain the core tenets of sol-system/core culture
+but can mix up the rest a little bit.
+Basically every child has to overlap with all its parent to at least n% otherwise
+it has to start its own tree (or raise up a level depending on the violation).
+So if the earth would not sufficiently overlap with sol-system/core culture, 
+but still have overlap wit Terran imperial we would get a new earth culture
+in the Terran imperial culture group.
+
+Every culture group has a main culture determining the core tenets.
+This is usually the founding culture until another one has a higher culture
+output.
+So if the Terran Colonial culture would produce lets say 125% of the cultural
+output of the sol-system/core culture for x turns it would become the dominant
+culture.
+This might lead to a split where other culture no longer sharing core tenets
+are banished into their own culture group (This should be reversible so probably
+a common heritage should be inserted above the culture group, so all
+the culture groups know where they are coming from).
+
+The same is true for cultures and streams. One stream is dominant,
+in our example the martian one.
+Every stream then has an associated world, determined by cultural output.
+
+If a stream is big enough relative to its culture and culture group,
+it may split given, that it has two reasonably separated or populated worlds.
+So either they are at different ends of the galaxy and can not communicate
+with each other or they have a very high cultural output.
+In that case the local culture starts accumulating until a new stream is born.
+The tenets of this stream should be determined by the attributes of this world,
+so a garden world giving garden world tenets like "beautiful architecture"
+or "one with nature" while an industrial world gives "Endless slums"
+or "industrial nightmares".
+
+I implicitly mentioned here that all planets not leading a stream do resist
+the influence of this stream with local culture depending on population
+and communication infrastructure.
+This usually just makes stuff slightly problematic like decreasing efficiency
+of taxation or something like that (just because the guys on that mining world
+do play different jazz does not mean the want to be independent, that comes
+if everything is different).
+This also punishes players for expanding since they
+either have to deal with a multicultural empire and all the administrative
+and internal diplomatic/political problems
+or build a lot of communication infrastructure on all their planets to combat
+this.
+
+I also should think of a way for the player to at least influence the streams
+to facilitate merges or generate advantages for the player like a industrial
+and a warrior stream.
+
+An ambitious player might even engineer specialized cultures within their
+empire.
+This could give a good feature for long term optimization,
+since cultural shifts should be slow.
