@@ -15,6 +15,6 @@ Particles = ReadParticles.Read("./particles/")
 Concepts = ReadConcepts.Read("./concepts/")
 Topics = ReadTopics.Read("./topics/")
 Uncontained = Connect.connect(Topics, Concepts, Particles, Items, Notes)
-CreateHtmlNotes.CreateNotes(
-	"./html", Items, Notes, Particles, Concepts, Topics, Uncontained
+CreateHtmlNotes.HtmlNotes("./html").CreateNotes(
+	Items, Notes, Particles, Concepts, Topics, Uncontained
 )
