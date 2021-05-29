@@ -25,6 +25,7 @@ class main:
 			self.Items, self.Notes, self.Particles, self.Concepts, self.Topics, 
 			self.Uncontained
 		)
+		print("Wrote html files!")
 	def addUi(self):
 		from python import Ui
 		Ui.run(self.createHtml)
