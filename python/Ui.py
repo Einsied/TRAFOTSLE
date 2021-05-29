@@ -1,7 +1,7 @@
 import tkinter
 from python.Gui import Main
 
-def run(createHtmlHandle):
+def run(main):
 	root = tkinter.Tk()
-	app = Main.Application(root, createHtmlHandle)
+	app = Main.Application(root, main)
 	app.mainloop()

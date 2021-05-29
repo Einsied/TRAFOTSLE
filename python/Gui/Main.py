@@ -1,16 +1,19 @@
 import tkinter
+import python.Gui.writeParticle
 
 class Application(tkinter.Frame):
-	def __init__(self, master, createHtmlHandle):
+	def __init__(self, master, main):
 		super().__init__(master)
 		self.master = master
-		self.createHtml = createHtmlHandle
+		self.main = main 
+		self.writeWidget = python.Gui.writeParticle.writeWidget(self)
+		self.writeWidget.pack(side="right")
 		self.pack()
 		self.create_widgets()
 
 	def create_widgets(self):
 		self.createHtml = tkinter.Button(self, text="Create Html",
-			command=self.createHtml
+			command=self.main.createHtml
 		)
 		self.createHtml.pack(side="top")
 
@@ -18,6 +21,3 @@ class Application(tkinter.Frame):
 			command=self.master.destroy
 		)
 		self.quit.pack(side="bottom")
-
-	def say_hi(self):
-		print("Hi")

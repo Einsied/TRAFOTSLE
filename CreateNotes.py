@@ -28,7 +28,7 @@ class main:
 		print("Wrote html files!")
 	def addUi(self):
 		from python import Ui
-		Ui.run(self.createHtml)
+		Ui.run(self)
 
 sysargv = sys.argv[1:]
 html = "-html"
@@ -40,5 +40,5 @@ for arg in sysargv:
 Main = main()
 if html in sysargv:
 	Main.createHtml()
-if not headless in arg:
+if not headless in sysargv:
 	Main.addUi()
