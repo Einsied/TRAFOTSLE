@@ -1,4 +1,5 @@
 import os
+import sys
 from python import CreateImageIndex
 from python import ReadParticles
 from python import ReadConcepts
@@ -24,6 +25,19 @@ class main:
 			self.Items, self.Notes, self.Particles, self.Concepts, self.Topics, 
 			self.Uncontained
 		)
+	def addUi(self):
+		from python import Ui
+		Ui.run(self.createHtml)
 
+sysargv = sys.argv[1:]
+html = "-html"
+headless = "-headless"
+commands = [html, headless]
+for arg in sysargv:
+	if arg not in commands:
+		print("argument \"{command:}\" unknown".format(command = arg))
 Main = main()
-Main.createHtml()
+if html in sysargv:
+	Main.createHtml()
+if not headless in arg:
+	Main.addUi()

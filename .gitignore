@@ -10,3 +10,5 @@
 **/python/ReadTopics.pyc
 **/python/CreateHtmlNotes.pyc
 **/python/Connect.pyc
+**/python/Gui/__init__.py
+**/python/Gui/__pycache__/
