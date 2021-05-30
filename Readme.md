@@ -23,7 +23,7 @@ because it describes what should be possible.
 
 ## Naming conventions
 
-I [mage] stands for physical documents/source notes
+I [tem] stands for physical documents/source notes
 N [ote] for digital documents/source notes
 P [article] stands for particles
 C [oncept] stand for concept
