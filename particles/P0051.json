@@ -1,0 +1,20 @@
+{
+	"Id": "P0051",
+	"Content": [
+		"Given the fact, that ship components or weapons are improved",
+		"by iterativ rng modifications of their stats,",
+		"the player should gain some tools of control.",
+		"To this end acceptance and rejection conditions should be availabel",
+		"that depend on the last accepted iteration and fixed values",
+		"or a reference model (that provides the fixed values).",
+		"For example an acceptance condition could be:",
+		"((speedNew > SpeedOld",
+		"and energyConsumptionNew <= EnergyConsumptionOld)",
+		"or (speedNew > 1.2 SpeedOld",
+		"and energyConsumptionNew <= 1.1 * EnergyConsumptionOld))",
+		"permitting some fine tuning.",
+		"Reasonable default values should be choosen so the players",
+		"do not have to optimize it if they do not desire to optimize it."
+	],
+	"SourceId": "none"
+}
