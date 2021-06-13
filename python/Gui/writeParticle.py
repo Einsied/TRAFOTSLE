@@ -10,6 +10,7 @@ class writeWidget(tkinter.Frame):
 		self.master = master
 		self.source = analog
 		self.SourceId = "none"
+		self.creatingNew = False
 		self.createMetaFrame()
 		self.textField = tkinter.Text(self, width = 60, height = 5,
 			wrap=tkinter.WORD
@@ -19,6 +20,7 @@ class writeWidget(tkinter.Frame):
 			command=self.saveParticle
 		)
 		self.saveButton.pack(side="bottom")
+		self.loadParticle()
 	def createMetaFrame(self):
 		def particleSelection():
 			particleFrontLabel = tkinter.Label(
@@ -43,6 +45,10 @@ class writeWidget(tkinter.Frame):
 				text="Load", command=self.loadParticle, width = 8
 			)
 			self.loadButton.grid(row = 0, column = 3)
+			self.newButton = tkinter.Button(self.metaFrame, 
+				text="New", command=self.createNewParticle, width = 8
+			)
+			self.newButton.grid(row = 0, column = 4)
 		def sourceSelection():
 			self.sourceFrontLabel = tkinter.Label(
 				self.metaFrame, text = "Source: X"
@@ -71,11 +77,13 @@ class writeWidget(tkinter.Frame):
 		sourceSelection()
 		self.metaFrame.pack(side="top")
 	def loadParticle(self):
-		curIndex = self.particleSpinbox.get()
+		curIndex = "{:04d}".format(int(self.particleSpinbox.get()))
 		self.textField.delete("1.0", tkinter.END)
 		self.textField.insert(tkinter.END,
 			self.master.main.Particles["P" + curIndex]["Content"]
 		)
+		self.particleSpinbox.delete(0, "end")
+		self.particleSpinbox.insert(0, curIndex)
 		newSourceId = self.master.main.Particles["P" + curIndex]["SourceId"]
 		if newSourceId != None:
 			source = analog
@@ -96,23 +104,56 @@ class writeWidget(tkinter.Frame):
 			if self.SourceId != "none":
 				self.linkSource()
 				self.updateSource()
+	def createNewParticle(self):
+		if (not self.creatingNew):
+			self.newButton["text"] = "Abort"
+			self.textField.delete("1.0", tkinter.END)
+			self.particleSpinbox.to = len(self.master.main.Particles) + 1 
+			self.particleSpinbox.delete(0, "end")
+			self.particleSpinbox.insert(0, "{:04d}".format(
+				len(self.master.main.Particles) + 1
+			))
+			self.SourceId = "" 
+			# Link soruce checks if the field is "none" if not it unlinks
+			self.linkSource()
+			# Make sure we can not load into nonsense
+			self.loadButton["state"] = "disabled"
+		else:
+			self.newButton["text"] = "New"
+			self.particleSpinbox.to = len(self.master.main.Particles)
+			# Load the last particle
+			self.particleSpinbox.delete(0, "end")
+			self.particleSpinbox.insert(0, "{:04d}".format(
+				len(self.master.main.Particles)
+			))
+			self.loadParticle()
+			self.loadButton["state"] = "normal"
+		self.creatingNew = not self.creatingNew 
 	def switchSource(self):
+		# Switch between states
+		if self.source == analog:
+			self.source += 1
+		else:
+			self.source = analog 
+		self.setSource()
+		self.updateSource()
+	def setSource(self):
+		activeArray = []
 		if self.source == analog:
 			activeArray = self.master.main.Notes
 			self.sourceFrontLabel["text"] = "Source: N"
 			self.sourceSwitchButton["text"] = "Switch to Items"
-			self.source += 1
-		else:
+		elif self.source == digital:
 			activeArray = self.master.main.Items
 			self.sourceFrontLabel["text"] = "Source: I"
 			self.sourceSwitchButton["text"] = "Switch to Notes"
-			self.source = analog
+		else:
+			print("Source-type unknown")
 		self.sourceSpinbox["to"] = len(activeArray)
 		self.sourceSpinbox.delete(0, "end")
 		self.sourceSpinbox.insert(0, "{:03d}".format(
 			len(activeArray)
 		))
-		self.updateSource()
 	def linkSource(self):
 		if self.SourceId == "none":
 			self.SourceId = ""
@@ -123,13 +164,36 @@ class writeWidget(tkinter.Frame):
 			self.linkButton["text"] = "not linked"
 	def updateSource(self):
 		if self.SourceId != "none":
-			curIndex = self.sourceSpinbox.get()
+			curIndex = "{:03d}".format(int(self.sourceSpinbox.get()))
 			if self.source == analog:
 				self.SourceId = "N" + curIndex
 			elif self.source == digital:
 				self.SourceId = "I" + curIndex
+			self.sourceSpinbox.delete(0, "end")
+			self.sourceSpinbox.insert(0, curIndex)
 	def saveParticle(self):
-		print(self.textField.get("1.0", tkinter.END))
-		print(self.SourceId)
-		print()
+		SourceId = self.SourceId
+		Id = "P{:04d}".format(int(self.particleSpinbox.get()))
+		RawContent = self.textField.get("1.0", tkinter.END).split(" ")
+		Content = '\t\t"'
+		lineLength = 0
+		for i in range(0, len(RawContent), 1):
+			word = RawContent[i]
+			lineLength += len(word) + 1
+			spaceRequired = True
+			if lineLength >= 80 - 8: # 8 stand fot to tabs
+				Content += '",\n\t\t"'
+				lineLength = len(word)
+			Content += word + " "
+		Content += '"'
+		Content = Content.replace(' "', '"')
+		Content = Content.replace('\n"', '"')
+		json = '{{\n'
+		json += '\t"Id": "{Id:}",\n'
+		json += '\t"Content": [\n' 
+		json += '{Content:}\n' 
+		json += '\t],\n'
+		json += '\t"SourceId": "{SourceId:}"\n'
+		json += '}}'
+		print(json.format(Id = Id, Content = Content, SourceId = SourceId))
 		print("Implementation Pending")
