@@ -108,7 +108,7 @@ class writeWidget(tkinter.Frame):
 		if (not self.creatingNew):
 			self.newButton["text"] = "Abort"
 			self.textField.delete("1.0", tkinter.END)
-			self.particleSpinbox.to = len(self.master.main.Particles) + 1 
+			self.particleSpinbox["to"] = len(self.master.main.Particles) + 1 
 			self.particleSpinbox.delete(0, "end")
 			self.particleSpinbox.insert(0, "{:04d}".format(
 				len(self.master.main.Particles) + 1
@@ -174,11 +174,12 @@ class writeWidget(tkinter.Frame):
 	def saveParticle(self):
 		SourceId = self.SourceId
 		Id = "P{:04d}".format(int(self.particleSpinbox.get()))
-		RawContent = self.textField.get("1.0", tkinter.END).split(" ")
+		RawContent = self.textField.get("1.0", tkinter.END)
+		RawContentSplit = RawContent.split(" ")
 		Content = '\t\t"'
 		lineLength = 0
-		for i in range(0, len(RawContent), 1):
-			word = RawContent[i]
+		for i in range(0, len(RawContentSplit), 1):
+			word = RawContentSplit[i]
 			lineLength += len(word) + 1
 			spaceRequired = True
 			if lineLength >= 80 - 8: # 8 stand fot to tabs
@@ -195,5 +196,15 @@ class writeWidget(tkinter.Frame):
 		json += '\t],\n'
 		json += '\t"SourceId": "{SourceId:}"\n'
 		json += '}}'
-		print(json.format(Id = Id, Content = Content, SourceId = SourceId))
-		print("Implementation Pending")
+		self.master.main.Particles[Id] = {
+			"Content" : RawContent,
+			"SourceId" : SourceId if SourceId != "none" else None,
+			"Concepts" : [],
+			"Topics" : []
+		}
+		self.particleSpinbox["to"] = len(self.master.main.Particles) 
+		with open(self.master.main.particleFolder + Id + ".json", "w") as jsonFile:
+			jsonFile.write(json.format(Id = Id, Content = Content, SourceId = SourceId))
+			print("Saved: {:}".format(Id))
+		if (self.creatingNew):
+			self.createNewParticle()

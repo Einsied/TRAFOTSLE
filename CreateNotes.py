@@ -11,10 +11,11 @@ from python import CreateHtmlNotes
 
 class main:
 	def __init__(self):
+		self.particleFolder = "./particles/"
 		self.jsonFileName = CreateImageIndex.CreateIndex("./analog_notes/")
 		self.Items = ReadAnalogItems.Read("./analog_notes/NewIndex.json", "./analog_notes/OldIndex.json", self.jsonFileName)
 		self.Notes = ReadDigitalNotes.Read("./digital_notes/Index.json")
-		self.Particles = ReadParticles.Read("./particles/")
+		self.Particles = ReadParticles.Read(self.particleFolder)
 		self.Concepts = ReadConcepts.Read("./concepts/")
 		self.Topics = ReadTopics.Read("./topics/")
 		self.Uncontained = Connect.connect(
