@@ -1,0 +1,19 @@
+{
+	"Id": "P0058",
+	"Content": [
+		"Since multiplayer parties may take a long time, players should be",
+		"permitted to participate only for a certain number of turns. So they",
+		"register on a server and get a account. Then they decide how long they",
+		"wanna play (in turns/ real time, since MMO-Servers need turn limits).",
+		"Now the get a playable entity assigned (they may filter or even choose",
+		"if possible). This entity has a score accumulated over the entirety of",
+		"the game. After the players tenure ends they get the point difference",
+		"added to their account. The result has to be scaled (points/turn) by",
+		"the duration of their tenure, to allow for comparisons. Since there",
+		"will be ticking objectives that would only be evaluated at the end of",
+		"the game (like protecting a certain species) this objectives contribute",
+		"the point difference to the score (which limits means all of this",
+		"objectives have to be ticking constantly)."
+	],
+	"SourceId": "none"
+}
