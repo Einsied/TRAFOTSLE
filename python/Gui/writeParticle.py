@@ -177,7 +177,10 @@ class writeWidget(tkinter.Frame):
 		Id = "P{:04d}".format(int(self.particleSpinbox.get()))
 		RawContent = self.textField.get("1.0", tkinter.END)
 		RawContent = RawContent.replace('"', "''")
-		RawContent = RawContent.replace("\n", "")
+		RawContent = RawContent.replace("\n", " ")
+		RawContentSplit = RawContent.split(" ")
+		Content ='\t\t"'
+		lineLength = 0
 		for i in range(0, len(RawContentSplit), 1):
 			word = RawContentSplit[i]
 			lineLength += len(word) + 1
@@ -188,7 +191,7 @@ class writeWidget(tkinter.Frame):
 			Content += word + " "
 		Content += '"'
 		Content = Content.replace(' "', '"')
-		Content = Content.replace('\n"', " ")
+		Content = Content.replace('\n"', '"')
 		json = '{{\n'
 		json += '\t"Id": "{Id:}",\n'
 		json += '\t"Content": [\n' 
