@@ -327,7 +327,7 @@ class HtmlNotes:
 				if Particle["SourceId"][0] == "I":
 					Folder = self.ItemFolder
 				if Particle["SourceId"][0] == "N":
-					Folder = NotesFolder
+					Folder = self.NotesFolder
 				htmlStr += "\n" + indentedNewLine(
 					"<a href=\"../../{Path:}\">".format(
 						Path = Folder + "/" + Particle["SourceId"] + ".html"
@@ -515,7 +515,7 @@ class HtmlNotes:
 					htmlIndentation += 1
 					htmlStr += "\n" + indentedNewLine(
 						"<a href=\"../../{particleFile:}\">".format(
-							particleFile = ParticleFolder + "/" + particle + ".html"
+							particleFile = self.ParticleFolder + "/" + particle + ".html"
 						), htmlIndentation
 					)
 					htmlIndentation += 1
@@ -575,7 +575,7 @@ class HtmlNotes:
 				for particle in sorted(Notes[Id]["Particles"]):
 					htmlStr += "\n" + indentedNewLine(
 						"<a href=\"../../{particle:}.html\">".format(
-							particle = ParticleFolder + "/" + particle
+							particle = self.ParticleFolder + "/" + particle
 						), 
 						htmlIndentation
 					)
