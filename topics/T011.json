@@ -2,7 +2,11 @@
 	"Id": "T011",
 	"Name": "Campaign/Story",
 	"Particles": [
-		"P0045"
+		"P0045",
+		"P0066",
+		"P0067",
+		"P0068",
+		"P0069"
 	],
 	"Concepts": [
 	]
