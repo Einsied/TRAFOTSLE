@@ -1,0 +1,13 @@
+{
+	"Id": "P0065",
+	"Content": [
+		"Military pressure is created by fleets (may be scaled if they anchored",
+		"for a certain time) and flows troughout the systems. Within this",
+		"systems in counters danger and therby pacifies the population/makes",
+		"them less weary/more loyal/ happy. It also signals military build up,",
+		"since it should trickle into foreign systems. (Military pressure should",
+		"be handeled on the highest possible level to avoid memory cluttering",
+		"and make it easier for the AI to distribute resources.)"
+	],
+	"SourceId": "I013"
+}
