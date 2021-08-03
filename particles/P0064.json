@@ -4,8 +4,7 @@
 		"Military pressure can bot be attached to the system/map, since this",
 		"way one would be threatened by foreign wars. So instead a secondary",
 		"measure named Dager is introduced. It is created by foreign ships,",
-		"destruction of ships and piracy.
-It simulates the saftey-need if a",
+		"destruction of ships and piracy. It simulates the saftey-need if a",
 		"planets population by increasing its need for patrol ships. It also",
 		"points out dangerous areas to the AI. It is always visible to everyone,",
 		"so it is a global value saved on the map structure."
