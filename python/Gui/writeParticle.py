@@ -3,6 +3,7 @@ import tkinter
 #Source Types
 analog = 0
 digital = 1
+textFieldHeight = 10
 
 class writeWidget(tkinter.Frame):
 	def __init__(self, master):
@@ -12,8 +13,8 @@ class writeWidget(tkinter.Frame):
 		self.SourceId = "none"
 		self.creatingNew = False
 		self.createMetaFrame()
-		self.textField = tkinter.Text(self, width = 60, height = 5,
-			wrap=tkinter.WORD
+		self.textField = tkinter.Text(self, width = 60,
+			height = textFieldHeight, wrap=tkinter.WORD
 		)
 		self.textField.pack()
 		self.saveButton = tkinter.Button(self, text="Save Particle",
