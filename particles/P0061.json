@@ -1,0 +1,8 @@
+{
+	"Id": "P0061",
+	"Content": [
+		"The AI should choose strategies, turning it into some kind of state",
+		"machine, with an explorative state an colonization state."
+	],
+	"SourceId": "I012"
+}

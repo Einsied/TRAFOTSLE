@@ -1,0 +1,9 @@
+{
+	"Id": "P0062",
+	"Content": [
+		"The Ai should set itself goals it tries to achieve. Like maintaining a",
+		"certain numer of scouts relative to unexplored reachable neighbours or",
+		"valuable neighbours anc colonies."
+	],
+	"SourceId": "I012"
+}

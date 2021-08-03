@@ -1,0 +1,9 @@
+{
+	"Id": "P0060",
+	"Content": [
+		"Combining movment and attacks into the same action, allows for the",
+		"simulation of things like recoil or fire and advance actions, with",
+		"corresponding mali/boni."
+	],
+	"SourceId": "I011"
+}
