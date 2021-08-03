@@ -1,0 +1,8 @@
+{
+	"Id": "P0071",
+	"Content": [
+		"A simple command line interface can be build with ncurses. Characters",
+		"can be used to generate a hex-grid if necessary. "
+	],
+	"SourceId": "N002"
+}
