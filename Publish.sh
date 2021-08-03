@@ -1,5 +1,5 @@
 git push
-# publish has to ne defined in .ssh/config
+# publish has to be defined in .ssh/config
 ssh publish <<-'ENDSSH'
 	./Publish.sh
 ENDSSH
