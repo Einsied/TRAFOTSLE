@@ -1,0 +1,8 @@
+{
+	"Id": "P0077",
+	"Content": [
+		"Conflicts should merge if the participants show a certain overlap",
+		"(e.g. more than 80% or so). "
+	],
+	"SourceId": "none"
+}
