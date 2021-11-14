@@ -1,0 +1,10 @@
+{
+	"Id": "P0080",
+	"Content": [
+		"Ai plans should contain subplans. So a system has a system wide plan",
+		"and the colonies have their own individual plans. Upwards the system",
+		"might be part of a sector plan. The hierarchical superior entity sends",
+		"the plans as demands to its inferiors. "
+	],
+	"SourceId": "I015"
+}

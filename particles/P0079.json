@@ -1,0 +1,10 @@
+{
+	"Id": "P0079",
+	"Content": [
+		"AI Decisions should be based on strategic plans, that determine",
+		"ressource contribution weights. This are evaluated against the current",
+		"production yiedling the next necessary action. (So the next action",
+		"attempts to get closer to the demanded target of the plan). "
+	],
+	"SourceId": "I015"
+}

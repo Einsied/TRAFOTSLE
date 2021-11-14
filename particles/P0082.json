@@ -1,0 +1,9 @@
+{
+	"Id": "P0082",
+	"Content": [
+		"Ai options should be picked at random, to permit mistakes. The",
+		"randomness is subject to a factor different for different Ais and",
+		"possible part of the difficulty. "
+	],
+	"SourceId": "I015"
+}
