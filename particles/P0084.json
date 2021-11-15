@@ -1,0 +1,10 @@
+{
+	"Id": "P0084",
+	"Content": [
+		"Research should be grouped into an interconnected graph. Containing",
+		"areas called research fields. This fields are collections of nodes.",
+		"Progress in one node means progress in all connected nodes and all",
+		"nodes in the field. Fields may overlap. "
+	],
+	"SourceId": "I016"
+}

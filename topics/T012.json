@@ -2,7 +2,12 @@
 	"Id": "T011",
 	"Name": "Technology/research",
 	"Particles": [
-		"P0051"
+		"P0051",
+		"P0084",
+		"P0085",
+		"P0086",
+		"P0087",
+		"P0088"
 	],
 	"Concepts": [
 	]

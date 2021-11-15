@@ -1,0 +1,10 @@
+{
+	"Id": "P0085",
+	"Content": [
+		"The researchgraph should have random links, with random weights.",
+		"Keeping nodes hidden, until certain criteria are fullfilled (e.g.",
+		"progress in other nodes) may give the player a sense of discovery and",
+		"provided strategic uncertainty. "
+	],
+	"SourceId": "I016"
+}

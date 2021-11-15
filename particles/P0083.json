@@ -1,0 +1,9 @@
+{
+	"Id": "P0083",
+	"Content": [
+		"For modding purposes it may be an option to expose the data structure",
+		"between different processing phases to custom scripts. This would",
+		"permit the modders to examine and process it as they see fit. "
+	],
+	"SourceId": "none"
+}

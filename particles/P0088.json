@@ -1,0 +1,10 @@
+{
+	"Id": "P0088",
+	"Content": [
+		"The Research graph should be disjunct. This requires entry conditions",
+		"in all necessary sub graphs. This may be random events, diplomatic",
+		"contacts, espinoage or other triggers (like the amount of a certain",
+		"building).  "
+	],
+	"SourceId": "I016"
+}

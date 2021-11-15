@@ -1,0 +1,9 @@
+{
+	"Id": "P0087",
+	"Content": [
+		"During game setup some playable entities may pick certain tech nodes,",
+		"that they have direct access to. (E.g. PSI-tech). Togehter with bonuses",
+		"this makes reserach cooperation more interesting. "
+	],
+	"SourceId": "I016"
+}
