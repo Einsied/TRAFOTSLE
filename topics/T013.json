@@ -2,6 +2,7 @@
 	"Id": "T013",
 	"Name": "Luxury ressources",
 	"Particles": [
+		"P0059",
 		"P0089",
 		"P0090",
 		"P0091",

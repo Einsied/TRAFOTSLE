@@ -9,13 +9,13 @@
 		"depend on the good. Maybe number of production sites multiplied by a",
 		"factor second factor(like robot tech for androids, culture output for",
 		"operas etc.). This competition should also increase the value of the",
-		"products, so the boni they provide.\nThe revenue for the producer",
-		"should depend on the number of consumers and the ranking of the",
-		"product. Or the specific number of consumers. To increase the price",
-		"competition the importers could compete on a ranking-list for the",
-		"highest Bonus. So the importer leading the list gets 100% of the bonus,",
-		"the 2nd place 90%, the 3rd 80% and so on down to X% for everybody below",
-		"the Nth place."
+		"products, so the boni they provide. The revenue for the producer should",
+		"depend on the number of consumers and the ranking of the product. Or",
+		"the specific number of consumers. To increase the price competition the",
+		"importers could compete on a ranking-list for the highest Bonus. So the",
+		"importer leading the list gets 100% of the bonus, the 2nd place 90%,",
+		"the 3rd 80% and so on down to X% for everybody below the Nth place.",
+		"(Idea may be repalced by later Interpretation) "
 	],
 	"SourceId": "I010"
 }
