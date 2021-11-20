@@ -1,0 +1,17 @@
+{
+	"Id": "P0091",
+	"Content": [
+		"Luxury ressource revenue based on slots should use weights. Example:",
+		"Paintings: A (invested 200), B (invested 180), C (invested 40), D",
+		"(invested 10), E(invested 1); The gains from all paintings sold are",
+		"divided by weights: A(5 since 1st place/slot) B(3 since 2nd slot) C (2",
+		"since 3rd slot), D & E(1 since unslotted). If the value and therefore",
+		"indirectly revenue is tied to the investment options present themself.",
+		"Guaranteeing fractions of income to the top slots, would keep the",
+		"slot-holders interested in investing. A cut-off value would stop",
+		"opportunists. Basing the weights on total investment and scalibg the",
+		"top 3 investors by a facor (2x for 1st; 1.5x for 2nd; 1,2x for third)",
+		"could be a really nice option. "
+	],
+	"SourceId": "I010"
+}

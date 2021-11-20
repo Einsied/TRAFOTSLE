@@ -1,0 +1,15 @@
+{
+	"Id": "T013",
+	"Name": "Luxury ressources",
+	"Particles": [
+		"P0089",
+		"P0090",
+		"P0091",
+		"P0092",
+		"P0093",
+		"P0094",
+		"P0095"
+	],
+	"Concepts": [
+	]
+}

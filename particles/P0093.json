@@ -1,0 +1,14 @@
+{
+	"Id": "P0093",
+	"Content": [
+		"The bonuses of a luxury resource should be determinde by the total",
+		"invested points and access to slots. For the base factor using the",
+		"value function (basically an modified logistical function)dampende by a",
+		"ratio between consumers and total investement, since this means rarity.",
+		"The second factor is the availabel slot. It is zero if the ressource",
+		"cannot be accessed within the market and 1 if there is no trade deal in",
+		"place with a slot holder. With a trade deal in place the bonus of the",
+		"highest slot applies.   "
+	],
+	"SourceId": "I010"
+}

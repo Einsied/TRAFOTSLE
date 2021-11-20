@@ -1,0 +1,14 @@
+{
+	"Id": "P0092",
+	"Content": [
+		"The value of a luxury ressources should be a logistical function f(x),",
+		"where x is a logarithm (since the logistical functions domain is",
+		"negative infinity to positive infinity) of a ratio between consumers",
+		"and total investement in that category. This functions minimal has to",
+		"be greater than zero, so there is always a profit to be made,",
+		"especially at low investment. (Where the ressource is very rare.) This",
+		"offset/function minimal should be differen for different luxury",
+		"ressources, so novels can be half as valuable as exotic dancers.   "
+	],
+	"SourceId": "I010"
+}
