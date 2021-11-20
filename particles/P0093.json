@@ -3,15 +3,15 @@
 	"Content": [
 		"The bonuses of a luxury resource should be determinde by the total",
 		"invested points and access to slots. For the base factor using the",
-		"value function (basically an modified logistical function) scaled by it",
-		"self, since this correlates to rarity and avoids abuse. The second",
-		"factor is the availabel slot. It is zero if the ressource cannot be",
-		"accessed within the market and 1 if there is no trade deal in place",
-		"with a slot holder. With a trade deal in place the bonus of the highest",
-		"slot applies. This bonus should be big enough to make trade more",
-		"reasonable, than just barley suppling a captured customer base (the",
-		"exploit for this system) and therefore maybe dependent on the upper",
-		"linit of the logistical function. "
+		"value function (basically an modified logistical function) scaled by a",
+		"Hyperbola(with in an output limits) or the gaussian of the logarithm",
+		"used in the logistical function, since this correlates to rarity vs",
+		"supply and avoids abuse. The second factor is the availabel slot. It is",
+		"zero if the ressource cannot be accessed within the market and 1 if",
+		"there is no trade deal in place with a slot holder. With a trade deal",
+		"in place the bonus of the highest slot applies. This bonus should be",
+		"big enough to make trade more reasonable, than just exactly suppling a",
+		"captured customer base (the exploit for this system). "
 	],
 	"SourceId": "I010"
 }
