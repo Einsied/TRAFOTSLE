@@ -2,7 +2,8 @@
 	"Id":"T003",
 	"Name":"Battle Module",
 	"Particles": [
-		"P0004"
+		"P0004",
+		"P0107"
 	],
 	"Concepts": [
 	]

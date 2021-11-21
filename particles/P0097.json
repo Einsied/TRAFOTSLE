@@ -1,0 +1,9 @@
+{
+	"Id": "P0097",
+	"Content": [
+		"Line connections (be they named hyperspace-routes or warplines) should",
+		"not lead to all systems. This makes line-creating tech or jump tech",
+		"necessary. "
+	],
+	"SourceId": "I017"
+}

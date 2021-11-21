@@ -1,0 +1,16 @@
+{
+	"Id": "P0105",
+	"Content": [
+		"There should be jump trave technologies. This may be instantaneous",
+		"after a spin up period (classic jump drive) or take some time (e.g.",
+		"none faster tan light travel). The jump capability (if it is even",
+		"possible) and cost (in terms of accuracy, destruction risk, spin-up",
+		"time, travel-time and energy/supply/ressource consumption) could depend",
+		"on distance, close objects or other factors (e.g. warp entity",
+		"displeasure). This factors should be different for different  jump",
+		"methods (so we can have warp-jumps, hyperspace-travel like in classic",
+		"space opera (just sailing but faster) and just infamous go everywhere",
+		"in a fixed time (infite inprobabylity drive). "
+	],
+	"SourceId": "I017"
+}

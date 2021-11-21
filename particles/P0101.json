@@ -1,0 +1,18 @@
+{
+	"Id": "P0101",
+	"Content": [
+		"Ther could be castable line connections with one fixed point. E.g. a",
+		"wormhole casting station next to a black-hole. To balance this they",
+		"would require cooldwons for the cast and a fixed opening time. (If at",
+		"the start of the casting the owner has to specify how long the",
+		"connection should hold, it becomes an decision. Also a counter attack",
+		"is possible if the target detects the cast and prepares a counter",
+		"offensive.) The cooldowns ensures, that the user does not queue up",
+		"connections, and stops the casting if he does no longer desire the",
+		"connection. The number of parallel castings could be governed by a",
+		"fixed number, an decrease in cast-success chance, an increase in",
+		"cast-duration-uncertainty or an increase of cast duration for each",
+		"following cast. All dependet on tech of course. "
+	],
+	"SourceId": "I017"
+}

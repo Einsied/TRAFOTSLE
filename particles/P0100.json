@@ -1,0 +1,15 @@
+{
+	"Id": "P0100",
+	"Content": [
+		"There should be realignable artifical line connections (e.g.",
+		"stargates). This could be one-way (sender to receiver or point to",
+		"point) or two way. Disconnecting them should take time, so the",
+		"controller has to choose between leaving a attack vector open or",
+		"destroyng the receiver and therfore loosing an access point to an area.",
+		"(Blowing up a stargate should feel strategically viable and",
+		"significant. Just  switching it off every time an enemy fleet is near",
+		"feels cheap and not fun, blowing it up an loosing access for n turns",
+		"feels like a strategic decision and desperate defense move).   "
+	],
+	"SourceId": "I017"
+}

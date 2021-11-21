@@ -1,0 +1,8 @@
+{
+	"Id": "P0098",
+	"Content": [
+		"Travel-lines should have speed modifiers. So there are faster and",
+		"slower lines. This dynamically creates fast routes. "
+	],
+	"SourceId": "I017"
+}

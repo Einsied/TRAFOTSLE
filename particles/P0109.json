@@ -1,0 +1,17 @@
+{
+	"Id": "P0109",
+	"Content": [
+		"Ships should be capable of crashing onto a planet. Destroing",
+		"structures, the enviroment, spewing toxic fallout and disembarking the",
+		"surviving crew either as units or colonists if the planet is settles.",
+		"This allows for interesting lost ship/found crew scenarios. (Like the",
+		"startrek episode,in which they find a primitive tribe that originates",
+		"from a lost freighter. Or a planet being conquered by a bunch of",
+		"merchants, with laser pistols. Of course they may also be capable of",
+		"reestablishing contact promting a rescue mission or a more transfer of",
+		"the crash-colony into a proper colony). This may also happen to",
+		"merchant ships, which may or may not be directly tracked (Optimization",
+		"question about trading routes). "
+	],
+	"SourceId": "none"
+}
