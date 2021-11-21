@@ -1,0 +1,17 @@
+{
+	"Id": "P0110",
+	"Content": [
+		"Unit classifications could be derived by module specification points.",
+		"So cargo modules contribute cargo spec-points, rockets missile cruiser",
+		"spec-points. Meaning a  ship scoring high in cargo and missiles is a",
+		"''cargo/missile cruiser''. Weapons colud be classified by effect. (E.g.",
+		"if the damage peak is located at 3 times standard combat range it is a",
+		"long range weapon. If it does double damage against shields it may be",
+		"considered a shield breaker.) Ships could be evaluated in a similar",
+		"way: Fast ship => raider. Lot of armor => tank. Size gives something",
+		"like frigate or cruiser This could be useful for Ai and human to",
+		"understand what they are using or facing and fairly easy to implement.",
+		"Getting the scoring factors right could be a challenge however. "
+	],
+	"SourceId": "none"
+}
