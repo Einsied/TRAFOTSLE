@@ -5,7 +5,8 @@
 		"Masterblueprint and variants. Also blueprints may be based on each",
 		"other. So battelship B is based on battelship A. This allows crew to",
 		"transfer some of their experience and specialized factories to retool",
-		"faster.  "
+		"faster.  There could also be a standard/default variant, which is the",
+		"master-blueprint. "
 	],
 	"SourceId": "I019"
 }
