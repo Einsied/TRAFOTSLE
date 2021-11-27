@@ -1,0 +1,11 @@
+{
+	"Id": "P0122",
+	"Content": [
+		"Units should have movement tables for their modes. So every mode",
+		"availabel to the unit (on-ground, swimming, submerged, hovering,",
+		"airborne, low-orbit etc.) should have a movement table. To conserve",
+		"memory there would be a default movement cost and an entry for every",
+		"deviating terrain type. "
+	],
+	"SourceId": "I020"
+}

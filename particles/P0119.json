@@ -1,0 +1,8 @@
+{
+	"Id": "P0119",
+	"Content": [
+		"To save memory individual planets may refer to terrain tables. This",
+		"could allow me to store a planet in characters instead of short ints. "
+	],
+	"SourceId": "I020"
+}

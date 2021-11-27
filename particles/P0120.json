@@ -1,0 +1,8 @@
+{
+	"Id": "P0120",
+	"Content": [
+		"The units could be bound to the map by a ''lookup-tree'', so basically",
+		"a binary tree, The coordinates would form the sorting index. "
+	],
+	"SourceId": "I020"
+}
