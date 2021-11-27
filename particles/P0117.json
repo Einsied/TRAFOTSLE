@@ -1,0 +1,11 @@
+{
+	"Id": "P0117",
+	"Content": [
+		"Shipyards should get a speed or efficency bonus if they build the same",
+		"blueprint again. This bonus should not stack, just incentivizing low",
+		"key specialization of shipyards. (So they are not limited but things go",
+		"faster if a little specialization happens, this eases the player into",
+		"the mass production concept.) "
+	],
+	"SourceId": "I019"
+}

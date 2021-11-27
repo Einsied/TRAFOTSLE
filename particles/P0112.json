@@ -1,0 +1,15 @@
+{
+	"Id": "P0112",
+	"Content": [
+		"Production plants like shipyards or factories, should be able to",
+		"specialize on a certain blueprint, earning benefits. This",
+		"specialization may refer to the blueprint familiy (so only variants can",
+		"be produced) or a specific model (so only this specific blueprint may",
+		"be produced). This specialization takes time (and ressources) to",
+		"create, change or undo. This simulates changes to the tooling and",
+		"forces the player to make decisions regarding to specialization of",
+		"production plants. Leading to different production lines with more or",
+		"less outdated equipment. "
+	],
+	"SourceId": "I019"
+}
