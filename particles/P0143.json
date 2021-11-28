@@ -1,0 +1,13 @@
+{
+	"Id": "P0143",
+	"Content": [
+		"For modding purposes a simplified python API should be provided. This",
+		"API should not expose the inner workings of the game to much to avoid",
+		"encouraging piracy. Maybe it will be an extra ''client'' connecting to",
+		"a unique function set on the server. The game-client modding is simple",
+		"since i wish to make the client open-source and the interface public,",
+		"so people can use their own clients and write them in the language they",
+		"prefer. "
+	],
+	"SourceId": "none"
+}
