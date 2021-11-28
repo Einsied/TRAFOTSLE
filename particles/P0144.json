@@ -1,0 +1,12 @@
+{
+	"Id": "P0144",
+	"Content": [
+		"For the GUI I could implement a modifier to modifies the amount of",
+		"screen movement. So the players may choose between different amount of",
+		"it. (Some people may prefer a static apperarance like on a chess baord",
+		"others prefer flashy lights and animation severywhere to ''let the",
+		"gameworld come alive'' with such a modifier everybody can choose the",
+		"level that keeps them engaged without being distracted. "
+	],
+	"SourceId": "none"
+}
