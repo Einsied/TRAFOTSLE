@@ -1,0 +1,11 @@
+{
+	"Id": "P0147",
+	"Content": [
+		"It should be possible to start on a disunited planet. (This means that",
+		"the player controls only one continen, while the others are controlled",
+		"by civilizations with the same staring specie(s) and different around",
+		"the same level of size and technology. (The player should be the",
+		"strongest faction, unless they pick an addtional modifier.)  "
+	],
+	"SourceId": "none"
+}
