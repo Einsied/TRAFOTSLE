@@ -1,0 +1,11 @@
+{
+	"Id": "P0152",
+	"Content": [
+		"There should be small optional storylines, that are triggered under",
+		"certain conditions. Only one should be active, and origin or early",
+		"storylines should only occur once. Also the same storyline should not",
+		"appear twice. This maybe a feature only resticted to human players, to",
+		"boost or challenge them. "
+	],
+	"SourceId": "none"
+}
