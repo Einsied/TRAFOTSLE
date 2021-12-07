@@ -1,0 +1,11 @@
+{
+	"Id": "P0155",
+	"Content": [
+		"It should be possible to open stock exchanges. Entities would deliver",
+		"Resources to this exchanges and bid on them. The owner of the exchange",
+		"get's their money from transaction fees. (Every actor should be able to",
+		"place multiple bids. For to match ask and offer algorithms can be",
+		"researched.) "
+	],
+	"SourceId": "I024"
+}
