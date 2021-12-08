@@ -3,7 +3,12 @@
 	"Content": [
 		"Picking an ambition should lower the potential reward for it. So they",
 		"self balance over time (If expanding fleet gives to much points all",
-		"palyers will pick it until it gives a fair amount of points). "
+		"palyers will pick it until it gives a fair amount of points). This",
+		"could be achived by chaging weights, so every time an ambition is",
+		"picked it lowers its weight relative to others (or increases it and the",
+		"reward is inverse to the weight), this is necessary since there are",
+		"ambitions, that can not be weighted, because they are situation",
+		"sensitive, like conuqering a planet or so. "
 	],
 	"SourceId": "none"
 }
