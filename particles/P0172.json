@@ -1,0 +1,11 @@
+{
+	"Id": "P0172",
+	"Content": [
+		"Picking ambitions should soft-lock them. The soflock is a point loss",
+		"for unsloting them. This point penalty declines over time. The decline",
+		"should depend on the ambition, chickening out of conquering your",
+		"neighbour should not be as expensive than chickening out of conquering",
+		"the entire galaxy. This also encourages to set some long term goals. "
+	],
+	"SourceId": "I025"
+}
