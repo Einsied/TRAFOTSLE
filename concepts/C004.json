@@ -1,0 +1,28 @@
+{
+	"Id": "C004",
+	"Name": "Markets",
+	"Description":[
+		[
+			"Markets are the way the different organisations use to exchange",
+			"ressources."
+		]
+	],
+	"Particles": [
+		"P0190",
+		"P0191",
+		"P0192",
+		"P0193",
+		"P0194",
+		"P0195",
+		"P0196",
+		"P0197",
+		"P0198",
+		"P0199",
+		"P0200",
+		"P0201",
+		"P0202",
+		"P0203",
+		"P0204",
+		"P0204"
+	]
+}
