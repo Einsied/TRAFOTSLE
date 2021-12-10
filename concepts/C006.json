@@ -1,0 +1,17 @@
+{
+	"Id": "C006",
+	"Name": "Cultures",
+	"Description":[
+		[
+			"This describe the cultural habits of populations."
+		]
+	],
+	"Particles": [
+		"P0046,"
+		"P0054",
+		"P0055",
+		"P0056",
+		"P0057",
+		"P0111"
+	]
+}
