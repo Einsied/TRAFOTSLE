@@ -1,0 +1,30 @@
+{
+	"Id": "C005",
+	"Name": "Ambitions",
+	"Description":[
+		[
+			"Ambitions are goals that need to be fullfilled to gain points,",
+			"and win the game"
+		]
+	],
+	"Particles": [
+		"P0169",
+		"P0170",
+		"P0171",
+		"P0172",
+		"P0173",
+		"P0174",
+		"P0175",
+		"P0176",
+		"P0177",
+		"P0178",
+		"P0179",
+		"P0180",
+		"P0181",
+		"P0182",
+		"P0184",
+		"P0185",
+		"P0186",
+		"P0187"
+	]
+}
