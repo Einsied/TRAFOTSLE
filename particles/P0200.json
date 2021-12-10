@@ -1,0 +1,15 @@
+{
+	"Id": "P0200",
+	"Content": [
+		"Market networks will create traderoutes between the stations, the",
+		"length of this routes and the cargo ships (more specifi the cargo *",
+		"speed value of them) determine the througput. This routes can be raided",
+		"yielding ressources in a semi random distribution out of the markets",
+		"inventory. Semi random the relativ amount of looted goods corresponds",
+		"to the goods availabel on the market with a little random fluctuation.",
+		"Alternativley only one kind of good is looted per transport and the",
+		"kind of good is randomly drawn according to the ratios of the market.",
+		"Plundered goods are removed before the buyers get their stuff.  "
+	],
+	"SourceId": "I026"
+}

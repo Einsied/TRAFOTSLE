@@ -1,0 +1,13 @@
+{
+	"Id": "P0190",
+	"Content": [
+		"Markets for empires could simply be supply and demand driven. Having a",
+		"running average should soften spikes. The proce could also be influence",
+		"by a rarity factor given as the fraction between all gos on the market",
+		"and units of this specific good on the market. This would encourage the",
+		"formation of an equilibirum by arbitrage and automatically value the",
+		"goods. (This system is inferior to the stock exchange since it does not",
+		"reason about the ''real'' costs of the good only its availability.)  "
+	],
+	"SourceId": "I026"
+}

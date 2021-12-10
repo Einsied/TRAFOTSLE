@@ -1,0 +1,20 @@
+{
+	"Id": "P0195",
+	"Content": [
+		"Since markets are physical places participants would rent storage",
+		"space or set up storage stations next to the market.   So the merket",
+		"owner gets rent from all participants and the ''real'' exchange station",
+		"has substations with storage. All this stations have to be close and",
+		"form the exchange/markt. (Of course the stations could be replaced by",
+		"ships, so cargo transports may join the exchange temporary until they",
+		"sold their gods or permanent if the participant does not wish to build",
+		"a station. This also means the exchange could be a ship.) The stations",
+		"have to provide enough cargo haulage capacity (e.g. drones shuttles) to",
+		"unload their entire offer during a turn. They may combine their haulage",
+		"capacity. This will likley be a öimiting factor. If the exchange is on",
+		"a planet this becomes irrelevant since we assume there are infinite",
+		"ground vehicles on the planet, unless I decide infrastructure should",
+		"limit the possible bids. "
+	],
+	"SourceId": "none"
+}

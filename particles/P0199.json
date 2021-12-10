@@ -1,0 +1,22 @@
+{
+	"Id": "P0199",
+	"Content": [
+		"Market networks would not keep track of the real ressources instead",
+		"they would just have a virtual storage and supply troughput to",
+		"stations. This means ressources may travel instantaneously trough the",
+		"galaxy. To mitigate the distance magic the networks already have",
+		"througputlimit based on participating transports. The time magic could",
+		"be mitigated by adding inerita to ressource availability, so if a large",
+		"bunch of goods enters the network (increasing the availabel amount of",
+		"this goods in the network significantly9 they will be delayed. This",
+		"means in practice, that the buyable supply can only increase by a fixed",
+		"percentage. (This implies, that the buyable supply is different form",
+		"the promised supply and the promised supply is used for price",
+		"calculations.) (It is also necessary to have a safe increase of goods",
+		"to avoid a resouce supply being stuck at 0. This should not depend on",
+		"the total troughput, since otherwise the markets can be abused to",
+		"teleport rare ressources troughout the galaxy. A easier way would be to",
+		"make the good availabel to buy x turns after it was offered to it.) "
+	],
+	"SourceId": "I026"
+}

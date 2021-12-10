@@ -1,0 +1,12 @@
+{
+	"Id": "P0194",
+	"Content": [
+		"A market owner may withdraw goods from the market at will, this should",
+		"be tweaked to avoid exploits (like watering down the price by",
+		"delivering large quantities of a good to buy it, a simple solution is",
+		"to set the price for the next turn and the end of one turn, so other",
+		"market participants withdraw their offers from the market once the",
+		"price drops). "
+	],
+	"SourceId": "I026"
+}

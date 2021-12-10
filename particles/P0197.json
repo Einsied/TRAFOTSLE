@@ -1,0 +1,12 @@
+{
+	"Id": "P0197",
+	"Content": [
+		"It is possible for the demand or supply on the market to stagnate at",
+		"zero, because of low activity. This would lead to an infinite price",
+		"drop or rise. So price changes should depend on the total market",
+		"activity. This would keep prices at backwater markets with 2",
+		"participants that do not trade stable, while the big hubs may still see",
+		"price drops. "
+	],
+	"SourceId": "I026"
+}
