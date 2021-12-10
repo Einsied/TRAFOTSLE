@@ -2,11 +2,11 @@
 	"Id": "P0129",
 	"Content": [
 		"To avoid subculture cluttering only big populations will support",
-		"subculturetracking on pop basis. For samller populations there will be",
+		"subculturetracking on pop basis. For smaller populations there will be",
 		"a more abstract tracking. So only subcultures above a certain size are",
 		"tracked via poplink the rest is tracked in an external distribution,",
-		"The pculture of the ops linked to this external distribution are listed",
-		"as miscellaneous. "
+		"The subculture of the pops linked to this external distribution is",
+		"listed as miscellaneous. "
 	],
 	"SourceId": "I021"
 }

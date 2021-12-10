@@ -1,11 +1,11 @@
 {
 	"Id": "P0141",
 	"Content": [
-		"If ships and units are sellable it should also ne possible to order",
-		"ships. So a a builder organisation publishes the blueprint of a ship",
-		"and sets aside a dockyard that can produce it. The price could be the",
+		"If ships and units are sellable it should also be possible to order",
+		"ships. So a builder organisation publishes the blueprint of a ship and",
+		"sets aside a dockyard that can produce it. The price could be the",
 		"resoruces necessary for the build with a markup or a currency. The",
-		"customer organisation no buys this ship and pays the ressources either",
+		"customer organisation now buys this ship and pays the ressources either",
 		"up front or each turn until the ship is ready. Since there is a risk of",
 		"contract failure if the dockyard gets destroyed or something else, the",
 		"exakt way of payment should be configurable or smart. A builder",

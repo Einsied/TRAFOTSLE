@@ -2,7 +2,8 @@
 	"Id": "T015",
 	"Name": "Modding support",
 	"Particles": [
-		"P0083"
+		"P0083",
+		"P0143"
 	],
 	"Concepts": [
 	]
