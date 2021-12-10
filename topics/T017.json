@@ -1,0 +1,14 @@
+{
+	"Id": "T017",
+	"Name": "Waste managment",
+	"Particles": [
+		"P0157",
+		"P0158",
+		"P0159",
+		"P0160",
+		"P0162",
+		"P0165"
+	],
+	"Concepts": [
+	]
+}
