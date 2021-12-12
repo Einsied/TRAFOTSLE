@@ -1,0 +1,14 @@
+{
+	"Id": "P0207",
+	"Content": [
+		"Equipment and units should have different usability states on planets.",
+		"So on some planets a ship may fully functional on others it may only be",
+		"limited. Limited may mean it can not fly trough storms or so. This",
+		"implies that there are operational parameter with ranges for equipment",
+		"(so optimal range, acceptable range, limited range). For planes the",
+		"parameter may be the air density or the amount of dust, for ships the",
+		"temperature and salinity of the ocean (or the kind of ocean water vs.",
+		"methane). "
+	],
+	"SourceId": "none"
+}
