@@ -1,0 +1,11 @@
+{
+	"Id": "P0212",
+	"Content": [
+		"Scenarions may need to fix certain values in place while they run.",
+		"This should not be done in the C-Code, since it would add a lot of",
+		"complexity, instead it should be done in the modding interface. This",
+		"means that the modding interface should see at least the differences",
+		"between rounds to eliminate them. "
+	],
+	"SourceId": "none"
+}
