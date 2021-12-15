@@ -1,0 +1,10 @@
+{
+	"Id": "P0237",
+	"Content": [
+		"Since acceleration chages easily permit evasive manouvers they should",
+		"be expensive (they may increase the cost of all other actions) and",
+		"there should be targetable actions (so it has to be possible to fire",
+		"the laserlance at a target ship and not only at a target hex) "
+	],
+	"SourceId": "I028"
+}

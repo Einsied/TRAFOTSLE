@@ -1,0 +1,12 @@
+{
+	"Id": "P0232",
+	"Content": [
+		"Turns should be split into process turns. This are turns without",
+		"player input in which oder are executed. Assume we have a slow ship",
+		"moving 2 hexes druing its turn and a fast one moving 10 and we split a",
+		"turn into 10 process turns, then the slow ships moves 1 hex on turn 3",
+		"and on turn 7 (middle values between 0 5 and 10), the fast ship moves",
+		"every turn. This concept permits more fluid and interesting battle. "
+	],
+	"SourceId": "I028"
+}

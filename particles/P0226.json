@@ -1,0 +1,9 @@
+{
+	"Id": "P0226",
+	"Content": [
+		"Weapons should have a Damage type, like kinetic, energy, explosive",
+		"etc. (This corresponds to the damage channels mentioned somewhere",
+		"else.) "
+	],
+	"SourceId": "I028"
+}

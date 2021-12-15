@@ -1,0 +1,15 @@
+{
+	"Id": "P0233",
+	"Content": [
+		"Players may plan process turn using action points so they may decide",
+		"to fire on process turn 1 and accelerate on turn 2, this drains some",
+		"form of action points (probably a combination of energy (from the",
+		"reactor, that is also needed to keep the ship running)  and command",
+		"points (command points represent the number of orderes that can be",
+		"bellowed on the bridge and different subsystems consume them to be",
+		"activated); so the real action points are the command points energy is",
+		"jsut a fastly regenerating ressource like ammo, but will be the limit",
+		"for small ships). "
+	],
+	"SourceId": "I028"
+}

@@ -1,0 +1,12 @@
+{
+	"Id": "P0234",
+	"Content": [
+		"The battle module should be based on actions that work like skills in",
+		"typical games. So there is an accelerate action and fire gun action an",
+		"strengthen shield action etc. This limits the possible interactions of",
+		"the player and makes everything more uniform. (So an enigne just adds a",
+		"movement action the player may use once per turn. A Laser battery adds",
+		"a fire laser battery action the player may use 3 time per turn etc.) "
+	],
+	"SourceId": "none"
+}

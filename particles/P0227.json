@@ -1,0 +1,10 @@
+{
+	"Id": "P0227",
+	"Content": [
+		"Weapons should also have travel speeds like instant, 3hex/turn,",
+		"5hex/turn. (The speed shoudl fo course be given in km/s and then",
+		"rescaled for the map, since I do not know id the battle module will",
+		"uses hexes or something else, so the speed would be given in m/s).  "
+	],
+	"SourceId": "I028"
+}

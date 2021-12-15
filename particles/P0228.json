@@ -1,0 +1,10 @@
+{
+	"Id": "P0228",
+	"Content": [
+		"Weapons should have fire methods, like angel, line, guided, AOE, line",
+		"into AOE etc. (to be more specific they should have a damage pattern",
+		"that explains how the damage is distributed. Guided weapons would",
+		"travel as missiles before applieng their damage pattern.) "
+	],
+	"SourceId": "I028"
+}
