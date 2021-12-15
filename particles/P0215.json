@@ -1,0 +1,14 @@
+{
+	"Id": "P0215",
+	"Content": [
+		"The AI should communicate its actions to the player in the form of",
+		"flavour messages. This should prevent the Ai being perceived as random",
+		"by the player. (E.g. the Ai discovers that here target gets to strong",
+		"and disengages from an arms race. So it sends a message to the player",
+		"reading: ''Our prey is growin to strong, so we have to grow strong",
+		"ourselves before buying further hunting equipment.) Direct messages",
+		"might be overwhelming and spam, so mayber the are discovered  via",
+		"intelligence missions. "
+	],
+	"SourceId": "I027"
+}

@@ -1,0 +1,9 @@
+{
+	"Id": "P0223",
+	"Content": [
+		"Discipline should be static and stay roughly constant between battles",
+		"(a long battle or a catastrophic defeat may reduce it, but it should be",
+		"more static). "
+	],
+	"SourceId": "I027"
+}
