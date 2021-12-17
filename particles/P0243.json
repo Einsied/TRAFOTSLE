@@ -1,0 +1,9 @@
+{
+	"Id": "P0243",
+	"Content": [
+		"Oceans, air and space are all 3d. How the combat map models that could",
+		"be interesting. Layers are one option, but I could also abanddon voxels",
+		"and just use height, but then I would loose the board game aspect. "
+	],
+	"SourceId": "none"
+}

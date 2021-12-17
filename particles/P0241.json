@@ -1,0 +1,9 @@
+{
+	"Id": "P0241",
+	"Content": [
+		"Adjacent buildings on the colony-map should be bounded together to",
+		"conserve memory. So to adjacent housing units form a housing complex or",
+		"2 weapon factories a factory complex. "
+	],
+	"SourceId": "none"
+}

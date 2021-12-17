@@ -1,0 +1,10 @@
+{
+	"Id": "P0242",
+	"Content": [
+		"Planet maps should have different layers/levels, so undergound cavern",
+		"fights or oceans can be properly simualted. (A ocean should have at",
+		"least 3 levels: surface, medium and deep, since different units may",
+		"operate on different levels (sub marines have a depth limit)). "
+	],
+	"SourceId": "none"
+}

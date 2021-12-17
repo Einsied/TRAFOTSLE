@@ -1,0 +1,12 @@
+{
+	"Id": "P0238",
+	"Content": [
+		"Values like population or production should have random fluctuations",
+		"applied to their first derivative. This should simulate the influence",
+		"of individual and wane with higher numbers. Imitating a gaussian",
+		"distribution the random factor scales with sqrt(x) instead of linear.",
+		"So if we have a value y, a change x and a uniform distribution u the",
+		"final formula is y += x + u(-0.1, 0.1) * sqrt(x)   "
+	],
+	"SourceId": "none"
+}
