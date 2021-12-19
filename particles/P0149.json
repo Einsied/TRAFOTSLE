@@ -1,11 +1,11 @@
 {
 	"Id": "P0149",
 	"Content": [
-		"It should be possible to confine population to planets. Similar to",
+		"It should be possible to confine population to colonies. Similar to",
 		"serfs on the medival era. So the miners do not leave the mines. Pops",
-		"may still flee or smuggle to other planets on smuggler ships unless a",
-		"police force stops them. They just won't mass board passernger",
-		"transoprt for the city planets anymore. "
+		"may still flee or smuggle to other colonies on smuggler ships or",
+		"overland unless a police force stops them. They just won't mass board",
+		"passernger transoprt for the prosperous core worlds anymore. "
 	],
 	"SourceId": "none"
 }

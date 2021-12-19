@@ -8,7 +8,7 @@
 		"points (command points represent the number of orderes that can be",
 		"bellowed on the bridge and different subsystems consume them to be",
 		"activated); so the real action points are the command points energy is",
-		"jsut a fastly regenerating ressource like ammo, but will be the limit",
+		"just a fastly regenerating ressource like ammo, but will be the limit",
 		"for small ships). "
 	],
 	"SourceId": "I028"

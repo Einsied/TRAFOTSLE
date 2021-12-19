@@ -1,0 +1,15 @@
+{
+	"Id": "C013",
+	"Name": "Characters",
+	"Description": [
+		[
+			"Characters are persons of interest and usually part",
+			"of a polity. Think admirals, presidents, kings,",
+			"party-leaders etc."
+		]
+	],
+	"Particles": [
+		"P0049",
+		"P0124" 
+	]
+}

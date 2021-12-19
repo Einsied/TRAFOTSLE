@@ -1,15 +1,29 @@
 {
 	"Id": "C009",
-	"Name": "Ship modules",
+	"Name": "Modules",
 	"Description":[
 		[
-			"This form the basis of ships" 
+			"This form the basis of ships and units" 
 		]
 	],
 	"Particles": [
+		"P0002",
+		"P0008",
 		"P0016",
 		"P0072",
 		"P0073",
-		"P0074"
+		"P0074",
+		"P0107",
+		"P0205",
+		"P0207",
+		"P0208",
+		"P0209",
+		"P0226",
+		"P0227",
+		"P0228",
+		"P0229",
+		"P0230",
+		"P0231",
+		"P0233"
 	]
 }

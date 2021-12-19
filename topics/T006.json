@@ -3,7 +3,8 @@
 	"Name": "Diplomacy",
 	"Particles": [
 		"P0007",
-		"P0039"
+		"P0039",
+		"P0189"
 	],
 	"Concepts": [
 		"C003"

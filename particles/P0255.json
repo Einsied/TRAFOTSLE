@@ -2,8 +2,8 @@
 	"Id": "P0255",
 	"Content": [
 		"All language objects should be linked to a language-token. This tokens",
-		"should be registerd in advance to produce decent error messages in case",
-		"of misspelling. There also has to be a default entry avialebel for",
+		"should be registered in advance to produce decent error messages in",
+		"case of misspelling. There also has to be a default entry availabel for",
 		"everything. This should be ASCII clean english. "
 	],
 	"SourceId": "none"

@@ -1,5 +1,5 @@
 {
-	"Id":"C010",
+	"Id":"C011",
 	"Name":"Colonies",
 	"Description":[
 		[
@@ -8,7 +8,7 @@
 			"stations or orbital debry-fields."
 		],
 		[
-			"They are alawys owned by a polity"
+			"They are alawys owned by a polity."
 		]
 	],
 	"Particles": [
@@ -16,6 +16,16 @@
 		"P0015",
 		"P0046",
 		"P0053",
-		"P0057"
+		"P0057",
+		"P0149",
+		"P0159",
+		"P0161",
+		"P0163",
+		"P0164",
+		"P0166",
+		"P0167",
+		"P0241",
+		"P0256",
+		"P0257"
 	]
 }

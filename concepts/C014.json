@@ -1,0 +1,22 @@
+{
+	"Id": "C014",
+	"Name": "Actions",
+	"Description": [
+		[
+			"They way units do damage to each other during battle",
+			"or move around."
+		]
+	],
+	"Particles": [
+		"P0004",
+		"P0060",
+		"P0226",
+		"P0227",
+		"P0228",
+		"P0229",
+		"P0230",
+		"P0234",
+		"P0235",
+		"P0237"
+	]
+}
