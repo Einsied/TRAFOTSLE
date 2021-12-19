@@ -670,15 +670,15 @@ class HtmlNotes:
 								htmlIndentation -= 1
 								htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 						for topic in Particles[particle]["Topics"]:
-								TopicFileName = "../../" + self.TopicFolder + "/" + topic + ".html"
-								htmlStr += "\n" + indentedNewLine(
-									"<a href=\"{FileName:}\">".format(FileName = TopicFileName), 
-									htmlIndentation
-								)
-								htmlIndentation += 1
-								htmlStr += "\n" + indentedNewLine(topic, htmlIndentation)
-								htmlIndentation -= 1
-								htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+							TopicFileName = "../../" + self.TopicFolder + "/" + topic + ".html"
+							htmlStr += "\n" + indentedNewLine(
+								"<a href=\"{FileName:}\">".format(FileName = TopicFileName), 
+								htmlIndentation
+							)
+							htmlIndentation += 1
+							htmlStr += "\n" + indentedNewLine(topic, htmlIndentation)
+							htmlIndentation -= 1
+							htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 					htmlIndentation -= 1
 					htmlStr += "\n" + indentedNewLine("</h3>", htmlIndentation)
 					htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
@@ -796,6 +796,31 @@ class HtmlNotes:
 				htmlStr += "\n" + indentedNewLine(particle, htmlIndentation)
 				htmlIndentation -= 1
 				htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+				if(len(Particles[particle]["Concepts"]) > 0
+					or len(Particles[particle]["Topics"]) > 1
+				):
+					htmlStr += "\n" + indentedNewLine("Also found in:", htmlIndentation)
+					for concept in Particles[particle]["Concepts"]:
+						ConceptFileName = "../../" + self.ConceptFolder + "/" + concept + ".html"
+						htmlStr += "\n" + indentedNewLine(
+							"<a href=\"{FileName:}\">".format(FileName = ConceptFileName), 
+							htmlIndentation
+						)
+						htmlIndentation += 1
+						htmlStr += "\n" + indentedNewLine(concept, htmlIndentation)
+						htmlIndentation -= 1
+						htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+					for topic in Particles[particle]["Topics"]:
+						if topic != Id:
+							TopicFileName = "../../" + self.TopicFolder + "/" + topic + ".html"
+							htmlStr += "\n" + indentedNewLine(
+								"<a href=\"{FileName:}\">".format(FileName = TopicFileName), 
+								htmlIndentation
+							)
+							htmlIndentation += 1
+							htmlStr += "\n" + indentedNewLine(topic, htmlIndentation)
+							htmlIndentation -= 1
+							htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 				htmlIndentation -= 1
 				htmlStr += "\n" + indentedNewLine("</h3>", htmlIndentation)
 				htmlStr += "\n" + indentedNewLine("<p>", htmlIndentation)
