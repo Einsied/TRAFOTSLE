@@ -1,0 +1,9 @@
+{
+	"Id": "P0254",
+	"Content": [
+		"Dynamic stuff like tech and goods should also carry manual entries",
+		"with them. This may be deposited in a json file. This is especially",
+		"relevant for modding. "
+	],
+	"SourceId": "none"
+}

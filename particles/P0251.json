@@ -1,0 +1,12 @@
+{
+	"Id": "P0251",
+	"Content": [
+		"To keep the manual and implementation synchronus major classes could",
+		"contain manual methods, that either provide a manual entry in english",
+		"or a translation identifier, that can then be filled with the formulas.",
+		"I thnik the english manual entry can serve as a backup and by checking",
+		"if it is identical to the real external manual entry i can easily",
+		"figure out if i forgot to update the manual. "
+	],
+	"SourceId": "none"
+}

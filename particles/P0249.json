@@ -1,0 +1,11 @@
+{
+	"Id": "P0249",
+	"Content": [
+		"The battle module should be capable of returning looted goods,",
+		"units/ships, pows etc. It should also return the scrap, survivors,",
+		"wrecks, devastation etc. left on the battle filed. Fort space this is",
+		"just a list for a planet this also needs to be distributed to the",
+		"diffrerent continents/colonies/regions. "
+	],
+	"SourceId": "none"
+}
