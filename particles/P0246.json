@@ -1,0 +1,14 @@
+{
+	"Id": "P0246",
+	"Content": [
+		"Cultures and ideologies should travel along trade lines and within the",
+		"same polity. In practice and regard to polities this would mean, that",
+		"evey politiy node would average over its subnodes and pull on them",
+		"depending on the bounding strength/how close teh subnode is associated",
+		"with the parent node. They should also travel between borders or",
+		"especially open borders, even if trade is not present. They should",
+		"travel faster within one culture and ideologies should travel faster",
+		"within the same subculture. "
+	],
+	"SourceId": "none"
+}
