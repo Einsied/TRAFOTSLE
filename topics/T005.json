@@ -1,9 +1,11 @@
 {
 	"Id": "T005",
-	"Name": "Ship Blueprints",
+	"Name": "Military pressure",
 	"Particles": [
-		"P0016",
-		"P0118" 
+		"P0020",
+		"P0023",
+		"P0064",
+		"P0065"
 	],
 	"Concepts": [
 	]

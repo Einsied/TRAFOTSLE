@@ -1,0 +1,13 @@
+{
+	"Id": "C010",
+	"Name": "Goods",
+	"Description":[
+		[
+			"The hard stuff going around, pilots, ore, droid parts",
+		       "etc."	
+		]
+	],
+	"Particles": [
+		"P0070"
+	]
+}

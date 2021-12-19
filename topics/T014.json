@@ -2,6 +2,7 @@
 	"Id": "T014",
 	"Name": "Faster than light travel",
 	"Particles": [
+		"P0052",
 		"P0097",
 		"P0098",
 		"P0099",

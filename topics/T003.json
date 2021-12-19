@@ -3,7 +3,10 @@
 	"Name":"Battle Module",
 	"Particles": [
 		"P0004",
-		"P0107"
+		"P0052",
+		"P0060",
+		"P0107",
+		"P0119"
 	],
 	"Concepts": [
 	]

@@ -1,0 +1,21 @@
+{
+	"Id":"C010",
+	"Name":"Colonies",
+	"Description":[
+		[
+			"The fundamental pop containing unit.",
+			"It may be found on planets (continents), ships",
+			"stations or orbital debry-fields."
+		],
+		[
+			"They are alawys owned by a polity"
+		]
+	],
+	"Particles": [
+		"P0011",
+		"P0015",
+		"P0046",
+		"P0053",
+		"P0057"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"Id": "C007",
+	"Name": "Planets",
+	"Description":[
+		[
+			"Larger celestial bodies. Since they host colonies via",
+			"continents and therefore pops they are central to the",
+			"game."
+		]
+	],
+	"Particles": [
+		"P0145"
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"Id": "C008",
+	"Name": "Continents/regions",
+	"Description":[
+		[
+			"Landmasses or oceans that may contain colonies." 
+		]
+	],
+	"Particles": [
+	]
+}

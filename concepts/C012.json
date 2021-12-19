@@ -1,0 +1,16 @@
+{
+	"Id": "C012",
+	"Name": "Blueprints",
+	"Description": [
+		[
+			"This describes the abstract ideal/undamaged build",
+			"of a ship or unit."
+		]
+	],
+	"Particles": [
+		"P0016",
+		"P0076",
+		"P0078",
+		"P0118" 
+	]
+}

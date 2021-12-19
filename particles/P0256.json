@@ -1,0 +1,11 @@
+{
+	"Id": "P0256",
+	"Content": [
+		"Continetns host colonies. They are aprt of a planet. So a samll moon",
+		"may have only one continet, while a large planet may have several. They",
+		"are the atomic unit of ''turf'' in the game. So this is the smallest",
+		"part of a planet that can be owned by a polity. A continent can host",
+		"only one colony. "
+	],
+	"SourceId": "none"
+}

@@ -9,6 +9,8 @@ and will be kept as a backup.
 The notes will be transformed into particles spawned from the sources,
 that are then connected to topics.
 
+Additional particles may be added for ideas that come up during the transcription.
+
 Concepts are collection of particles that will later morph into classes.
 They collect information like topics but are restricted to an entity.
 They also contain additional description text.

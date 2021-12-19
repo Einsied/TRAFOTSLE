@@ -1,0 +1,9 @@
+{
+	"Id": "P0258",
+	"Content": [
+		"Planets should have maps saving the layout of colonies and underlying",
+		"terrain. To conserve memory they should jsut sotre the seed that was",
+		"used to generate the map if possible. "
+	],
+	"SourceId": "none"
+}

@@ -1,7 +1,7 @@
 {
 	"Id": "P0072",
 	"Content": [
-		"There should be manual and autoamted components in ships. The manuals",
+		"There should be manual and automated components in ships. The manuals",
 		"scaling stronger with crew experience than the autoamted ones, but",
 		"starting at lower points. (Both affected by technology of course.) "
 	],

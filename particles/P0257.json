@@ -1,0 +1,18 @@
+{
+	"Id": "P0257",
+	"Content": [
+		"Adding quarters or cities to colonies would be a way to permit",
+		"something like branch offices. So the diplomatic quarters building",
+		"permits foriegn polities to set up branch offices. The city permits the",
+		"building of special administrative buildings. To conserve memory this",
+		"things should be expensive. If they are resonable similar they may",
+		"point to identical instances only creating new instances if they",
+		"differ. This is relevant since most cities may contain the same 5",
+		"buildings (e.g. gouvernors palace, trade guild hub, military",
+		"administration, police headquarter, statue to the patron god), since",
+		"the Ai or player believes them to be good choices. Of course if they",
+		"are literally all the same introducing a special building with this",
+		"benefits may be preferable. "
+	],
+	"SourceId": "none"
+}

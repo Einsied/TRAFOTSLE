@@ -1,0 +1,15 @@
+{
+	"Id": "C009",
+	"Name": "Ship modules",
+	"Description":[
+		[
+			"This form the basis of ships" 
+		]
+	],
+	"Particles": [
+		"P0016",
+		"P0072",
+		"P0073",
+		"P0074"
+	]
+}
