@@ -1,0 +1,12 @@
+{
+	"Id": "P0285",
+	"Content": [
+		"Modules may include: scanners, fueltanks, engines, computercores,",
+		"rocket launchers, cockpits, bridges, canons, fighterbays, hangars,",
+		"runways, fighter storage, storage, cargo holds, crypods, escap pods, ",
+		"power generators, crew quarters, entertainment, supply bays, turrets,",
+		"docking hatches, corridors, transport belts, factories, maintaninece",
+		"bays, shield generators, loading ramps, armor. "
+	],
+	"SourceId": "I033"
+}

@@ -1,0 +1,11 @@
+{
+	"Id": "P0265",
+	"Content": [
+		"Effects on hex fileds should be linked to the effect creator so they",
+		"can be removed if it is destroyed. This only applies to active effects",
+		"like shields or tractor beams. Radiation left after the use of a",
+		"thermonuclear device is obviously not linked to anything and just ticks",
+		"down. "
+	],
+	"SourceId": "none"
+}

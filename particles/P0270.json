@@ -1,0 +1,15 @@
+{
+	"Id": "P0270",
+	"Content": [
+		"Different weapons should use different ammunitions, which have to be",
+		"researched shipped and produced, making supply more complicated. There",
+		"could be supply bundles that supply according to their production costs",
+		"+10% to make it a little easier. The idea is more to ship planet",
+		"cracking rockets or a anti-station missle that can only be fired by two",
+		"ships around. Of course floating factories producing ammuntions and",
+		"other supplies (energy cells, food etc) would be way more interesting,",
+		"since they could be configured to serve the fleet they are assigned to.",
+		""
+	],
+	"SourceId": "none"
+}

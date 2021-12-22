@@ -1,0 +1,10 @@
+{
+	"Id": "P0274",
+	"Content": [
+		"Buildings should be general things shared by all colonies, so there is",
+		"only one object in the RAM. The individual output is derived by appling",
+		"tech, culture, size and other modifiers so the colony ownly knows the",
+		"pointer to the building, its owner and its size. "
+	],
+	"SourceId": "I030"
+}

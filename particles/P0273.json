@@ -1,0 +1,16 @@
+{
+	"Id": "P0273",
+	"Content": [
+		"There should be claims on planets and other entities (polities,",
+		"stations, moons, ships etc.) showing a) how strongly a polity believes",
+		"they own this entity (strength) and how legitimate other polities view",
+		"this claim (acceptance). The later value should be split into a gneral",
+		"acceptance depending on the strength and specific acceptance for",
+		"ploities that modified it (by disputing or acknoledging the claim). The",
+		"individual value should drift towards the general value and both be",
+		"modifiable via diplo/culture points. The strenght should drift",
+		"depending on invested political or diplo/culture points and current",
+		"controller. "
+	],
+	"SourceId": "I030"
+}

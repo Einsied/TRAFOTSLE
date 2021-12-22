@@ -1,0 +1,12 @@
+{
+	"Id": "P0266",
+	"Content": [
+		"Ships/defense fields should have an option to let friendly fire pass",
+		"(to simualte point defense systems (friendly fire passes) and forec",
+		"barriers/classical space opera shields(friendly fire is intercepted).",
+		"There should be athird option that permits fire from inside the shield",
+		"to leave it (so some shields are just walls (nothing in nothing out)",
+		"and others are semipermeable (nothing in but everything out). "
+	],
+	"SourceId": "I029"
+}

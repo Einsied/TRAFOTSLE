@@ -1,0 +1,10 @@
+{
+	"Id": "P0271",
+	"Content": [
+		"Shields should be capable of reducing incoming damage either once or",
+		"multiple times (permitting things like damage dampening fields",
+		"(reducing x points per hex passed) and  layered shields, wich would",
+		"stack but may be more expensive to operate). "
+	],
+	"SourceId": "I029"
+}

@@ -1,0 +1,9 @@
+{
+	"Id": "P0268",
+	"Content": [
+		"Shields/defence fields should have flat damage reduction and  relative",
+		"damage reduction (so they may soak 20dmg flat or reduce incoming damage",
+		"by 40%). If both are active the one reducing more damage is choosen. "
+	],
+	"SourceId": "I029"
+}

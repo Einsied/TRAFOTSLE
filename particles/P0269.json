@@ -1,0 +1,9 @@
+{
+	"Id": "P0269",
+	"Content": [
+		"If multiple damage channels are combined projectile interception is",
+		"done first (so if the torpedo is shot down it does not do any damage).",
+		"All damage channels are processed in parallel. "
+	],
+	"SourceId": "I029"
+}

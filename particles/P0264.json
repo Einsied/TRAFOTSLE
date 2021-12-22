@@ -1,0 +1,8 @@
+{
+	"Id": "P0264",
+	"Content": [
+		"Shields/defence fields should be clearly linked to the owner, so they",
+		"can be properly removed if the projecting entity is destroyed. "
+	],
+	"SourceId": "I029"
+}

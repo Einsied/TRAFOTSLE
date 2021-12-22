@@ -1,0 +1,11 @@
+{
+	"Id": "P0288",
+	"Content": [
+		"Ships require at least one freight dock (either in form of a docking",
+		"hatch for another ship or a shuttle bay to recevie shuttles, late game",
+		"they may jsut beam it up) to load cargo suplly and crew. There may be",
+		"multiple forms of freight dock/transfer so ships compability should be",
+		"checked. "
+	],
+	"SourceId": "I033"
+}

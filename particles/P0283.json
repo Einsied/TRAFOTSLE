@@ -1,0 +1,11 @@
+{
+	"Id": "P0283",
+	"Content": [
+		"Ships crashig into planets (after battle or system failure) should be",
+		"capable of causing different effects depending on the moudles they",
+		"contained and the planet they crashed onto. (The effects may include:",
+		"founding a colony of survivors, damaging the ecosphere, leaving toxic",
+		"or other waste, destroing a building etc.) "
+	],
+	"SourceId": "I035"
+}

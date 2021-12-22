@@ -1,0 +1,10 @@
+{
+	"Id": "P0279",
+	"Content": [
+		"Modules should have layouts. With more difficult (less square more",
+		"puzzly) layouts having higher efficency. (This may go down to the",
+		"submodules. The idea is to reward players for sinking time in the ship",
+		"designer, by having less empty/dead space.) "
+	],
+	"SourceId": "I031"
+}

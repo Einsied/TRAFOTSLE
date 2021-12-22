@@ -1,0 +1,9 @@
+{
+	"Id": "P0263",
+	"Content": [
+		"Ships should be able to project shields/defense fields. In case of",
+		"overlap the highest defense value is used so they do not stack but can",
+		"compliment each other. "
+	],
+	"SourceId": "I029"
+}

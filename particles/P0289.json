@@ -1,0 +1,8 @@
+{
+	"Id": "P0289",
+	"Content": [
+		"The number of launchable or recovlerable vessles (e.g. fighters)",
+		"should depend on the launch and recover facilities on a ship. "
+	],
+	"SourceId": "I033"
+}
