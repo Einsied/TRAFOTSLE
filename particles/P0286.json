@@ -1,8 +1,8 @@
 {
 	"Id": "P0286",
 	"Content": [
-		"Some modules shull require connections to other modules via third",
-		"modules. So a gut turret needs to be connected to a ammo storage",
+		"Some modules should require connections to other modules via third",
+		"modules. So a gun turret needs to be connected to a ammo storage",
 		"directly or via a ammo transport belt. "
 	],
 	"SourceId": "I033"

@@ -1,0 +1,9 @@
+{
+	"Id": "P0295",
+	"Content": [
+		"Species conversion may only happen based on species and pops. Since",
+		"the facility may run out of a certain pop during the turn, it should",
+		"operate either on weighted ratios or a list with orders. "
+	],
+	"SourceId": "none"
+}
