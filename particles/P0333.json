@@ -1,0 +1,18 @@
+{
+	"Id": "P0333",
+	"Content": [
+		"Before a battle starts the defender may deploy defence structures if",
+		"there is no map ready (the maps will be removed after x turns since",
+		"then the defenses may have been moved). Larger defenses may be",
+		"automatically placed by the map generator, since it is nor conceivable",
+		"that they could have been redeployed before the battle. The aggressor",
+		"may retreat as if they would have not attacked after the defender",
+		"placed their defences. This gives the defender the ability to place the",
+		"defenses in whate they believe is the optimal position, while the",
+		"attacker can still see them in advance. This only applies to static",
+		"defences like trenches and small bunkers, not units or fortified",
+		"cities. Units are placed in a second phase and probably hidden. Large",
+		"structures stay where they are. "
+	],
+	"SourceId": "I044"
+}

@@ -1,0 +1,10 @@
+{
+	"Id": "P0303",
+	"Content": [
+		"Ship classes should be based on characteristics (e.g. size, speed,",
+		"cargohold size, amount of possible passengers, armament (This have to",
+		"be used as ratios of course, otherwise everything is a",
+		"gun-brick-Cargo-Behemoth)).  "
+	],
+	"SourceId": "I039"
+}

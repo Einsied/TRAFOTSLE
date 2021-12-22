@@ -1,0 +1,13 @@
+{
+	"Id": "P0309",
+	"Content": [
+		"Units should be capable off accumulating movement points, in case they",
+		"need to go on a tile that is to expensive. (Example: Mc Slowass",
+		"Infatrydivison has 2 Movement points per turn and wishes to go on a",
+		"mountain costing 6 movement points. SO Mc Slowass uses the prepare",
+		"movement action for 2 turns and moves on the mountain in the 3rd turn.)",
+		"There should be an upper limit. An alternative would be to start the",
+		"movement and keep track of it via a status modifier. "
+	],
+	"SourceId": "I039"
+}

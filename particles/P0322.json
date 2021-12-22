@@ -1,0 +1,8 @@
+{
+	"Id": "P0322",
+	"Content": [
+		"Ships should not move in space as an action but accelerate and",
+		"deaccelerate. "
+	],
+	"SourceId": "I042"
+}
