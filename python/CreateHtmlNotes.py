@@ -287,7 +287,7 @@ class HtmlNotes:
 				)
 		IndexFileName = self.ItemFolder + "/Index.html"
 		with open (IndexFileName, "w") as IndexFile:
-			IndexFile.write(self.htmlFile("Index", CreateIndex(Items), "../../"))
+			IndexFile.write(self.htmlFile("Item-Index", CreateIndex(Items), "../../"))
 
 	def CreateParticles(self, Particles):
 		GenerateFolder(self.ParticleFolder)
@@ -475,7 +475,7 @@ class HtmlNotes:
 				))
 		IndexFileName = self.ParticleFolder + "/Index.html"
 		with open (IndexFileName, "w") as IndexFile:
-			IndexFile.write(self.htmlFile("Index", CreateIndex(Particles), "../../"))
+			IndexFile.write(self.htmlFile("Particle-Index", CreateIndex(Particles), "../../"))
 
 	def CreateDigitalNotes(self, Notes):
 		def CreateNotePage(Id, Note):
@@ -601,7 +601,7 @@ class HtmlNotes:
 				))
 		IndexFileName = self.NotesFolder + "/Index.html"
 		with open (IndexFileName, "w") as IndexFile:
-			IndexFile.write(self.htmlFile("Index", CreateIndex(Notes),
+			IndexFile.write(self.htmlFile("Notes-Index", CreateIndex(Notes),
 				"../../"
 			))
 
@@ -761,7 +761,7 @@ class HtmlNotes:
 				))
 		IndexFileName = self.ConceptFolder + "/Index.html"
 		with open (IndexFileName, "w") as IndexFile:
-			IndexFile.write(self.htmlFile("Index", CreateIndex(Concepts),
+			IndexFile.write(self.htmlFile("Concept-Index", CreateIndex(Concepts),
 				"../../"
 			))
 
@@ -953,7 +953,7 @@ class HtmlNotes:
 				))
 		IndexFileName = self.TopicFolder + "/Index.html"
 		with open (IndexFileName, "w") as IndexFile:
-			IndexFile.write(self.htmlFile("Index", CreateIndex(Topics), "../../"))
+			IndexFile.write(self.htmlFile("Topic-Index", CreateIndex(Topics), "../../"))
 
 	def CreateUncontained(self, Uncontained):
 		def CreateUncontainedPage():
