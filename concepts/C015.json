@@ -1,0 +1,14 @@
+{
+	"Id": "C015",
+	"Name": "Species",
+	"Description": [
+		[
+			"The way the pops in the galaxy are categorized",
+			"while this will refer primarily to biological species",
+			"it should also include androids and robots."
+		]
+	],
+	"Particles": [
+		"P0154"
+	]
+}
