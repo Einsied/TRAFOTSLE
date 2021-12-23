@@ -393,6 +393,19 @@ class HtmlNotes:
 					htmlStr += "\n" + indentedNewLine("</li>", htmlIndentation)
 					htmlIndentation -= 1
 					htmlStr += "\n" + indentedNewLine("</ul>", htmlIndentation)
+			else:
+				curId = int(Id.strip("P"))
+				nextId = "P{ID:04d}".format(ID=curId + 1)
+				if nextId in Particles.keys():
+					htmlStr += "\n" + indentedNewLine(
+						"<a href=\"../../{nextPath:}\">".format(
+							nextPath = self.ParticleFolder + "/" + nextId + ".html"
+						), htmlIndentation
+					)
+					htmlIndentation += 1
+					htmlStr += "\n" + indentedNewLine("Next uncontained", htmlIndentation)
+					htmlIndentation -= 1
+					htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 			htmlIndentation -= 1
