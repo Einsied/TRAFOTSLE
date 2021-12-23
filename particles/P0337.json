@@ -1,0 +1,14 @@
+{
+	"Id": "P0337",
+	"Content": [
+		"Species should have sub sepcies, representing genetical modifications,",
+		"natural evolution and castes like for ants. The latter implies that",
+		"population growtwh has to viewed species and non species wide. In the",
+		"ant example there would be a quees subspecies and for every member an",
+		"certain number of worker, queen, drone and soldier subspecies would be",
+		"born, meaning the growth of worker-ants is only dependent on the number",
+		"of queen ants not worker ants. (Maybe sexual species should keep track",
+		"of the male to female ratio in general). "
+	],
+	"SourceId": "none"
+}
