@@ -1,0 +1,8 @@
+{
+	"Id": "P0341",
+	"Content": [
+		"AOE damage is non-directional so a ship getting hit by AOE takes",
+		"damage from all sides at once. (It is a damage bath in essence.) "
+	],
+	"SourceId": "I046"
+}

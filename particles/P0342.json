@@ -1,0 +1,9 @@
+{
+	"Id": "P0342",
+	"Content": [
+		"Directional damage to a ship should have some scatter variable applied",
+		"to it, so that not every shot hits exactly the same part of the ship,",
+		"just because the shooters are squatting on the same tile. "
+	],
+	"SourceId": "I046"
+}

@@ -1,0 +1,8 @@
+{
+	"Id": "P0340",
+	"Content": [
+		"Weapons should have ranges and effectivness functions for this ranges,",
+		"this may differ for different damage channels. "
+	],
+	"SourceId": "I046"
+}
