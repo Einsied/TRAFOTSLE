@@ -1,0 +1,11 @@
+{
+	"Id": "P0346",
+	"Content": [
+		"Abandoning tiles within solar systems in favor of spherical",
+		"corrdinates relative to the sun, would not only conserve memory it",
+		"would also permit more realistic movement of bodies and ships. It would",
+		"also permit to build space stations or station fleets at the Lagrange",
+		"points of a system.  "
+	],
+	"SourceId": "none"
+}

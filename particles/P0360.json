@@ -1,0 +1,9 @@
+{
+	"Id": "P0360",
+	"Content": [
+		"The energy consumption of gates should depend on the distance",
+		"connected (this would indirectly translate to bigger generators and",
+		"higher upkeep). "
+	],
+	"SourceId": "none"
+}

@@ -1,0 +1,9 @@
+{
+	"Id": "P0343",
+	"Content": [
+		"Pops should have an education value, increased by eduaction services",
+		"and decaying overtime. (The decay rate should increase with the value",
+		"so further services give a diminishing return.) "
+	],
+	"SourceId": "none"
+}
