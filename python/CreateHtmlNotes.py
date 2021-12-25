@@ -396,16 +396,25 @@ class HtmlNotes:
 			else:
 				curId = int(Id.strip("P"))
 				nextId = "P{ID:04d}".format(ID=curId + 1)
-				if nextId in Particles.keys():
-					htmlStr += "\n" + indentedNewLine(
-						"<a href=\"../../{nextPath:}\">".format(
-							nextPath = self.ParticleFolder + "/" + nextId + ".html"
-						), htmlIndentation
-					)
-					htmlIndentation += 1
-					htmlStr += "\n" + indentedNewLine("Next uncontained", htmlIndentation)
-					htmlIndentation -= 1
-					htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+				while(nextId in Particles.keys()):
+					nextId = "P{ID:04d}".format(ID=curId + 1)
+					if( len(Particles[nextId]["Topics"]) 
+						+ len(Particles[nextId]["Concepts"])
+					!= 0):
+						curId += 1
+					else:
+						htmlStr += "\n" + indentedNewLine(
+							"<a href=\"../../{nextPath:}\">".format(
+								nextPath = self.ParticleFolder + "/" + nextId + ".html"
+							), htmlIndentation
+						)
+						htmlIndentation += 1
+						htmlStr += "\n" + indentedNewLine(
+							"Next uncontained", htmlIndentation
+						)
+						htmlIndentation -= 1
+						htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+						break
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
 			htmlIndentation -= 1
