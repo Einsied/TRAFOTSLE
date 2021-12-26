@@ -403,6 +403,8 @@ class HtmlNotes:
 					!= 0):
 						curId += 1
 					else:
+						htmlStr += "\n" + indentedNewLine("<h2>", htmlIndentation)
+						htmlIndentation += 1
 						htmlStr += "\n" + indentedNewLine(
 							"<a href=\"../../{nextPath:}\">".format(
 								nextPath = self.ParticleFolder + "/" + nextId + ".html"
@@ -414,6 +416,8 @@ class HtmlNotes:
 						)
 						htmlIndentation -= 1
 						htmlStr += "\n" + indentedNewLine("</a>", htmlIndentation)
+						htmlIndentation -= 1
+						htmlStr += "\n" + indentedNewLine("</h2>", htmlIndentation)
 						break
 			htmlIndentation -= 1
 			htmlStr += "\n" + indentedNewLine("</section>", htmlIndentation)
