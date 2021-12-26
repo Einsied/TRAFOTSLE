@@ -1,0 +1,13 @@
+{
+	"Id": "C016",
+	"Name": "Buildings",
+	"Description": [
+		[
+			"The physical infrastrucutre in a colony."
+		]
+	],
+	"Particles": [
+		"P0005",
+		"P0274"
+	]
+}

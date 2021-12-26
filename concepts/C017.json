@@ -1,0 +1,13 @@
+{
+	"Id": "C017",
+	"Name": "Claims",
+	"Description":[
+		[
+			"Polities claim of ownership to enities."
+		]
+	],
+	"Particles": [
+		"P0006",
+		"P0273"
+	]
+}

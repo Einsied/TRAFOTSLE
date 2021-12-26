@@ -1,0 +1,19 @@
+{
+	"Id": "C018",
+	"Name": "Ships",
+	"Description":[
+		[
+			"Space faring vessles."
+		]
+	],
+	"Particles": [
+		"P0024",
+		"P0025",
+		"P0109",
+		"P0115",
+		"P0250",
+		"P0276",
+		"P0282",
+		"P0283"
+	]
+}
