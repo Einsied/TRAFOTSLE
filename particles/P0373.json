@@ -1,0 +1,9 @@
+{
+	"Id": "P0373",
+	"Content": [
+		"It should only be possible to lauch or recover a limited number of",
+		"figthers/subcrafts per turn, depending on the launch and landing",
+		"facilities. "
+	],
+	"SourceId": "I032"
+}
