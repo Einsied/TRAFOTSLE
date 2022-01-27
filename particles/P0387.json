@@ -1,0 +1,11 @@
+{
+	"Id": "P0387",
+	"Content": [
+		"During the setup game gate systems might be part of infrastructure",
+		"improvement, so in case there is no jump-gate-technology, jump buoys",
+		"are placed instead. Jump buoys may also be placed with a certain chance",
+		"if jump-gate-technology is availabel, so the player does not know what",
+		"technologies are availabel, due to their experience in the setup game. "
+	],
+	"SourceId": "none"
+}

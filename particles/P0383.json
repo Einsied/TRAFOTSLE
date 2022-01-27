@@ -1,0 +1,17 @@
+{
+	"Id": "P0383",
+	"Content": [
+		"During negotiations people participating in them could be assigned",
+		"points and sue them to get stuff into the contract. So an item has an",
+		"positive weight and a negative weight in then end the sum of all items",
+		"with positive weights form the contract. Once the contract is done",
+		"everybody hast to decide if they wish to sign it or not.   There should",
+		"also be a finalization value. Every point invested in it makes",
+		"increasing the weights in the contract more expensive and once it",
+		"reaches max level it is time to sign (of course it should also be",
+		"possible to lower it) The size of the contract should influence how",
+		"much points are necessary to finalize it (so if there is no haggling it",
+		"can be agreed in a few turns instead of endless negotiations) "
+	],
+	"SourceId": "none"
+}
