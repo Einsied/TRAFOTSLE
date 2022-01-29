@@ -1,0 +1,9 @@
+{
+	"Id": "P0392",
+	"Content": [
+		"To generate a diff for everything, every class needs should have a",
+		"mirror changes class or strcut, that can then be neatly packeaged into",
+		"a json. This also implies nearly everything has an id. "
+	],
+	"SourceId": "none"
+}
