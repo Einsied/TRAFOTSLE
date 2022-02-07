@@ -1,0 +1,9 @@
+{
+	"Id": "P0395",
+	"Content": [
+		"If ships are cut apart during battle and both parts form valid ships",
+		"(having power and a command core) both should form ship-like",
+		"controllable entities for the rest of the battle. "
+	],
+	"SourceId": "none"
+}

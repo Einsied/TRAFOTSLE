@@ -1,0 +1,12 @@
+{
+	"Id": "P0418",
+	"Content": [
+		"Every weapon/equimpment or ship component  should have a required crew",
+		"count and an optimal crew count describing what it needs to operate,",
+		"these counts are then used to carry over to the unit or starship. This",
+		"might be fractions so for example a gun needs 1 soldier and 0.01 staff",
+		"officers (100 soldiers one staff officer) a tank 3 drivers and 0.0625",
+		"staff officer (1 enginner per 20 tanks and one tactican for 80 tanks). "
+	],
+	"SourceId": "none"
+}

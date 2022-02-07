@@ -1,0 +1,9 @@
+{
+	"Id": "P0396",
+	"Content": [
+		"Clamped ships should form one entity in the battle module until they",
+		"are seperated. (The battle module should know the  ships that make up",
+		"the connected entity.) "
+	],
+	"SourceId": "none"
+}

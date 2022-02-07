@@ -1,0 +1,18 @@
+{
+	"Id": "P0412",
+	"Content": [
+		"As soldier types we identify: spacer(starships), star",
+		"figther-pilot(star fighters), sub-marine-pilot (fast fighter like",
+		"submarines), atmospheric-pilot (atmospheric figthers), mariner",
+		"(planetray navy), driver (small vehicles like tanks, artillery etc.),",
+		"spacer (infantry in space), diver (sub marine infantry), foot soldier",
+		"(surface infantry), flyer (atmospheric infantry (e.g avians flying with",
+		"guns)), tunnler (subterran infantry), orbital staff officers",
+		"(organizing star ships, spacers and space infantry), planetary staff",
+		"officers (organizing navy, army and airforce). This could be folded",
+		"iinto vehicle crews (driver, mariner), grunts (diver, spacer, foot",
+		"soldier, flyer tunnler) , pilots( submarine, star, atmosphere), star",
+		"ship crews and officers (orbital and planetray) "
+	],
+	"SourceId": "none"
+}

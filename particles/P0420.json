@@ -1,0 +1,9 @@
+{
+	"Id": "P0420",
+	"Content": [
+		"The soldier type system should be general enough to support custom",
+		"soldier types for everything (moders may wish to have a psycic or",
+		"mecha-pilot crewtype or add a priest to every unit). "
+	],
+	"SourceId": "none"
+}

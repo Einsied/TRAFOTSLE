@@ -1,0 +1,14 @@
+{
+	"Id": "P0398",
+	"Content": [
+		"The experience of in ship-crews should be tracked via its members, so",
+		"there are different members with different levels (So 10 lvl. 1",
+		"members, 15 lvl. 2 members and so on, their average giving the",
+		"crews-experience level) and if the whole crew gets 50 experience",
+		"points, 50 crewmember level up. This level-up is split equally between",
+		"the different level groups, with the remainder of the division being",
+		"applied to the lowest level-grpup firtst, and the highest level not",
+		"participating obviously.  "
+	],
+	"SourceId": "none"
+}
