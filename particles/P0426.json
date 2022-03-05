@@ -1,0 +1,8 @@
+{
+	"Id": "P0426",
+	"Content": [
+		"Buildings should have blueprints, since they may be build from",
+		"components or have different techs. "
+	],
+	"SourceId": "none"
+}

@@ -1,0 +1,9 @@
+{
+	"Id": "P0427",
+	"Content": [
+		"Buildings may be summed up in complexes. So a mining complex is made",
+		"up of N mining buildings (which may be named mining modules). The",
+		"complexes may contain multiple modules for synergy boni. "
+	],
+	"SourceId": "none"
+}
