@@ -1,0 +1,12 @@
+{
+	"Id": "P0437",
+	"Content": [
+		"Ships should have structural integrity in addition to module health",
+		"points. This should depend on the hull or the structure connecting the",
+		"modules. This would be significantly lower than the sum of all the",
+		"health points of the ships modules. This makes sure a ship is destroyed",
+		"if it takes to much damage, if it is not destroyed by critical system",
+		"failure (e.g. reactor detonation before). "
+	],
+	"SourceId": "I047"
+}

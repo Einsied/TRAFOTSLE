@@ -1,0 +1,9 @@
+{
+	"Id": "P0431",
+	"Content": [
+		"Weapon attacks should have area of effects or targetable angles/areas",
+		"based on the ships orientation. Thinkable are angle/fans or lines or",
+		"something alike. "
+	],
+	"SourceId": "I047"
+}

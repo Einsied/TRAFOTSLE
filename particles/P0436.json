@@ -1,0 +1,10 @@
+{
+	"Id": "P0436",
+	"Content": [
+		"Weapons should have different strength depending on the distance, so",
+		"they may gain or loose strength depending on the distance. So there",
+		"should basically be a damage function either discretly mapped to the",
+		"hexes or just dependent on the coordinates. "
+	],
+	"SourceId": "I047"
+}
