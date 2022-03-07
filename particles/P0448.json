@@ -1,0 +1,11 @@
+{
+	"Id": "P0448",
+	"Content": [
+		"To form a battle line on a hex field, a unit needs either three fronts",
+		"or another solution has to be found. The easiest way is a buff for",
+		"adjacent units, this does automatically lead to the formation of lines.",
+		"Capping this bonus so only three supports can be stacked at once",
+		"creates a nice and even line. "
+	],
+	"SourceId": "I049"
+}
