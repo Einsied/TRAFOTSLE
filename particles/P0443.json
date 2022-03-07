@@ -1,0 +1,9 @@
+{
+	"Id": "P0443",
+	"Content": [
+		"Objects should have associated history objects. (So a ship may have",
+		"its creation and relevant battles. A colony may have the date of its",
+		"founding, relevant battles, great projects etc.) "
+	],
+	"SourceId": "I048"
+}

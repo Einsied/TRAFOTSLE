@@ -1,0 +1,9 @@
+{
+	"Id": "P0444",
+	"Content": [
+		"Some history should be handeled by events. So battles may very well be",
+		"their own data structure reference by all participating objects",
+		"(armies, cahracters, colonies, ships etc.). "
+	],
+	"SourceId": "I048"
+}

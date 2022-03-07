@@ -1,0 +1,15 @@
+{
+	"Id": "P0442",
+	"Content": [
+		"The setup game should support at least the following actions:  <ul>",
+		"<li>Scout</li> <li>Develop</li> <li>Colonize</li>  <li>Uplift",
+		"pre-sentients (if availabel)</li>  <li>Enlighten technological lesser",
+		"developed empire</li>  <li>Colonize far away star (creating an new",
+		"indepenet colony at proper game start)</li> <li>Build",
+		"Infrastructure</li> <li>Build up military</li> <li>Gather",
+		"intelligence</li> <li>Research</li> <li>Invest in culture</li>",
+		"<li>Declare war</li> <li>Make peace</li> <li>Build defenses</li>",
+		"<li>Build industry</li> </ul>  "
+	],
+	"SourceId": "I048"
+}
