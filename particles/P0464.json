@@ -1,0 +1,11 @@
+{
+	"Id": "P0464",
+	"Content": [
+		"Projectiles in battle may have an accuracy attached to them, which is",
+		"the weighted against the evasion of a target to determine the chance to",
+		"hit. This may be modified by target tracking methods, temporary",
+		"countermeasures (e.g. smoke clouds) and countercountermeasures against",
+		"them, but in the end it would be those 2 values. "
+	],
+	"SourceId": "I051"
+}

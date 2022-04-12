@@ -1,0 +1,15 @@
+{
+	"Id": "P0472",
+	"Content": [
+		"Common ships like system police or freighters should have default",
+		"models. So there are around 3 system police models, 2 longrange",
+		"freighter models, 2 passenger liners, 2 system freight transport",
+		"vessels etc. for every polity. This can be used to determine the",
+		"effectivnes of its abstract units. Like the pyracy suppresion pro",
+		"system police hangar or cargo troughput per point in inter system",
+		"freight. In case of battle or draft this dafault models also inform the",
+		"used units. So if the system police is drafted it consists out of the",
+		"default units. "
+	],
+	"SourceId": "I051"
+}

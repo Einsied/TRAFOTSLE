@@ -1,0 +1,12 @@
+{
+	"Id": "P0467",
+	"Content": [
+		"Guns should have repulsion, changing the speed of ships or at least",
+		"moving them. (For planet based units repulsion will be neglected due to",
+		"scale). Repulsion may be eliminated by opposing guns (so basically",
+		"forces canceling each other out,  be ware of angular moments as they",
+		"should send ships spinning which likley will not be simulated and may",
+		"be represented by a effect or the need to bur fuel to stabilize). "
+	],
+	"SourceId": "I051"
+}

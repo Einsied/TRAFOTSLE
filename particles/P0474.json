@@ -1,0 +1,13 @@
+{
+	"Id": "P0474",
+	"Content": [
+		"Abstarct ships like transports and system police will have efficencies",
+		"for certain roles based on their blueprints and therby determine how",
+		"efficent they are at their job per production point. (So small system",
+		"police ships with fast engines and small guns may perform very well,",
+		"while freighters may  be judged by a (cargo * speed - personnell +",
+		"maintanence)-metric. This formulas should be modable and fine tuned to",
+		"the roles. "
+	],
+	"SourceId": "I051"
+}
