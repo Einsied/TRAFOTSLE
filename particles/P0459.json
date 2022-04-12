@@ -1,0 +1,10 @@
+{
+	"Id": "P0459",
+	"Content": [
+		"Continets should contain some values of the total planet, like surface",
+		"minerals, tehir own ecosphere, climate type, animal populations,",
+		"temperatres etc. Some of them may be shared among the planet (like",
+		"pollution or the ecosphere).  "
+	],
+	"SourceId": "I050"
+}

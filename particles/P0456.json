@@ -1,0 +1,11 @@
+{
+	"Id": "P0456",
+	"Content": [
+		"The market climate moves toward a target randomly choosen every n",
+		"turns. The position of this target may be informed by prior targets",
+		"total size of the market, a randomly choosen long term target,",
+		"political events, personal freedom, population happiness, supply and",
+		"demand matching etc. "
+	],
+	"SourceId": "I050"
+}

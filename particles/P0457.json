@@ -1,0 +1,13 @@
+{
+	"Id": "P0457",
+	"Content": [
+		"The private sector may have mixed buildings. So there is no food and",
+		"metal factory but a private industrial comples. The production of this",
+		"complex is then distributed according to market condtitions. Since",
+		"there may be overlap this means the potential production has to",
+		"allocated, this may lead to a knapsack problem so production should",
+		"happen according to priority, so every buildling pivots to the highest",
+		"demand, like in any disfunctional market.  "
+	],
+	"SourceId": "I050"
+}
