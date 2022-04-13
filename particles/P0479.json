@@ -1,0 +1,9 @@
+{
+	"Id": "P0479",
+	"Content": [
+		"The battle module reports at the end of a general turn the conclusion",
+		"of its battles. This may also be an intermediate state if the battle",
+		"was not concluded. "
+	],
+	"SourceId": "I052"
+}

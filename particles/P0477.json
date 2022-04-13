@@ -1,0 +1,16 @@
+{
+	"Id": "P0477",
+	"Content": [
+		"In multiplayer games multiple battles between players may occur. This",
+		"means that if two players fight in battle the others have to wait. They",
+		"can not specatate, since this would reveal information about their",
+		"possible opponents (permiting spectators may if all batteling parties",
+		"agree may ease this) and they may not have battle to fight themselves.",
+		"If the battle module is not directly used in multiplayer or only one",
+		"turn can be taken the problem also disappears. It is also possible to",
+		"resolve the battle while other player are still doing their general",
+		"turn, so they do not notice what happens, this implies, that players",
+		"have to choose their battles at the start or during the general turn. "
+	],
+	"SourceId": "I052"
+}

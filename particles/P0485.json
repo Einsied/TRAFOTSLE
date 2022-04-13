@@ -1,0 +1,11 @@
+{
+	"Id": "P0485",
+	"Content": [
+		"Contracts should have a ''strength'', measuring how serious they are",
+		"takes. This should keep falling over time, as the contract is slowly",
+		"forgotten. Polities can now invest diplomatic points to strengthen or",
+		"weaken a contract. The results from breaking a contract depend on its",
+		"strength.  "
+	],
+	"SourceId": "I055"
+}

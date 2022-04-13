@@ -1,0 +1,12 @@
+{
+	"Id": "P0486",
+	"Content": [
+		"The cost on influenceing a contract should depend on the closeness to",
+		"it (so signatories can easier influence a contract than gurantors or",
+		"third parties, the number of obligations in a contract may determine",
+		"how easy it is to influence). It should also be considered that",
+		"closeness could arise from a heirarchy, so an overlord may be closer to",
+		"a vassals trade contract than the vassals neighbors.   "
+	],
+	"SourceId": "I055"
+}

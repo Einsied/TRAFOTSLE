@@ -1,0 +1,8 @@
+{
+	"Id": "P0478",
+	"Content": [
+		"The battle module may itself call submodules like a boarding module to",
+		"do a boarding action in parallel to the fleet battle. "
+	],
+	"SourceId": "I052"
+}
