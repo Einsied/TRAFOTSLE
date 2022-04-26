@@ -1,0 +1,9 @@
+{
+	"Id": "P0517",
+	"Content": [
+		"Assemblies might have seats assigned to planets. So one planet might",
+		"have 3 seats assigned another one. Of course not all planets governed",
+		"by the assembly need to have a seat in it. "
+	],
+	"SourceId": "none"
+}
