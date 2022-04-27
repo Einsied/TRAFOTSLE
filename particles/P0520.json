@@ -1,0 +1,11 @@
+{
+	"Id": "P0520",
+	"Content": [
+		"Land-, Sea-, Air- and space-mines should be semiconsistent between",
+		"battles (their amount should decay and their position might shift). The",
+		"first is meant to deplete minefields and remove them from memory after",
+		"a few turns, the second to reduce the information that has to be stored",
+		"and suprise the mine layer as well as the other party. "
+	],
+	"SourceId": "none"
+}
