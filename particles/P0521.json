@@ -5,8 +5,9 @@
 		"political (assemblies, contracts, polities, conflicts) </li> <li>",
 		"military (battle module) </li> <li> economical (goods, resources,",
 		"buildings) </li> </ul> Pops and colonies connect the economical and",
-		"political sphere. Shipyards and arms factories the economical and",
-		"military. Wars, alliances and battles the political and military. "
+		"political sphere. Shipyards and arms factories connect the economical",
+		"and military spheres. Wars, alliances and battles connect the political",
+		"and military spheres.  "
 	],
 	"SourceId": "none"
 }
