@@ -1,0 +1,13 @@
+{
+	"Id": "P0556",
+	"Content": [
+		"When a ship containing a colony leaves a system it should form",
+		"together with other such ships, that may accompany it, a",
+		"fleet-administration similar to a system-administration. This",
+		"administration can be dissolved if the fleet enters a system with a",
+		"friendly administration, in which case the ships join this friendly",
+		"administration. <br> This permits migrating fleets, colonization fleets",
+		"and similar concepts. "
+	],
+	"SourceId": "none"
+}

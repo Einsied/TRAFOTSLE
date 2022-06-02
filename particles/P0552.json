@@ -1,0 +1,12 @@
+{
+	"Id": "P0552",
+	"Content": [
+		"The AI should guess the strength of an ally from different hints",
+		"(intelligence, the allies own claim about its strenght, size of",
+		"diplomatic fleets etc.) and act according to this hints. So acting",
+		"tough and mighty may help secure an alliance with a stronger partner",
+		"but this partner may enter a war relying on this inflated strength",
+		"creating trouble for both parties. "
+	],
+	"SourceId": "none"
+}
