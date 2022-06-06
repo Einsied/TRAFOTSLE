@@ -1,0 +1,9 @@
+{
+	"Id": "P0559",
+	"Content": [
+		"Buildings should be able to scale together so a tool factory increases",
+		"the productivity of all tool factories in the colony by 10% and the",
+		"productivitiy on the planet by 2%. Encouraging specizalization. "
+	],
+	"SourceId": "I070"
+}
