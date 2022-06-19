@@ -1,0 +1,19 @@
+{
+	"Id": "P0567",
+	"Content": [
+		"Similar equipment of different value suggests that one would outphase",
+		"the other (Rifle-Mk.1, Rifle-Mk2, Rifle-Mk3). <br> This maybe",
+		"represented by role-slots for this equipment (so for ground forces",
+		"there would be an boarding-rifle-slot and a anti-armor-slot and so on).",
+		"<br> This slots would then be filled by the equipment. Since one",
+		"repalces another it is reasonable to store this in the slots, so the",
+		"game knows which equipment is recycled first (the oldest one in a",
+		"depot), when newer equipment arrives. This leads to outdated equipment",
+		"resting in depost availabel for a larger mobilized force, which may be",
+		"forced to use the outdated equipment. (Basically permitting emergency",
+		"mobilizations that are disencouraged for the stronger party because",
+		"losses and shipping costs will be higher. This might be a catch-up",
+		"mechanic.) "
+	],
+	"SourceId": "none"
+}
