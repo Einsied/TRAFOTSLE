@@ -1,0 +1,15 @@
+{
+	"Id": "P0572",
+	"Content": [
+		"Plants or animals may participate in battles if a planet has the",
+		"correct modifiers. They may also initalize battles on their own trough",
+		"random events. So the revolt of the local (2 ton heavy) ants may spice",
+		"things up for players. <br> This requires to have randomized hostile",
+		"life on the planets  so the animals/plants can be generated for the",
+		"battle according to random seed of the planet, ecosphere and planetary",
+		"data (e.g. climate) instead of having the same 3 predefined hostile",
+		"aliens showing up in endless repetition. <br> (The existing species",
+		"designer may be misused for this). "
+	],
+	"SourceId": "none"
+}

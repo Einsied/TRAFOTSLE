@@ -1,0 +1,15 @@
+{
+	"Id": "P0574",
+	"Content": [
+		"Being capable of desiginin Prototype plants for certain planets might",
+		"be an interesting feature, but I doubt it would do much and create a",
+		"lot of additional pointers, since the local life should deviate from",
+		"the genetic template (if clear rules would be defined this memory",
+		"consumption could be reduced so the ''Terran cow'' template exists only",
+		"once but creates subtypes for Earth and a terraformed Mars",
+		"automatically using their enviromental data to manipulate its values).",
+		"<br> Creating the perfect tree or the best dog might be a nice vanity",
+		"dlc however. "
+	],
+	"SourceId": "none"
+}
