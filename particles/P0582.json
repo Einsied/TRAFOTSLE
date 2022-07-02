@@ -1,0 +1,12 @@
+{
+	"Id": "P0582",
+	"Content": [
+		"The bonus that parents-research-nodes/clusters/fields bestow on their",
+		"children can be realized as a fixed contribution (so if the parent node",
+		"has 1000 points the children nodes all have a base of 100 points) or a",
+		"discount (the discount would be capped). Fixed contribution permit",
+		"passive research as advanced nodes start dragging the others, while",
+		"discounts still need some active investment. "
+	],
+	"SourceId": "I074"
+}
