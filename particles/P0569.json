@@ -1,7 +1,7 @@
 {
 	"Id": "P0569",
 	"Content": [
-		"Ther should be a way to makr equipment as ''obsolete'' or",
+		"Ther should be a way to mark equipment as ''obsolete'' or",
 		"''deprecated'' so it will always be recycled and never distributed. "
 	],
 	"SourceId": "none"
