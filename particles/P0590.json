@@ -1,0 +1,17 @@
+{
+	"Id": "P0590",
+	"Content": [
+		"It should be possible to compile knowledge (gained from research) into",
+		"knowledge reservoirs/databases (think encyclopedia galactica).",
+		"Maintaining this databases should give a small research bonus for the",
+		"next levels of research in this field (due to the well organized",
+		"structure of it) and a big bonus for researching levels below it",
+		"(Reading/decoding and applying it). Databases should not be cheap to",
+		"build, but have a lower maintainence cost comapred to normal tech. They",
+		"are the storage form of knowledge in the game. It should be possible to",
+		"copy them (onto a ship or planet (without cost)) so they can be",
+		"transferred to other systems an polities to boost the research there",
+		"and bring them up to the level of the database relativley fast. "
+	],
+	"SourceId": "I077"
+}
