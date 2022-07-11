@@ -1,0 +1,13 @@
+{
+	"Id": "P0593",
+	"Content": [
+		"Specific scenarios, like a cold war scenario will require fixed",
+		"planetary maps. So during world generation it should be possible to",
+		"assign planets and system fixed or partially fixed content. <br> A cold",
+		"war scenario would also model every country as a continent, so every",
+		"scenarion should be capable of providing its own localisation file, so",
+		"general concepts like ''continents'' may be renamed to ''regions'' or",
+		"space to ''the magic sea''. "
+	],
+	"SourceId": "none"
+}

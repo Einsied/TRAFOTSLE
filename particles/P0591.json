@@ -1,0 +1,13 @@
+{
+	"Id": "P0591",
+	"Content": [
+		"Branches or soldier types are a matrix over medium (space,",
+		"athmosphere, ground, hydrosphere surface, hydrosphere, hydrosphere",
+		"ground, underground)and vehicle size ( infantry, small vehicle, large",
+		"vehicle, base). A third dimension might be active vs supportive roles",
+		"(soldier, support(medic, mechanic ...), field officer, staff officer).",
+		"<br> Staff officers might however be responsible for an entire medium",
+		"as the mediums may roughly correspond to branches. "
+	],
+	"SourceId": "none"
+}
