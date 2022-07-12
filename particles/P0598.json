@@ -1,0 +1,15 @@
+{
+	"Id": "P0598",
+	"Content": [
+		"Ships/stations and other objects (e.g. comets) should travel in",
+		"''packages'' if possible so fewer calculations teps are necessary to",
+		"calculate encounters and movement. (A fleet or comet swarm might be",
+		"good examples for packages, since they travle with similar speed). The",
+		"meta information for a pacakge would be origin or current location,",
+		"target, speed and type of travel/travel-medium (sub-light, hyper-drive,",
+		"warp-drive, slip-stream etc.). <br> Packages should not be used for",
+		"journeys shorter than one turn, since after checking for encouters the",
+		"objects can simply be transffered. "
+	],
+	"SourceId": "I078"
+}

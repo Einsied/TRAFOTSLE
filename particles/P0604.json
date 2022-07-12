@@ -1,0 +1,9 @@
+{
+	"Id": "P0604",
+	"Content": [
+		"Deep space assemblies being stationary or close together like,",
+		"deep-space-stations or debreis fields should be tracked as their own",
+		"nodes instead of pacakges. "
+	],
+	"SourceId": "I078"
+}

@@ -1,0 +1,14 @@
+{
+	"Id": "P0599",
+	"Content": [
+		"Some-FTL mediums may use different graphs than the original map. Ss",
+		"there is a FTL-plane or something. Systems might then be mapped to this",
+		"plane with different methods (e.g. hashing the systems coordinates and",
+		"interpreting the hash as coordinates in the new plane). This may result",
+		"in interesting assymetries between polities using different forms of",
+		"FTL, especially if two mediums with different planes permit permit",
+		"different kinds of travel (e.g. one only permits gates while another",
+		"only permits jumps). "
+	],
+	"SourceId": "none"
+}

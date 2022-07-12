@@ -1,0 +1,13 @@
+{
+	"Id": "P0595",
+	"Content": [
+		"Pathfinding should be done on a layered graph. So systems form",
+		"subgraphs with clearly defined entry- and exit-points (FTL-points like",
+		"gates or warp-points or the system boarder to traverse into",
+		"interstellar space). This exit points themselves form a graph in a top",
+		"layer. This top layer may then be separated into regions, which form",
+		"subgraphs of their own, before the central top graph for the galaxy is",
+		"reached. This should speed up local and global pathfinding.  "
+	],
+	"SourceId": "I078"
+}

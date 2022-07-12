@@ -1,0 +1,10 @@
+{
+	"Id": "P0596",
+	"Content": [
+		"Found connections between 2 points within a system should be stored if",
+		"they are not trivial to calculate (because orbital mechanics or",
+		"interesting map geomety might be involved). This is necessary to spped",
+		"up pathfinding. "
+	],
+	"SourceId": "I078"
+}

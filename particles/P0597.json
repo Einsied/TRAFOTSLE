@@ -1,0 +1,10 @@
+{
+	"Id": "P0597",
+	"Content": [
+		"All systems are connected in real-space. This implies that ships may",
+		"encounter each other. To simulate this correctly local",
+		"transit-data-structures should exist keeping track of all objects",
+		"moving within a region of space. "
+	],
+	"SourceId": "I078"
+}
