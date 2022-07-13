@@ -1,0 +1,14 @@
+{
+	"Id": "P0635",
+	"Content": [
+		"There should be arsenals/weapons storage facilities, that permit the",
+		"storage of weapons for unit templates, to enable the activation of this",
+		"''reserve'' unit from the civilian population. So this are essentially",
+		"the armories of militias that are only used in times of need (z.b. war",
+		"or rebellion in the neighbouring colony). <br> The arsenals should",
+		"store specific unti templates instead of random ones (as the local",
+		"ground-police-force/milita does). This permits a specific tempalte for",
+		"a desert-border-world in opposition to a densly inhabited world. "
+	],
+	"SourceId": "I085"
+}
