@@ -1,0 +1,22 @@
+{
+	"Id": "P0611",
+	"Content": [
+		"Population growth should depend on the size of the population and some",
+		"of its inherent traits (like infertility/fertility, average age",
+		"expectancy, cultural factors, socio-economic factors, famine etc.).",
+		"There might also be fixed changes. <br> The changes should in the end",
+		"be collected in a list, so they can be used by other parts of the game.",
+		"The entries should include: <ul> <li> Deaths </li><li> Births </li><li>",
+		"Cloned/Constructed </li><li> Immigrants </li><li> Emmigrants </li><li>",
+		"Converted (to cyborg or other species) </li><li> Exterminated ",
+		"</li><li> Draftees </li> </ul> <br> Examples: <ul>  <li> Child support",
+		"facilities  (icreasing births per individual </li><li> Availabel",
+		"housing (increases births per individual) </li><li> Shortage of",
+		"luxuries (increases births per individual) </li><li> Liveprolonging",
+		"treatments (decreases deaths per individual) </li><li> Famine",
+		"(increases deaths per individual) </li><li> Disease (increases deaths",
+		"per individual) </li><li> Draft (fixed decrease) </li><li> Clones",
+		"(fixed increase) </li> </ul> "
+	],
+	"SourceId": "I081"
+}
