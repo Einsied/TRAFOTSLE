@@ -1,0 +1,20 @@
+{
+	"Id": "P0610",
+	"Content": [
+		"Since simulating every sociological/political group for every species",
+		"would create a lot of unnecessary data, groups below a certain size",
+		"should be summarized in a ''others''-group. This group is then",
+		"supported by an external data structure that summarizes populations for",
+		"multiple colonies. This bigger data structure may either reside on a",
+		"planetary-, system- or even politiy level. <br> It would also be",
+		"possible to build up a hierarchy of this file so one is present on",
+		"every level having a ''others''-group hinting to the next bigger level.",
+		"<br> The evalutation of such a ''others''group depends on settlement",
+		"policies on the colony, so if the colony is reserved for a special kind",
+		"of population (e.g. worker drones) no other population lives there",
+		"(even if the ''others''-group contains it).  <br> The ''other''-group",
+		"could be named after the level where it operates like ''general Earth",
+		"population. "
+	],
+	"SourceId": "I080"
+}
