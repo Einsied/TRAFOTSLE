@@ -1,0 +1,14 @@
+{
+	"Id": "P0629",
+	"Content": [
+		"Trade nodes should be organized in a tree like structure if possible,",
+		"so they can be resolved in a tree. For resolution every node looks at",
+		"the demand of its subnodes and their supplies, the difference form its",
+		"demand and supply. Once the root is reached the actual transactions are",
+		"down down the tree. So essentially it is a series of local markets that",
+		"only trade with other sides if necessary. <br> This behavior makes it",
+		"impossible to starve one system to feed another unless demand is",
+		"artifically supressed.  "
+	],
+	"SourceId": "I084"
+}

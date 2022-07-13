@@ -1,0 +1,22 @@
+{
+	"Id": "P0634",
+	"Content": [
+		"Depending on the strength of the local administration a part of a",
+		"trade node should always be a ''black-market'' exempt from taxes and",
+		"similar controls. The black-market should also be fueled directly from",
+		"the losses caused by crime and piracy in the systems connected to the",
+		"node. This enable playing as a criminal organization, pirates or simply",
+		"avoiding an enemies economical sanctions. <br> Due to its nature the",
+		"black market will always form a global amrket, once all trade ndoes are",
+		"connected in some way. <br> The black-market is not a market run by a",
+		"criminal organization., it can not be controlled. If a criminal faction",
+		"like a pirate gang opens a trade station, this station will also have a",
+		"black market, which is the portion of the market the pirate-gang does",
+		"not control. <br> Every controller of a trade node should be free to",
+		"permit a connection between the offical and black-market, if they wish.",
+		"This should however lower the control over their trade node and",
+		"probably increase crime as corruption seeps from the black into the",
+		"offical market. "
+	],
+	"SourceId": "I084"
+}

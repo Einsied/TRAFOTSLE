@@ -1,0 +1,13 @@
+{
+	"Id": "P0633",
+	"Content": [
+		"To determine when a colony or other end-trade-partner gets to bid on a",
+		"resource or determine which part of a ''fair'' split they receive, we",
+		"could utilize trade weight. Trade weight might be granted by",
+		"population, production and special buildings ensuring larger more",
+		"prosperous worlds gain more ressources. This trade weight would travel",
+		"upwards the trade-network-tree. (I suggest decay in this source but",
+		"this would punish tall trees for no reason.) "
+	],
+	"SourceId": "I084"
+}

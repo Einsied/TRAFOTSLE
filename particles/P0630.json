@@ -1,0 +1,22 @@
+{
+	"Id": "P0630",
+	"Content": [
+		"Since nodes acn be part of multiple networks, the resoultion of one",
+		"parent has to be prioritized or certain resources earmarked for one",
+		"trade network. <br> A possible solution is to iterate over the trees in",
+		"changing order for multiple turns (so the first X% are part of the 1st",
+		"trading round, started by tree-1, followed by tree-2 and tree-3, the",
+		"next X% are part of the 2nd trading round, started by tree-2 followed",
+		"by tree-3 and one). This solution becomes very expensive if there are a",
+		"lot of networks intertwined. <br> The earmarking solution is faster.",
+		"First every node splits is ressources either evenly between networks or",
+		"according of ist historic traffic (last n turns). Now all trees are",
+		"resolved. In a second step all leftover bids are known and resolve",
+		"again, so no network starves. In the second resolution step the nodeas",
+		"are already aware of their parents demands and can statisfy them. It",
+		"would also be possible to apply this method iterativley while",
+		"eliminating stale branches of networks, which are unable to fullfill",
+		"their demands. "
+	],
+	"SourceId": "I084"
+}

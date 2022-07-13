@@ -1,0 +1,19 @@
+{
+	"Id": "P0632",
+	"Content": [
+		"It would also be possible to have the nodes trade with each other via",
+		"variable rates. So all nodes try to maintain storage levels and prices",
+		"according to heir demand. The local participants then buy from the",
+		"nodes stores, while the node refills from neighbouring nodes if",
+		"possible. <br> In this model every participant (if local or node) would",
+		"bid on resources in the stores of a node, they would then be",
+		"distributed by the value of the bid (highest bid first, equal bid split",
+		"evenly). <br> This option means that poorer nodes may be unable to",
+		"restock certain goods as they can not match bids in neighbouring nodes.",
+		"<br> To avoid a node runnign dry for several turns, because it always",
+		"attempts to by from the cheapest nearest node (that runs out before the",
+		"node acquires the goods), nodes shoul start spreading bids if they run",
+		"low or are to close to the price last turn and risk being outbid. "
+	],
+	"SourceId": "none"
+}
