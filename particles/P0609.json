@@ -1,0 +1,13 @@
+{
+	"Id": "P0609",
+	"Content": [
+		"Trade nodes infecting each other with diseases should be based on",
+		"chance. So every turn there is a X% Chance (depending on the disease)",
+		"to infect another node. This chance should depend on the distance",
+		"between the nodes and their relation (so busy lanes have a higher",
+		"chance then less busy lanes). <br> Depending on the trade system",
+		"exploits (like a lot of intermediate stations or artifically long",
+		"routes should be avoided by penalizing exploitative strategies. "
+	],
+	"SourceId": "I079"
+}
