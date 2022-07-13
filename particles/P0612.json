@@ -1,0 +1,15 @@
+{
+	"Id": "P0612",
+	"Content": [
+		"To avoid an infinite number of polities being created in an unstable",
+		"system, colonies should be classified as anacrchic. Since it might not",
+		"be possible to calculate the stability for a system for the next n",
+		"rounds every rebellion should increase an anarchy meter (which may be",
+		"tied to an unrest meter). After this meter reaches a certain threshold",
+		"no new authority will be establisehd for the colony and it will be",
+		"instead anarchic. To return to an orderly state a much lower threshold",
+		"has to be crossed again (so the colonies do not keep bouncing between",
+		"anarchic and organized) or it has to be conquered by another politiy. "
+	],
+	"SourceId": "I082"
+}

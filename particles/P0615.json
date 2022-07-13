@@ -1,0 +1,13 @@
+{
+	"Id": "P0615",
+	"Content": [
+		"Buildings should be traced by size not by number. So we do not have 42",
+		"mines but one mine of size 19 and one of size 23. Reducing memory",
+		"consumption and necessary calculations. <br> The construction of large",
+		"buildings should be incentivized by efficency increase per added",
+		"size-point with diminishing returns. <br> The advantage of multiple",
+		"buildings is that random events (e.g. strikes) are only obstructing a",
+		"fraction of the local industry (unless it is a colony-wide strike). "
+	],
+	"SourceId": "I082"
+}
