@@ -1,0 +1,9 @@
+{
+	"Id": "P0616",
+	"Content": [
+		"The map-generation should contain a pregenitor-phase/minigame. During",
+		"this phase the already (partially) generated galaxy would be filled",
+		"with future artefacts (like lost colonies, gatenetworks, ruins etc.). "
+	],
+	"SourceId": "I083"
+}

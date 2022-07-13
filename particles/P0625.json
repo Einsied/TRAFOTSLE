@@ -1,0 +1,11 @@
+{
+	"Id": "P0625",
+	"Content": [
+		"It should be ensured that artefacts are generated as sets, so they are",
+		"thematically fitting (e.g. a gate should in general be accompanied by a",
+		"station or colony and not just float in the middle of nowhere (may also",
+		"just be next to a terraforming canidate of course or just nothing but",
+		"not always)). "
+	],
+	"SourceId": "none"
+}

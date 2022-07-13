@@ -1,0 +1,13 @@
+{
+	"Id": "P0617",
+	"Content": [
+		"All empires generated during the progenitor-phase have to fall, at",
+		"precisley the time the player is starting to work with their own empire",
+		"(As the progentior-minigame is also a method to keep players busy while",
+		"players with earlier start-dates take their setup rounds). This can be",
+		"solved by an randomized, automatic ''spin-down'', which automatically",
+		"selects the cause(s) for the fall of the empire and also distributes",
+		"the final artefacts. "
+	],
+	"SourceId": "I083"
+}
