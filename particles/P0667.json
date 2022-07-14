@@ -1,0 +1,14 @@
+{
+	"Id": "P0667",
+	"Content": [
+		"Battles should be limited to 15 major pieces per player and no more",
+		"than 60 pieces total. (So everything is abstracted into groups until",
+		"only 60 groups total and not much more then 15 per player are left.)",
+		"During the abstraction bigger pieces (like titanic space-ships or giant",
+		"space-stations) should be individuals for longer, since they command",
+		"more attention. So we may abstract the escort of a large asset while it",
+		"is still an individual ship, before we later combine them if further",
+		"abstraction is necessary. "
+	],
+	"SourceId": "I089"
+}

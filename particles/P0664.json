@@ -1,0 +1,11 @@
+{
+	"Id": "P0664",
+	"Content": [
+		"If battlegroups get damaged the damage is either applied to an",
+		"individual part of the group or overall. If overall damage is choosen",
+		"ships/units are destroyed at certain damage intervals depending on the",
+		"make-up of the group. (A combined hitpoint-pool invites exploits like",
+		"damage-soaking ships with a lot of health points). "
+	],
+	"SourceId": "I089"
+}
