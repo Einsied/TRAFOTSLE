@@ -1,0 +1,9 @@
+{
+	"Id": "P0637",
+	"Content": [
+		"To avoind exploits regarding gifts and making them useful, there",
+		"should be a gratitude-score or gift-balance in relations, so telling",
+		"the AI that it is pretty does not yield infinite resources. "
+	],
+	"SourceId": "I086"
+}

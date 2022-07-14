@@ -1,0 +1,18 @@
+{
+	"Id": "P0640",
+	"Content": [
+		"Every ship and unit design should have a tested- and a",
+		"battle-tested-score filling up over time, by training and the final",
+		"part of the battle-tested-score only by real (or almost real",
+		"(flower-war exercises (which are battles with slightly lower",
+		"casulties))) battle. <br> These scores simulate the kinks of new",
+		"designs that have to be solved once they enter service. <br> Depending",
+		"on other values (like design quality or how much battle experience the",
+		"desiging polity had) this scores correspond to mail. The tested-score",
+		"refers to civilian values like energy, drive, speed, acceleration etc",
+		"and grows  as long as a certain number of crafts is in service. The",
+		"battle-tested-score may refer to shields, weapons-damage fire rate etc.",
+		""
+	],
+	"SourceId": "I086"
+}

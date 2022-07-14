@@ -1,0 +1,12 @@
+{
+	"Id": "P0639",
+	"Content": [
+		"It should be possible to declare interests. This interests should be",
+		"grouped (so there would be military: ships, weapons, stations;",
+		"economical: market access, transport ships, resources; diplomatic:",
+		"diplomatic influence points, favorable treaties; security: Guarantees,",
+		"Non-aggression treaties, alliances). They should be used by the AI to",
+		"determine what gifts to give and what contracts to propose.  "
+	],
+	"SourceId": "I086"
+}
