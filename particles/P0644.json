@@ -1,0 +1,12 @@
+{
+	"Id": "P0644",
+	"Content": [
+		"There should be uplink stations permitting a colony to access the",
+		"archives of another system. There should be a penalty that increases",
+		"once the number of users outpaces the capacity of the uplink station.",
+		"The uplink should however be chaper than just building another archive,",
+		"to enable more centralized solutions, balanced by their vulnerability.",
+		"The uplink stations should also use a slot like system. "
+	],
+	"SourceId": "I087"
+}

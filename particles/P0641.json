@@ -1,0 +1,17 @@
+{
+	"Id": "P0641",
+	"Content": [
+		"Archives represent stored knowledge. They produce passive knowledge",
+		"used to store technologies. They cooperate within a system",
+		"administration and determine the potential knowledge available to this",
+		"system administration. They have slots for technology or",
+		"''encyclopedias'', cultural data-banks , administrative records and so",
+		"on. (Basically they can either hold technologies and patters/templates",
+		"or enhance local infrastructure, like culural, economical or",
+		"administrative buildings by letting them use free slots.) <br> Slots",
+		"are not literal slots but objects consuming space within the archives",
+		"databank, so this databank has a certain size, which can then be",
+		"delegated to individual concerns. "
+	],
+	"SourceId": "I087"
+}

@@ -1,0 +1,9 @@
+{
+	"Id": "P0650",
+	"Content": [
+		"It should also be possible to expand a tempalte with new modules. The",
+		"research cost for doing so should increase with every module added to",
+		"encourage the use of multiple templates. "
+	],
+	"SourceId": "I087"
+}
