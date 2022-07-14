@@ -1,0 +1,11 @@
+{
+	"Id": "P0653",
+	"Content": [
+		"The server has to keep track of the information availabel to the",
+		"player. The interesting part is, that information might not travel in",
+		"real time. So the news of a lost battle may reach the player 3 turns",
+		"after the battle happend. To permit this the server has to maintain",
+		"information queus for the players. "
+	],
+	"SourceId": "I088"
+}

@@ -1,0 +1,15 @@
+{
+	"Id": "P0656",
+	"Content": [
+		"Summarizing the player ''sees'' only within a small part of the game,",
+		"while everything else is partially or completly obscured by a",
+		"fog-of-war. The server would have to maintain two different game states",
+		"for every client (including) AI for this to work out perfectly. So",
+		"instead it will be the clienst duty to collect and process information.",
+		"It can only request information about the things directly visible to",
+		"it. This also implies that foreign entities can be querried for",
+		"abstract information, like rough location and data. Precise information",
+		"has to be stored by the client and should in general not be relevant. "
+	],
+	"SourceId": "none"
+}

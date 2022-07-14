@@ -1,0 +1,9 @@
+{
+	"Id": "P0655",
+	"Content": [
+		"It should be noted, that the player will attempt to order already",
+		"destroyed assets around. The server should only return an error if the",
+		"player was already informed about theloss of this fleet. "
+	],
+	"SourceId": "I088"
+}
