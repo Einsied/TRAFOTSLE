@@ -1,0 +1,15 @@
+{
+	"Id": "P0684",
+	"Content": [
+		"Since system defense ships are draftable, they need FTL capabilities.",
+		"This increases their cost without much benefit. To avoid this the FTL",
+		"capable ships within system defence forces should be drafted first,",
+		"this requires the system defence force to remember how much ships were",
+		"drafted and have to be rebuildt (for above or below average cost (cost",
+		"depend on system-defence-FTL-blueprints vs other",
+		"system-defence-blueprints)), before pre draft ratios have been",
+		"resotred. <br> (This also means systems may have an non-draftable part",
+		"of their system defence force, since that part is not ftl-capable). "
+	],
+	"SourceId": "none"
+}
