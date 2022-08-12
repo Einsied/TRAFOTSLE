@@ -1,0 +1,13 @@
+{
+	"Id": "P0696",
+	"Content": [
+		"Not all FTL-methods should adhere to the cluster connection points.",
+		"Wormholes for example should be distributed more ''randomly'' (having",
+		"them at a easier to defend outer position for the cluster would not be",
+		"terrible though). (The better solution is probably to have certain",
+		"FTL-line-bound-media be more ''real-space'' like and always connect to",
+		"outer systems and other tend to different systems (for examle the",
+		"center of mass for wormholes)). "
+	],
+	"SourceId": "I075"
+}

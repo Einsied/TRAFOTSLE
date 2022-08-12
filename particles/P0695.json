@@ -1,0 +1,11 @@
+{
+	"Id": "P0695",
+	"Content": [
+		"To figure out which systems are valid for connection a border region",
+		"could be defined(I would however now prefer a top down approach, where",
+		"every cluster knows the incoming connections and designs the systems",
+		"afterwards.). The size of this border region would be increased, incase",
+		"not enough connection systems were found. "
+	],
+	"SourceId": "I075"
+}
