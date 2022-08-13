@@ -1,0 +1,9 @@
+{
+	"Id": "P0712",
+	"Content": [
+		"Shields and armor should have an absolut damage reduction. Damage",
+		"below this value is ignored. This absolut reduction is also substracted",
+		"from the damage that is then handed to the proportional_reduction. "
+	],
+	"SourceId": "N003"
+}

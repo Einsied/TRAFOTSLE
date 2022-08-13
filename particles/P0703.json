@@ -1,0 +1,9 @@
+{
+	"Id": "P0703",
+	"Content": [
+		"Ships have hull integrity, representing how well they are glued",
+		"together. Once hull integrity reaches 0 the ship breaks apart, even if",
+		"its modules are still functional. "
+	],
+	"SourceId": "N003"
+}

@@ -1,0 +1,9 @@
+{
+	"Id": "P0708",
+	"Content": [
+		"Shields should have a hardness, if a weapon penetrates the ships",
+		"hardness the damage reuction is reduced. (So real_damage_reduction =",
+		"damage_reduction * min(1, hardness/piercing) would be the formula.) "
+	],
+	"SourceId": "N003"
+}

@@ -1,0 +1,12 @@
+{
+	"Id": "P0713",
+	"Content": [
+		"An alternative fromula for the damage penetrating shields is: leak =",
+		"max(0, (incoming_damage - absolute_reduction)) * (1 - max(1,",
+		"(shield_points * (shield_hardness / shield_piercing))) /",
+		"shield_points_max)) <br> This formula means shields start leaking as",
+		"soon as they take damage, since all the damage that is not leaked is",
+		"absorbed instead.  "
+	],
+	"SourceId": "N003"
+}

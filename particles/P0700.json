@@ -1,0 +1,8 @@
+{
+	"Id": "P0700",
+	"Content": [
+		"The direction of incoming damage should influence what modules are",
+		"damaged. "
+	],
+	"SourceId": "N003"
+}
