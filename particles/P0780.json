@@ -1,0 +1,15 @@
+{
+	"Id": "P0780",
+	"Content": [
+		"FTL-Method: Grav jump<br> Ship-module: Grav jump engine AND grav jump",
+		"navigation equipment <br> Stations: artifical grav jump stations",
+		"(attracting nearby grav jumps to them)<br> The grav-jump engine permits",
+		"a ship to jump. Heavier ships need bigger more energy hungry engines.",
+		"Technology limits the maximal distance. The naviagation equipment",
+		"affects the accuracy and warm-up before the jump. Accuracy declines",
+		"with greater distances requiring longer warm-ups or better equipment.",
+		"Technology determines the maximal effect of the equipment. The size of",
+		"the equipment is independent of the ship size. "
+	],
+	"SourceId": "N004"
+}

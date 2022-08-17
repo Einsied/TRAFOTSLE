@@ -1,0 +1,19 @@
+{
+	"Id": "P0781",
+	"Content": [
+		"FTL-Method: Signal Jump<br> Ship-module: Jump engine AND mavigation",
+		"equipment AND signale emmiter AND signal scrambler<br> Stations: Signal",
+		"station AND scrambler station<br> Technology limits the maximal jump",
+		"distance. The engine also limits the maximal distance depending on the",
+		"ships size and the availabel engery. Bigger ships need bigger engines",
+		"and more energy. The accuracy is determined by the navigation",
+		"equipment. The size of this equimpment is fixed. Technology governs the",
+		"time necessary to calculate jump coordinates. Accuracy declines with",
+		"increasing distances. Accuracy can be  increased with longer warmup",
+		"times (asymptothical growht for accuracy). Signal emmiters are the only",
+		"valid targets for this jump method. Strong signals shorten the time to",
+		"calcualte jump coordiantes. Signal scramlers have the opposite effect,",
+		"the also impose a fixed penatly of accuracy.   "
+	],
+	"SourceId": "N004"
+}

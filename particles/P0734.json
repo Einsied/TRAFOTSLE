@@ -1,0 +1,12 @@
+{
+	"Id": "P0734",
+	"Content": [
+		"Ther should be buildings which yields depends on population numbers,",
+		"so a fleet academy becomes more efficent it the population is larger,",
+		"since it can pick the best few from a bigger pool of people. (This",
+		"effect should decrease with the total production, so we will not see a",
+		"planet covered in housing and a giant fleet academy. The best solution",
+		"is probabyl a logistical-growth-curve) "
+	],
+	"SourceId": "N004"
+}

@@ -1,0 +1,17 @@
+{
+	"Id": "P0778",
+	"Content": [
+		"FTL-Method: Wormholestations<br> Ship-module: wormhole stabilizers<br>",
+		"Stations: A station planed in close proximity to a black hole<br> After",
+		"a station was built next to a black hole it may establish a artifical",
+		"wormhole a tech-dependent distance away. The numer of wormholes that",
+		"can be established from one black hole is limited by tech, this should",
+		"be a soft limit imposed over energy costs. Wormholes exist for a set",
+		"duration of time, this duration is chosen during creation and then",
+		"modfiedy by a random roll. Every ship with a worm hole stabilizer can",
+		"pass trough such an artifical wormhole. Wormholes have sizes which are",
+		"set via energy investment during creation and slowly decline before it",
+		"disappears.  "
+	],
+	"SourceId": "N004"
+}

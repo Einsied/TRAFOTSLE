@@ -1,0 +1,10 @@
+{
+	"Id": "P0736",
+	"Content": [
+		"Some buildings like administrative complexes or planetary shields",
+		"should require a warm-up time if they were shut down. (There might also",
+		"be spin-down times and start-up mali, the latter one could be used for",
+		"factories as they slowly gear into motion). "
+	],
+	"SourceId": "N004"
+}

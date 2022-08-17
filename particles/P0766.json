@@ -1,0 +1,9 @@
+{
+	"Id": "P0766",
+	"Content": [
+		"Buildings should have active workes being taken form the worker pool",
+		"to man them. This may be classical factorie workers or ant-queens in a",
+		"breeding lair. "
+	],
+	"SourceId": "N004"
+}

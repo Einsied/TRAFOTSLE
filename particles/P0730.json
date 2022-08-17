@@ -1,0 +1,11 @@
+{
+	"Id": "P0730",
+	"Content": [
+		"Planetary ore deposits should not only have a size/amount but also a",
+		"yield describing how easy to access they are. So a moon with a few iron",
+		"meteroites on its surface has a small size high yield iron deposit, a",
+		"jungle world with giant iron veins deep below ground has a big size low",
+		"yield iron deposit. This can be tracked per contient or per deposit. "
+	],
+	"SourceId": "N004"
+}

@@ -1,0 +1,10 @@
+{
+	"Id": "P0723",
+	"Content": [
+		"It should be able to refine resources to give positive effects(so pops",
+		"may eat grain but if they get refined grain (a.k.a. bread and pasta)",
+		"they are happier). The idea is to permit the use of inferiro production",
+		"chains if resources are short. "
+	],
+	"SourceId": "N004"
+}

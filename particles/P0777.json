@@ -1,0 +1,14 @@
+{
+	"Id": "P0777",
+	"Content": [
+		"FTL-Method: Stargates <br> Ship-module: None <br> Stations: Stargates",
+		"of different sizes that may form part of bigger stations, with",
+		"defensive equipment like shield generators etc.<br> Stargates are",
+		"connected in pairs. They can be destroyed by weapons fire (or self",
+		"destruction). The owner may reconnect them at will (the reconnection",
+		"needs a spin-up-time). The permissible distance between gates and the",
+		"(re)connection time depend on tech. The bigger the connection-distance",
+		"and diameter of the gate the more energy is necessary to maintain it. "
+	],
+	"SourceId": "N004"
+}

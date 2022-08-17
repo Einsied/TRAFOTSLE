@@ -1,0 +1,11 @@
+{
+	"Id": "P0756",
+	"Content": [
+		"Ships should be only capable of landing on some planets, depending on",
+		"gravity, athmosphere and the modules in their blueprint. (So not every",
+		"spacehip can just land within an ocean and start out of it again. So",
+		"there may be non-athmosphere rated ships and ships that can dive into",
+		"oceans.) "
+	],
+	"SourceId": "none"
+}

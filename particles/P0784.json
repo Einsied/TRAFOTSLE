@@ -1,0 +1,19 @@
+{
+	"Id": "P0784",
+	"Content": [
+		"FTL-Method: Accelerators<br> Ship-module: Acceleration core<br>",
+		"Stations: Accelerator<br> The orbital accelerator has to be aimed at a",
+		"certain system. Its accuracy declines with the target distance. The",
+		"accuracy decline per distance depends on tech. The travel speed is",
+		"limited by tech and determined by the energy availabel to the station",
+		"and the acceleration-core-mass to the ships entire mass. So a",
+		"civilization may either build very energy hungry accelerator stations",
+		"or very heavy acceleration cores into their ships. After a ship was",
+		"flung towards a system it finds itself on a trajectory towards the star",
+		"of this system with a random roll based on the accuracy. During its",
+		"flight it is free to manouver to home towards the star and more",
+		"importantly slow down to avoid colliding with the star or just being",
+		"lost in the vastness of space.  "
+	],
+	"SourceId": "N004"
+}

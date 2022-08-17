@@ -1,0 +1,11 @@
+{
+	"Id": "P0765",
+	"Content": [
+		"Some species should grow their population deliberatley in buildings.",
+		"This might be common nesting-grounds for egg-laying species,",
+		"assembly-halls for machine-empires or queen-lairs for ant like species.",
+		"This means that they have no passive population growth but a building",
+		"that may need resources or scale with the already existing population. "
+	],
+	"SourceId": "N004"
+}

@@ -1,0 +1,12 @@
+{
+	"Id": "P0779",
+	"Content": [
+		"FTL-Method: Steam<br> Ship-module: Warp sail<br> Stations: Inhibitor",
+		"stations may pull ships out of the stream<br> The streams are existing",
+		"FTL-lines between systems. They are generated during map generation.",
+		"Every ships with a Warp sail can sail along them. They have a direction",
+		"traveling stream downwards is signigicantly faster than treaveling",
+		"upwards.     "
+	],
+	"SourceId": "N004"
+}

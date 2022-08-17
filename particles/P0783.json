@@ -1,0 +1,13 @@
+{
+	"Id": "P0783",
+	"Content": [
+		"FTL-Method: Rift<br> Ship-module: Rift Generator AND Starmap <br>",
+		"Stations: Rift detector <br> The huge starmap module permits a ship",
+		"with a rift generator to jump anywhere it the galaxy. The energy cost",
+		"depend on the density of the ship. The spin up is quite long and can be",
+		"detected with rift detectors. This is a late game tech. The energy cost",
+		"is independent of the distance. There is no real maximal jump distance.",
+		""
+	],
+	"SourceId": "N004"
+}
