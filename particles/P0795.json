@@ -1,0 +1,15 @@
+{
+	"Id": "P0795",
+	"Content": [
+		"The problem of regions is balancement, so every region should have a",
+		"drwaback. If in doubt space monsters can be added to make nice regions",
+		"less lucrative. In general the map-generator should attempt to generate",
+		"the desired galaxy and avoid placing spawns in hopeless areas (so there",
+		"may be no-spawn regions, poor-spawn regions, average-spawn regions and",
+		"good-spawn regions. (The balancement can than occur in in the",
+		"empire-generator, where a region quality is selected, or better bet on",
+		"with the highest bidder getting placed in the best approriate spot.))  ",
+		" "
+	],
+	"SourceId": "N008"
+}
