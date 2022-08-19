@@ -1,0 +1,10 @@
+{
+	"Id": "P0799",
+	"Content": [
+		"There are multiple ways to create spherical maps, like fibonacci",
+		"spheres, with arbitrary vertex numbers or cube spheres (a cube",
+		"projected onto a sphere).  <br> Cube spheres have better connectivity",
+		"than icosahedrons.  "
+	],
+	"SourceId": "N011"
+}
