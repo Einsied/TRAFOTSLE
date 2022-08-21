@@ -1,0 +1,11 @@
+{
+	"Id": "P0819",
+	"Content": [
+		"Whithin designers (like ship-, unit- or  module-designer) it should be",
+		"possible to select role recommendations. These recommendations are",
+		"essentially value-ranges for the desiganted role. So a heavy-freighter",
+		"has a recommended speed, cargon-capacity and travel-distance range",
+		"helping the player to desing the ship.   "
+	],
+	"SourceId": "none"
+}
