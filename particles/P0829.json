@@ -1,0 +1,10 @@
+{
+	"Id": "P0829",
+	"Content": [
+		"There should be 3 froms of knowledge buldings: <ul>  <li> Research",
+		"faciltities creating new knowledge </li> <li> Archives storing",
+		"information (these give tech slots) </li> <li> Educational facilites",
+		"making the stored knowledge useful (creating boni from it) </li> </ul> "
+	],
+	"SourceId": "N006"
+}

@@ -1,0 +1,8 @@
+{
+	"Id": "P0831",
+	"Content": [
+		"Research fields held in slots should now increase research in adjacent",
+		"fields according to the tech-map. "
+	],
+	"SourceId": "N006"
+}

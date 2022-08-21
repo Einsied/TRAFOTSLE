@@ -1,0 +1,8 @@
+{
+	"Id": "P0827",
+	"Content": [
+		"Slot size for research slots is determined by the technology, so laser",
+		"level 1 may have a size of 60 and laser level 2 a size of 100. "
+	],
+	"SourceId": "N006"
+}

@@ -1,0 +1,11 @@
+{
+	"Id": "P0822",
+	"Content": [
+		"There should be general tech levels representing entire fields to",
+		"simplyfy storage logic. Only specializations would need to be safed. Of",
+		"course there would also be general knowledge representing the knowledge",
+		"in all fields. <br> The specialized technology or fields would help",
+		"planets to focus on one specifi area. "
+	],
+	"SourceId": "N006"
+}
