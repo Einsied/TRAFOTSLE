@@ -1,0 +1,11 @@
+{
+	"Id": "P0849",
+	"Content": [
+		"The dominant culture or stream is determined by the cultural output of",
+		"its colonies. The culture of a colony can be determined by the pops.",
+		"This should be fractional so if 30% of a colony belong to culture A and",
+		"67% to Culture be. The output should be split between A and B 30:67,",
+		"while the missing 3% are ignored. "
+	],
+	"SourceId": "N013"
+}

@@ -1,0 +1,12 @@
+{
+	"Id": "P0844",
+	"Content": [
+		"Cultures should be modelled as tree like structures. So a culture",
+		"contains a core-node culture-group and cultures containing multiple",
+		"streams. One culture is dominant within the group and one stream is",
+		"dominant within every culture. A stream may be part of multiple ",
+		"cultures if it is a hybrid, the same holds for a culture in regard to",
+		"culture groups.   "
+	],
+	"SourceId": "N013"
+}
