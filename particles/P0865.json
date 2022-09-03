@@ -1,0 +1,9 @@
+{
+	"Id": "P0865",
+	"Content": [
+		"To correctly simulate flanks in a hex-map a unit has a front side, a",
+		"left and right front flank, a left and right rear flank and a rear. The",
+		"unit may have different damage resitances for each of this sides. "
+	],
+	"SourceId": "N005"
+}

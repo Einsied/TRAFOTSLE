@@ -1,0 +1,9 @@
+{
+	"Id": "P0883",
+	"Content": [
+		"FTL-dirve-methods should track their usage and turgger region or",
+		"galaxy wide events based on usage. So if everyone uses wormholes random",
+		"wormholes appear more often as space turns into swiss cheese. "
+	],
+	"SourceId": "N005"
+}

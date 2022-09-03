@@ -1,0 +1,9 @@
+{
+	"Id": "P0866",
+	"Content": [
+		"To create a battle lines on a hex field units should strengthen the",
+		"side front flanks of their neighbors if they have a battle line",
+		"attribute.  "
+	],
+	"SourceId": "N005"
+}

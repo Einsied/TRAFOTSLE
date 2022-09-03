@@ -1,0 +1,9 @@
+{
+	"Id": "P0872",
+	"Content": [
+		"Buildings on the map will be attached to hexes. The surface features",
+		"could deoend on the building. So a space-port has sparse 100m-buildings",
+		"and a factory dense 20-m buldings. "
+	],
+	"SourceId": "N005"
+}

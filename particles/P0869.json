@@ -1,0 +1,12 @@
+{
+	"Id": "P0869",
+	"Content": [
+		"Planet should have vegetation/surface features. These have 2",
+		"attributes density and average size. So a tile may have dense 5m",
+		"buildings. Both can be used to determine cover of units (since the",
+		"units have different sizes). (Units should also have problems firing",
+		"out of surface features, so a dense 20m forest makes the use of direct",
+		"laser weapons difficult). "
+	],
+	"SourceId": "N005"
+}
