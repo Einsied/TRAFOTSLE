@@ -1,0 +1,17 @@
+{
+	"Id": "P0913",
+	"Content": [
+		"Votes in assemblies can be distributed in multiple ways. First a group",
+		"is defined. So Group A gets X votes. Then the distribution method for",
+		"this group is defined. So Group As votes may be awarded according to:",
+		"<ul> <li> Controlled planets </li> <li> Controlled colonies </li> <li>",
+		"Fleet size </li> <li> Army size </li> <li> War contribution </li> <li>",
+		"Fixed (by a contract) </li> <li> Science output </li> <li> Tribute paid",
+		"to the polity the assembly represents </li> <li> Cultural influence",
+		"</li> <li> Contribution to the armed forces controlled by the assembly",
+		"</li> <li> Possesion of specific planets </li> <li> Number of",
+		"individuals part of the polity or faction </li> <li> Planets or colonis",
+		"controlled in their plurality by this polity or faction </li> </ul> "
+	],
+	"SourceId": "N005"
+}

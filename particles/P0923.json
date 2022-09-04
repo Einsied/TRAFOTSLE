@@ -1,0 +1,14 @@
+{
+	"Id": "P0923",
+	"Content": [
+		"A military coup is started by an illoyal officer. He first searches",
+		"for allies in other branches or formations. After the officer",
+		"determines the force is big enough every sub-node of the military tree",
+		"rolls a dice (this has to be factored in by the conspiracy before",
+		"starting otherwise they always loose) to see if they stay loyal or",
+		"participate. The dice role dpends on the values of the individual",
+		"officer and the polity (strong states with a disciplined military are",
+		"less suceptible). "
+	],
+	"SourceId": "N005"
+}

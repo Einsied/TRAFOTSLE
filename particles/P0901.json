@@ -1,0 +1,10 @@
+{
+	"Id": "P0901",
+	"Content": [
+		"Captials should be able to track small things in the palace like",
+		"monuments, ceremonial weapon chambers or arenas, tombs, throne halls",
+		"etc. This could be done by giving some buildings a special data array",
+		"to store this stuff. "
+	],
+	"SourceId": "N005"
+}

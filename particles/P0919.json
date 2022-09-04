@@ -1,0 +1,15 @@
+{
+	"Id": "P0919",
+	"Content": [
+		"Political allegiance of the population should depend on: <ul> <li>",
+		"Changes last turn </li> <li> Members in the faction (This curve should",
+		"invert so there are no single faction colonies) </li> <li> Members in",
+		"the opposite faction </li> <li> Influence by the governing system",
+		"administration (passive just pulling or pushing based on overall",
+		"happiness, and active via buildings or other measn) </li> <li> Problems",
+		"(Starvation incentivizes socialism or communism, abundance capitalism)",
+		"</li> <li> Legislation (the more laws desired by this faction are in",
+		"place the lower the appeal) </li> </ul> "
+	],
+	"SourceId": "N005"
+}

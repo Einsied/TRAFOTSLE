@@ -1,0 +1,10 @@
+{
+	"Id": "P0903",
+	"Content": [
+		"Assemblies should have seats (either colonies or specific buildings).",
+		"These seats can then be raided to disrupt them. It should also be",
+		"possible to have no seat (virtual seat via FTl-communication) or a",
+		"moving seat. "
+	],
+	"SourceId": "none"
+}
