@@ -1,0 +1,14 @@
+{
+	"Id": "P0957",
+	"Content": [
+		"Police ships are drawn from a number of blueprints. These blueprints",
+		"have certain ratios. These rations should be collected in templates, so",
+		"there can be ''core'' and ''rim'' templates. The value of each police",
+		"point is determined by the values of the the blueprints in the",
+		"templates, taking into account their buidlign costs and values. <br> To",
+		"determine the final value of each police point the relevant values",
+		"(speed, sensors, weaponisation, boarding, shields etc.) should be",
+		"sorted and the lowest X% ignored, to simulate specialized deployment. "
+	],
+	"SourceId": "N005"
+}

@@ -1,0 +1,12 @@
+{
+	"Id": "P0936",
+	"Content": [
+		"Pathifinding is a graph problem. The problem are the costs for",
+		"half-permanent connectios like stargates, since the AI has to decide if",
+		"it wishes to open them to facilitate transport. Assigning the",
+		"capabilites to tasks may ease this problem. (So a fleet has a gate or",
+		"wormhole station assocaited to it and can make use of it for",
+		"pathfinding.) "
+	],
+	"SourceId": "N005"
+}

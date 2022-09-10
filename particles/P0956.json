@@ -1,0 +1,10 @@
+{
+	"Id": "P0956",
+	"Content": [
+		"Depending on the physical size of the system there should be a point",
+		"were police points count more (this simulates that the police is now",
+		"able to effectivly patrol the entire system). This could be influence",
+		"by the quality of the sensors of the police ships. "
+	],
+	"SourceId": "N005"
+}

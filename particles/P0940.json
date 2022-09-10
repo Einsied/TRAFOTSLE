@@ -1,0 +1,10 @@
+{
+	"Id": "P0940",
+	"Content": [
+		"There should be offensive and defensive espionage missions. Defensive",
+		"points are assigned to assets and lower the success chances of an",
+		"offensive action. The success chance goes against 0 but never reaches",
+		"it, so every offensive has a chance to succed. "
+	],
+	"SourceId": "N005"
+}

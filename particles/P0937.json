@@ -1,0 +1,7 @@
+{
+	"Id": "P0937",
+	"Content": [
+		"Ai should assign weight to certain actions and then select randomly. "
+	],
+	"SourceId": "N005"
+}

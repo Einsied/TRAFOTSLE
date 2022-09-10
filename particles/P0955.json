@@ -1,0 +1,11 @@
+{
+	"Id": "P0955",
+	"Content": [
+		"The amount of captured goods is based on the ratio of police to pirate",
+		"points. If there is an overwhelming police presence (e.g. 5 police",
+		"points per pirate points), no cargo is captured anymore. Also the",
+		"amount of total caputred cargo is capped by pirate points (so n pirate",
+		"points can only capture x units of cargo per turn). "
+	],
+	"SourceId": "N005"
+}

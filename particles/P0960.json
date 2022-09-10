@@ -1,0 +1,11 @@
+{
+	"Id": "P0960",
+	"Content": [
+		"Ships may have officer characters attached to it. They should be",
+		"leightweight on memory. These officers should have a",
+		"skill,loyalty-value and ideology (for military coups and revolts). For",
+		"big ships they may also have classes like (Commander, Pilot,",
+		"Ship-security, Ships physician etc.). "
+	],
+	"SourceId": "N005"
+}

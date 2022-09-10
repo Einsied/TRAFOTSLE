@@ -1,0 +1,11 @@
+{
+	"Id": "P0953",
+	"Content": [
+		"Piracy is tracked per system. There is a level of pirate-points",
+		"represeting the strength of the pirates. This increases for cargo moved",
+		"trough the system. It also increases with the amount of captured cargo.",
+		"The latter giving a bigger increase so things can spiral out of",
+		"control. It is decreased by police points. "
+	],
+	"SourceId": "N005"
+}
