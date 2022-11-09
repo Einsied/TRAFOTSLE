@@ -1,0 +1,27 @@
+{
+	"Id": "P0974",
+	"Content": [
+		"Conflicts should have causes, like grievances, claims or declared",
+		"rivalries. This causes are then charged using diplomatic influence",
+		"yielding pressure. <br> War can only be declared by a party if the",
+		"summed up pressure from all causes exceeds a threshold dependent on",
+		"their and their oponents culture, size and pressure potential (e.g.",
+		"diplomatic output) (this adaptive threshold should ensure giant",
+		"polities do not go to war over tiny things).  The maximal charge should",
+		"also depend on the cause and threshold, so a war needs n turns to",
+		"start, giving polities time to prepare. <br> To prevent war opponents",
+		"can discharge causes (the discharge rate should in general be below the",
+		"charge rate however, so parties can go to war if they desire) or",
+		"fullfill the associated demands, therby removing the pressure.",
+		"(Yielding control of a planet but keeping almost half of the colonies,",
+		"does remove the cobtrol plates cause, but creates a new cause for the",
+		"future). Acceptance of causes ca be done unilaterally or in",
+		"negotiations (In negotiations both parties may fullfill demands in",
+		"exchange, this lowers pressure for both sides). <br> Certain causes",
+		"like ''declare flower war'' should be almost impossible to",
+		"discharge.<br> Warrior cultures should also have a charge bonus and",
+		"discahrge penalty for their causes so their wars do not get stalled by",
+		"pacifists at the negotiating table forever. "
+	],
+	"SourceId": "none"
+}
