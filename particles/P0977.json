@@ -1,0 +1,16 @@
+{
+	"Id": "P0977",
+	"Content": [
+		"There should be interactions between pops cultures, goods and colony",
+		"behavior. Example: Pops with ''american''-culture have a demand for",
+		"guns as a luxury good. The supply of luxury goods increases the deaths",
+		"from violent crime in the colony (Like crimedeaths = (crimerate ×",
+		"populationSize) policing  * (0.01 + GunSupply / populationSize) ). <br>",
+		"Similar effects might be applied to narcotics (higher mortality and",
+		"lower productivity) or other goods like medicine (lower mortality and",
+		"higher productivity) (fun in medicine and narcotics overlap to some",
+		"extend and the effects are non linear, so supply has to be carefully",
+		"balanced) or furniture (increasing happiness and productivity) "
+	],
+	"SourceId": "none"
+}
