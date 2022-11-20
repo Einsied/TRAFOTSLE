@@ -1,0 +1,12 @@
+{
+	"Id": "C019",
+	"Name": "Assemblies",
+	"Description":[
+		[
+			"Parliaments, senates courts and other ruling boides of polities.",
+			"They are the center of politics within polities." 
+		]
+	],
+	"Particles": [
+	]
+}
