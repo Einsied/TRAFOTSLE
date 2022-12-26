@@ -1,8 +1,11 @@
 {
 	"Id": "T004",
-	"Name": "Turns",
+	"Name": "Military pressure",
 	"Particles": [
-		"P0021"
+		"P0020",
+		"P0023",
+		"P0064",
+		"P0065"
 	],
 	"Concepts": [
 	]

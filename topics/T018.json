@@ -1,11 +1,9 @@
 {
 	"Id": "T018",
-	"Name": "Manual",
+	"Name": "UI",
 	"Particles": [
-		"P0251",
-		"P0252",
-		"P0253",
-		"P0254"
+		"P0071",
+		"P0144"
 	],
 	"Concepts": [
 	]

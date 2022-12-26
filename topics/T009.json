@@ -1,13 +1,17 @@
 {
 	"Id": "T009",
-	"Name": "Politics",
+	"Name": "Victory conditions/scoring",
 	"Particles": [
-		"P0025",
-		"P0029",
-		"P0030",
-		"P0148",
-		"P0318"
+		"P0026",
+		"P0027",
+		"P0028",
+		"P0032",
+		"P0050",
+		"P0058",
+		"P0168",
+		"P0169"
 	],
 	"Concepts": [
+		"C005"
 	]
 }

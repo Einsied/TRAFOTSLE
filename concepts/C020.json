@@ -1,0 +1,22 @@
+{
+	"Id": "T020",
+	"Name": "Ground Units",
+	"Description": [
+		"This are the military formations fighting on a planets ",
+		"surface."
+	],
+	"Particles": [
+		"P0002",
+		"P0008",
+		"P0009",
+		"P0010",
+		"P0012",
+		"P0013",
+		"P0014",
+		"P0121",
+		"P0122",
+		"P0205",
+		"P0207",
+		"P0291"
+	]
+}

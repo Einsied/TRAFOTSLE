@@ -1,10 +1,8 @@
 {
 	"Id": "T022",
-	"Name": "Event-chains/storylines",
+	"Name": "Intelligence",
 	"Particles": [
-		"P0152",
-		"P0153",
-		"P0213"
+		"P0024"
 	],
 	"Concepts": [
 	]
