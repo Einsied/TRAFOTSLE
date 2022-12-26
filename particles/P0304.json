@@ -1,10 +1,10 @@
 {
 	"Id": "P0304",
 	"Content": [
-		"For sizes in intended to seperate between (in ascending order)",
-		"Gunboat, Corvett, Frigate, Destroyer, Cruiser, Battleship with light",
-		"and heavy as suffix to denote big and small variants. (This is outdated",
-		"and I should probably use correcter nautical classes.) "
+		"For sizes I intended to seperate between (in ascending order) Gunboat,",
+		"Corvett, Frigate, Destroyer, Cruiser, Battleship with light and heavy",
+		"as suffix to denote big and small variants. (This is outdated and I",
+		"should probably use correcter nautical classes.) "
 	],
 	"SourceId": "I039"
 }
