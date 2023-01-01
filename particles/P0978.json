@@ -1,0 +1,11 @@
+{
+	"Id": "P0978",
+	"Content": [
+		"There should be different drafts: <ul><li> Mandatory service",
+		"(automatically creates military units with draftees)</li> <li> Militia",
+		"(cost productivity for training)</li> <li> Levy (Low trained some",
+		"veterans, depending on the time since the last war) </li> <li> General",
+		"draft (untrained draftees)</li> <li> No draft </li> </ul>  "
+	],
+	"SourceId": "none"
+}

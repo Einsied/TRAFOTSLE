@@ -1,0 +1,13 @@
+{
+	"Id": "P0979",
+	"Content": [
+		"Ship modules should connect to corridors on one side (This also means",
+		"they just need one or multiple supply ports in one direction, while to",
+		"corridors connect them in 3d). These corridors should serf as a buffer,",
+		"so the ship modules can be attached to each other as blocks. On the",
+		"none corridor sides the material might be armor or scaffolding like (if",
+		"viewed in the ship editor) mechanicaly the modules become boxes, so",
+		"they fit together without gaps or other odd stuff. "
+	],
+	"SourceId": "none"
+}
