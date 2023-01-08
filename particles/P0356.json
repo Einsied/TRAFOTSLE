@@ -6,7 +6,7 @@
 		"or robots need recharging stations). The consumption of this buildings",
 		"should depend on the number of pops. (So they would have an upper",
 		"limit, but if they could supply more pops than living in the colony",
-		"they would reduce their ressource consumption. Since different species",
+		"they would reduce their ressource consumption.) Since different species",
 		"consume differen foods a food types should be introduced for this",
 		"system or the building would only support a certain kind of species. "
 	],
