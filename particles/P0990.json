@@ -1,0 +1,9 @@
+{
+	"Id": "P0990",
+	"Content": [
+		"Armor penetration chance should become more effective with the damage",
+		"already sustained by the armor. <br> This is supposed to simulate the",
+		"chance to hit a weak spot created previously. "
+	],
+	"SourceId": "none"
+}
