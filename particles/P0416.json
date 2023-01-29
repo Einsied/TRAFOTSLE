@@ -1,7 +1,7 @@
 {
 	"Id": "P0416",
 	"Content": [
-		"fUnits should also require officers depending on their size. This",
+		"Units should also require officers depending on their size. This",
 		"should be done via a tactics and logistical bonus that is capped at a",
 		"certain officer per non-officer ration. "
 	],
