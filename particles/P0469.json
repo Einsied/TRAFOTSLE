@@ -3,8 +3,8 @@
 	"Content": [
 		"Repulsion should lower accuracy. This could be tracked by a ",
 		"''stability'' or pose value measuring how calm the ship is during a",
-		"turn, with every shoot lowering it, which makes it preferable to fire",
-		"lasers withouf or before the kinetic guns. Stabiliy may be regained by",
+		"turn. Every shoot would lower it, making it preferable to fire",
+		"lasers without or before the kinetic guns. Stabiliy may be regained by",
 		"using manouver thrusters. "
 	],
 	"SourceId": "I051"
