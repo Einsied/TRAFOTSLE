@@ -1,7 +1,7 @@
 {
 	"Id": "P0488",
 	"Content": [
-		"Ground units should only meele after they charged onto the same hex,",
+		"Ground units should only enter meele after they charged onto the same hex,",
 		"during this charge special multipliers should apply for defender and",
 		"attacker depending on their equipment. "
 	],

@@ -1,7 +1,7 @@
 {
 	"Id": "P0481",
 	"Content": [
-		"Depending on the warp method there should be an warp inhibitor:  <ul>",
+		"Depending on the warp method there should be a warp inhibitor:  <ul>",
 		"<li>Slip stream may have stoppers in the stream</li> <li>Warp lanes may",
 		"have inhibitors in a system</li> <li>Warp jump may be stopped by an",
 		"inhibitor bubble</li> <li>Wormholes may be stopped from forming by an",
