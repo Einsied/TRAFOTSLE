@@ -1,0 +1,9 @@
+{
+	"Id": "P0995",
+	"Content": [
+		"Special users, like the server admin or a mod-API-client need special",
+		"interfaces and the ability to store credentials(public keys) during",
+		"server boot up. "
+	],
+	"SourceId": "none"
+}

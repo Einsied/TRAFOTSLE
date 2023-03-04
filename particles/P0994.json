@@ -1,0 +1,9 @@
+{
+	"Id": "P0994",
+	"Content": [
+		"Having the mod interface as a rest API would be nice. This means it",
+		"becomes language independent, also means the mods have to be able to",
+		"change game internal documentation remotely "
+	],
+	"SourceId": "none"
+}

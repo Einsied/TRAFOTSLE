@@ -1,11 +1,11 @@
 {
 	"Id": "C020",
 	"Name": "Ground Units",
-	"Description": [
+	"Description":[
 		"This are the military formations fighting on a planets ",
 		"surface."
 	],
-	"Particles": [
+	"Particles":[
 		"P0002",
 		"P0008",
 		"P0009",
