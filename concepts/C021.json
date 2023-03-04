@@ -2,10 +2,12 @@
 	"Id": "C021",
 	"Name": "Heritage",
 	"Description":[
-		"The heritage is the offical origin of a polity. ",
-		"This might be an ancient empire or a homeworld. ",
-		"It is distinct from the culture of a polity and not reflected ",
-		"in the pops of the polity."
+		[
+			"The heritage is the offical origin of a polity. ",
+			"This might be an ancient empire or a homeworld. ",
+			"It is distinct from the culture of a polity and not reflected ",
+			"in the pops of the polity."
+		]
 	],
 	"Particles": [
 		"P0494",

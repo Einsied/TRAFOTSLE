@@ -2,8 +2,10 @@
 	"Id": "C020",
 	"Name": "Ground Units",
 	"Description":[
-		"This are the military formations fighting on a planets ",
-		"surface."
+		[
+			"This are the military formations fighting on a planets ",
+			"surface."
+		]
 	],
 	"Particles":[
 		"P0002",
