@@ -1,0 +1,8 @@
+{
+	"Id": "P1003",
+	"Content": [
+		"Ships should be assocaited with name lists, so once a name is freed it",
+		"can be reused or we can ensure, that no name appears twice. "
+	],
+	"SourceId": "none"
+}
