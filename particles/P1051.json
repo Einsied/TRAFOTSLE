@@ -1,0 +1,8 @@
+{
+	"Id": "P1051",
+	"Content": [
+		"Complete inhibiton of currents seems undesirable. So maybe they should",
+		"not be inhibitable. Instead a slow-down should be applied. "
+	],
+	"SourceId": "none"
+}
