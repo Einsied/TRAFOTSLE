@@ -1,0 +1,8 @@
+{
+	"Id": "P1018",
+	"Content": [
+		"For front, back and side armor, the best way is probably to  ",
+		"interpolate the armor depending on the angle of incoming fire. "
+	],
+	"SourceId": "none"
+}

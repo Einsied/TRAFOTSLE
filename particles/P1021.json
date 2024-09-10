@@ -1,0 +1,10 @@
+{
+	"Id": "P1021",
+	"Content": [
+		"It should be possible to build ring orbitals around planets. These",
+		"should block their orbit (+- their height times 10) for the building of",
+		"other orbitals since they would collide   <br /> Ring worlds are ring",
+		"orbitals around stars. "
+	],
+	"SourceId": "none"
+}
