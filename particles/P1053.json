@@ -1,0 +1,21 @@
+{
+	"Id": "P1053",
+	"Content": [
+		"It should be possible to create premium versions of certain products,",
+		"like androids. So with research or production-investment products can",
+		"be up leveled. There are n Top spots for the best products giving",
+		"bonuses. So the producer with the most points in android production can",
+		"export 1st class androids or [Polity-Name]-androids. Polities importing",
+		"them get a bonus depending on the number of imported or used androids.",
+		"<br /> So if polity A produces 1st class androids, giving a 5% bonus to",
+		"manufacturing and does not import androids, it gets a 5 % bonus to",
+		"manufacturing. <br /> If polity B produces 2nd class androids, giving a",
+		"3% bonus to manufacturing and imports 50% of its demand from A, they",
+		"get a 4% bonus to manufacturing. <br /> If polity C produces androids",
+		"that are not good enough for a quality class and does not import",
+		"high-quality androids it gets no bonus. <br /> If polity C produces no",
+		"androids and imports only from A it also gets 5% bonus to",
+		"manufacturing. "
+	],
+	"SourceId": "none"
+}
