@@ -1,0 +1,9 @@
+{
+	"Id": "P1034",
+	"Content": [
+		"There should be a minimal viable population size. Pops below that",
+		"should not procreate. With this method small pops and tiny outposts die",
+		"out by themselves, reducing strain on computational resources "
+	],
+	"SourceId": "none"
+}

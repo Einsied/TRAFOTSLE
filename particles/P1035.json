@@ -1,0 +1,12 @@
+{
+	"Id": "P1035",
+	"Content": [
+		"There should be a social viable population size. Pops below that size,",
+		"that are neither significant for the colony nor encouraged to live in",
+		"this world nor experiencing rapid population increase should try to",
+		"consolidate with similar pops nearby. <br /> The last condition can be",
+		"eliminated, if the penalty is small, so it can be out surpassed by",
+		"growth factors. "
+	],
+	"SourceId": "none"
+}
