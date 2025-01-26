@@ -1,0 +1,17 @@
+{
+	"Id": "P1062",
+	"Content": [
+		"Relative payments of one polity to another (taxation, tribute,",
+		"reparations) should be based on reported numbers. So the paying polity",
+		"may underreport its capabilities and the receiving one may fund an",
+		"investigation to renew the numbers. How the authoritative number is",
+		"chosen should be part of the contract (reasonable consensus, payer or",
+		"receiver authoritative, average, neutral 3rd etc.). <br> So numbers",
+		"fudging could be an interesting game mechanic. Obviously it should be",
+		"automatable with a investigation budget and sliders. <br> The",
+		"payment-receiver now gains an interest in establishing a permanent",
+		"presence to update the data continiusly, while the payment-receiver",
+		"might be able to corrupt this census-bureaucrats. "
+	],
+	"SourceId": "none"
+}
